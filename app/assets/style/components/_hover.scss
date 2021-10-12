@@ -1,0 +1,17 @@
+//hover效果-導覽列連結底線-顯示
+.nav--items__hover {
+    transition: all .3s;
+
+    &:hover {
+        border-bottom: 1px solid $secondary;
+    }
+}
+
+//卡片hover效果-陰影
+.hover--shadow {
+    transition: all .3s;
+
+    &:hover {
+        box-shadow: 1px 3px 6px #BBB;
+    }
+}

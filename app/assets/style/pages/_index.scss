@@ -1,0 +1,18 @@
+//半透明黑色背景
+.bg--translucent {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+//banner白色底線
+.banner--border {
+    width: 100px;
+    border-bottom: 2px solid #FFF;
+}
+
+//設計師照片
+.person--img__circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+}
