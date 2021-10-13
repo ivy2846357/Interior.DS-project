@@ -24,9 +24,9 @@ current: index
 </div>
 
 <!-- 表單內容 -->
-<form class="container">
+<form class="container-lg">
     <div class="row d-flex justify-content-center">
-        <div class="col-12 col-sm-6 col-lg-4 text-gray">
+        <div class="col-12 col-lg-6 text-gray px-6">
             <!-- 第一題 -->
             <div class="form-group mb-6">
                 <h6 class="mb-3">1. 請問您的裝修預算？</h6>
@@ -96,9 +96,9 @@ current: index
 
             <!-- 第五題 -->
             <div class="form-group mb-6">
-                <label for="exampleInputEmail1" class="mb-1">5. 請問裝修地址在哪？</label>
+                <label for="exampleInputEmail1" class="mb-1">5. 請問施工地點在哪？</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="請輸入裝修的地點地址">
+                    placeholder="請輸入施工地址">
             </div>
 
             <!-- 第六題 -->
@@ -109,14 +109,87 @@ current: index
                     <input type="date" placeholder="MM/DD/YYYY">
                 </div>
                 <h6 class="mb-2">希望施工時間 - 若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</h6>
-                <div class="d-block">
+                <div class="d-inline">
+                    <input type="date" placeholder="MM/DD/YYYY">
+                </div>
+                <div class="d-inline">
                     <input type="date" placeholder="MM/DD/YYYY">
                 </div>
             </div>
 
             <!-- 第七題 -->
             <div class="form-group mb-6">
-                <h6 class="mb-2">7. 填寫基本資料</h6>
+                <h6 class="mb-3">7. 請問您有想給哪間設計公司處理嗎？</h6>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>請選擇設計公司</option>
+                    <option value="AB">AB 設計空間</option>
+                    <option value="CD">CD 設計空間</option>
+                    <option value="EF">EF 設計空間</option>
+                    <option value="HG">GH 設計事務所</option>
+                    <option value="IJ">IJ 設計公司</option>
+                    <option value="KL">KL 設計股份有限公司</option>
+                    <option value="MN">MN 設計事務所</option>
+                    <option value="OP">OP 設計空間</option>
+                    <option value="none">沒有，請專員線上評估</option>
+                </select>
+            </div>
+
+            <!-- 第八題 -->
+            <div class="form-group mb-6">
+                <h6 class="mb-3">8. 請問您有希望設計成什麼風格？</h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label mb-2" for="inlineCheckbox1">北歐風</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label mb-2" for="inlineCheckbox2">現代風</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option3">
+                    <label class="form-check-label mb-2" for="inlineCheckbox2">新古典</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option4">
+                    <label class="form-check-label mb-2" for="inlineCheckbox2">美式風</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option5">
+                    <label class="form-check-label mb-2" for="inlineCheckbox2">鄉村風</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option6">
+                    <label class="form-check-labe mb-2l" for="inlineCheckbox2">混搭風</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option7">
+                    <label class="form-check-label mb-2" for="inlineCheckbox2">奢華風</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option8">
+                    <label class="form-check-label mb-2" for="inlineCheckbox2">簡約風</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option9">
+                    <label class="form-check-label mb-2" for="inlineCheckbox2">工業風</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option10">
+                    <label class="form-check-label mb-2" for="inlineCheckbox2">中式風</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option11">
+                    <label class="form-check-label mb-2" for="inlineCheckbox2">日式無印</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option12">
+                    <label class="form-check-label mb-2" for="inlineCheckbox2">人文禪風</label>
+                </div>
+            </div>
+
+            <!-- 第九題 -->
+            <div class="form-group mb-6">
+                <h6 class="mb-2">9. 填寫基本資料</h6>
                 <h6 class="mb-2">完成預約後會請專員聯絡並寄送通知至電子信箱，請留下聯絡人的資訊</h6>
                 <div class="row mb-3">
                     <div class="col">
@@ -160,7 +233,8 @@ current: index
                         placeholder="0912-345-678">
                 </div>
 
-                <a href="#" class="btn btn-primary text-white d-block py-2" style="margin-bottom: 116px;">送出</a>
+                <a href="reserve-checked.html" class="btn btn-primary text-white d-block py-2"
+                    style="margin-bottom: 116px;">確認資料</a>
             </div>
         </div>
     </div>
