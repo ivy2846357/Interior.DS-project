@@ -16,16 +16,16 @@
 
 <body>
   <!-- 導覽列 -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-auxiliary-dark py-4">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-auxiliary-dark py-4">
     <div class="container">
-      <a class="navbar-brand me-9 pe-8 d-lg-none logo__font text-white" href="index.html">Interior.DS</a>
+      <a class="navbar-brand me-9 pe-8 d-lg-none logo__font text-white fs-2" href="index.html">Interior.DS</a>
       <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon hamburger-color"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-        <a class="navbar-brand logo__font text-white fs-3" href="index.html">Interior.DS</a>
+        <a class="navbar-brand logo__font text-white fs-2 d-none d-lg-block" href="index.html">Interior.DS</a>
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item mb-3 mb-lg-0">
             <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
@@ -38,6 +38,10 @@
           <li class="nav-item mb-3 mb-lg-0">
             <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
               href="#">設計師作品</a>
+          </li>
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+              href="#">合作設計公司</a>
           </li>
           <li class="nav-item mb-3 mb-lg-0">
             <a class="nav-link nav-hover text-secondary px-0 d-inline d-lg-block nav--items nav--items__hover"
@@ -55,22 +59,29 @@
   </nav>
 
   <!-- 右側 icon 列表 -->
-  <div class="position-fixed d-none d-md-block nav--icon" style="z-index: 1100;">
+  <div class="position-fixed nav--icon" style="z-index: 1100;">
     <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center me-3">
-      <li class="mb-2">
+      <li class="mb-2 d-none d-md-block">
         <a href="#"
-          class="text-primary fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
             class="fab fa-facebook"></i></a>
       </li>
-      <li class="mb-2">
+      <li class="mb-2 d-none d-md-block">
         <a href="#"
-          class="text-primary fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
             class="fab fa-instagram"></i></a>
+      </li>
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-line"></i></a>
       </li>
       <li class="mb-2">
         <a href="#"
-          class="text-primary fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
-            class="fab fa-line"></i></a>
+          class="text-white bg-primary fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black scroll--top-btn"><i
+            class="fas fa-arrow-up"></i>
+
+        </a>
       </li>
     </ul>
   </div>
@@ -78,7 +89,7 @@
   <%- contents %>
 
   <!-- 頁尾 -->
-  <footer class="footer bg-auxiliary-dark">
+  <footer class="bg-auxiliary-dark">
     <div class="container">
       <!-- 訂閱資訊 -->
       <div class="row py-6 border-bottom align-items-center">
@@ -102,9 +113,14 @@
           <a class="navbar-brand me-9 pe-8 logo__font text-white" href="index.html">Interior.DS</a>
           <!-- icon 連結 -->
           <ul class="footer-icon list-unstyled d-flex">
-            <li><a href="#" class="text-white h4 me-2"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#" class="text-white h4 me-2"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#" class="text-white h4"><i class="fab fa-line"></i></a></li>
+            <li><a href="#" class="text-white h4 me-2 hover--change-color__light px-1 rounded-sm"><i
+                  class="fab fa-facebook"></i></a>
+            </li>
+            <li><a href="#" class="text-white h4 me-2 hover--change-color__light px-1 rounded-sm"><i
+                  class="fab fa-instagram"></i></a>
+            </li>
+            <li><a href="#" class="text-white h4 hover--change-color__light px-1 rounded-sm"><i
+                  class="fab fa-line"></i></a></li>
           </ul>
         </div>
         <div class="footer-item d-flex flex-column flex-md-row align-items-md-end">
@@ -122,10 +138,24 @@
     </div>
   </footer>
 
+  <!-- 配對廣告視窗 -->
+  <nav class="navbar fixed-bottom navbar-light bg-primary required--alert">
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-baseline w-100">
+        <p class="text-white me-3 mb-0">幫我配對設計師，我有裝潢需求！</p>
+        <a class="btn btn-outline-light hover--change-color__primary me-3" href="#">馬上配對</a>
+        <a class="btn btn-outline-light hover--change-color__primary required--alert__close" href="#">關閉視窗</a>
+      </div>
+    </div>
+  </nav>
+
   <!-- bootstrap-JS -->
   <script src="./assets/js/vendors.js"></script>
   <!-- swiper-JS -->
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
   <!-- JS -->
   <script src="./assets/js/all.js"></script>
 </body>

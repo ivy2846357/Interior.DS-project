@@ -43,3 +43,23 @@
         transform: translateY(-8px);
     }
 }
+
+//文字hover效果-顏色改變
+.hover--change-color {
+
+    &__light {
+        transition: all .3s;
+
+        &:hover {
+            background-color: $primary;
+        }
+    }
+
+    &__primary {
+        transition: all .3s;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}
