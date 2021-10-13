@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Interior.DS - 立即預約 - 確認資料</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!-- swiper-CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <!-- 導覽列 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-auxiliary-dark py-4">
+    <div class="container">
+      <a class="navbar-brand me-9 pe-8 d-lg-none logo__font text-white fs-2" href="index.html">Interior.DS</a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon hamburger-color"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <a class="navbar-brand logo__font text-white fs-2 d-none d-lg-block" href="index.html">Interior.DS</a>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+              aria-current="page" href="#">公司介紹</a>
+          </li>
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+              href="#">服務項目</a>
+          </li>
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+              href="#">設計師作品</a>
+          </li>
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+              href="#">合作設計公司</a>
+          </li>
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary px-0 d-inline d-lg-block nav--items nav--items__hover"
+              href="#">部落格</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <a href="reserve-information.html" class="btn btn-outline-secondary rounded-lg me-3 reserve-btn py-2 px-3"
+            type="submit">立即預約</a>
+          <a href="#" class="btn btn-outline-secondary rounded-lg course-btn py-2 px-3" type="submit">聯絡我們</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 右側 icon 列表 -->
+  <div class="position-fixed nav--icon" style="z-index: 1100;">
+    <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center me-3">
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-facebook"></i></a>
+      </li>
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-instagram"></i></a>
+      </li>
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-line"></i></a>
+      </li>
+      <li class="mb-2">
+        <a href="#"
+          class="text-white bg-primary fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black scroll--top-btn"><i
+            class="fas fa-arrow-up"></i>
+
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  
+<!-- 確認資料標題 -->
+<h2 class="mt-9 mb-4 text-primary text-center fw-bold">確認資料</h2>
+
+<!-- 流程標籤 -->
+<div class="container mb-6">
+    <div class="row justify-content-center">
+        <div class="col-4 col-sm-3 col-lg-2">
+            <div class="alert bg-auxiliary-dark text-auxiliary-light text-center rounded-lg" role="alert">填寫資料</div>
+        </div>
+        <div class="col-4 col-sm-3 col-lg-2">
+            <div class="alert bg-primary text-white text-center rounded-lg">確認資料</div>
+        </div>
+        <div class="col-4 col-sm-3 col-lg-2">
+            <div class="alert bg-secondary text-auxiliary-light text-center rounded-lg" role="alert">完成預約</div>
+        </div>
+    </div>
+</div>
+
+<!-- 預約提示 -->
+<h5 class="text-primary text-center mb-6">以下是您的預約資訊，請確認是否填寫正確：</h5>
+
+<!-- 預約資訊 -->
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="col-12 col-sm-8 col-lg-6">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button bg-secondary text-auxiliary-dark" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            預約資訊
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="mb-3">
+                                <h6 class="text-gray me-3">您希望是
+                                    <span class="h5 text-primary fw-bold mx-2">請專員評估</span>裝修狀況
+                                </h6>
+                            </div>
+                            <ul class="list-unstyled text-auxiliary-dark">
+                                <li class="mb-2">預約人：Joanne Chen</li>
+                                <li class="mb-2">年齡：18 歲</li>
+                                <li class="mb-2">性別：女</li>
+                                <li class="mb-2">電子信箱：example123@gmail.com</li>
+                                <li class="mb-2 border-bottom pb-3">手機號碼：0912-345-678</li>
+                                <li class="mb-2 pt-3">施工地點：台北市中正區北平西路3號</li>
+                                <li class="mb-2">預期丈量時間：2021/07/21</li>
+                                <li class="mb-2">預期施工時間：2021/07/21</li>
+                                <li>希望的居家風格：北歐風、鄉村風</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 預約注意事項 -->
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="col-12 col-sm-6 col-lg-4">
+            <h3 class="text-center mt-6 mb-3 text-primary fw-bold">預約注意事項：</h3>
+            <ul class="mb-6 text-gray">
+                <li>會請專員致電給預約顧客，請留下負責人電話</li>
+                <li>詳細的丈量與施工時間會請專員致電給顧客商討</li>
+                <li>預約結果會郵寄至電子信箱</li>
+                <li>除了電話連絡外，也會將商討結果郵寄給顧客</li>
+                <li>如要變更資料，請洽負責專員</li>
+            </ul>
+            <a href="index.html" class="btn btn-primary text-white d-block py-2"
+                style="margin-bottom: 104px;">確認資料無誤</a>
+        </div>
+    </div>
+</div>
+
+  <!-- 頁尾 -->
+  <footer class="bg-auxiliary-dark">
+    <div class="container">
+      <!-- 訂閱資訊 -->
+      <div class="row py-6 border-bottom align-items-center">
+        <div class="col-12 col-lg-8">
+          <div class="d-flex justify-content-between align-items-lg-center flex-column flex-lg-row">
+            <h3 class="text-white mb-2 mb-lg-0">訂閱電子報，獲得更多設計消息！</h3>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Username"
+              aria-describedby="basic-addon1">
+            <a href="#" class="btn btn-primary text-white py-2 px-3">訂閱</a>
+          </div>
+        </div>
+      </div>
+      <!-- 頁尾導覽列 -->
+      <div class="footer-body d-flex flex-column py-6">
+        <div class="footer-item d-flex justify-content-between">
+          <!-- LOGO -->
+          <a class="navbar-brand me-9 pe-8 logo__font text-white" href="index.html">Interior.DS</a>
+          <!-- icon 連結 -->
+          <ul class="footer-icon list-unstyled d-flex">
+            <li><a href="#" class="text-white h4 me-2 hover--change-color__light px-1 rounded-sm"><i
+                  class="fab fa-facebook"></i></a>
+            </li>
+            <li><a href="#" class="text-white h4 me-2 hover--change-color__light px-1 rounded-sm"><i
+                  class="fab fa-instagram"></i></a>
+            </li>
+            <li><a href="#" class="text-white h4 hover--change-color__light px-1 rounded-sm"><i
+                  class="fab fa-line"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-item d-flex flex-column flex-md-row align-items-md-end">
+          <!-- 導覽列 -->
+          <ul class="list-unstyled m-0">
+            <li class="mb-2"><a href="#" class="text-white nav--items nav--items__hover">公司介紹</a></li>
+            <li class="mb-2"><a href="#" class="text-white nav--items nav--items__hover">服務項目</a></li>
+            <li class="mb-2"><a href="#" class="text-white nav--items nav--items__hover">設計師作品</a></li>
+            <li class="mb-2"><a href="#" class="text-white nav--items nav--items__hover">合作設計公司</a></li>
+            <li class="mb-2"><a href="#" class="text-white nav--items nav--items__hover">部落格</a></li>
+          </ul>
+          <!-- 版權文字 -->
+          <p class="text-white offset-md-3 ps-md-3 offset-lg-4 ps-lg-6 mb-2">© 2021. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- bootstrap-JS -->
+  <script src="./assets/js/vendors.js"></script>
+  <!-- swiper-JS -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <!-- JS -->
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
