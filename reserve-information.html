@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Interior.DS - 立即預約</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!-- swiper-CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <!-- 導覽列 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-auxiliary-dark py-4">
+    <div class="container">
+      <a class="navbar-brand me-9 pe-8 d-lg-none logo__font text-white fs-2" href="index.html">Interior.DS</a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon hamburger-color"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <a class="navbar-brand logo__font text-white fs-2 d-none d-lg-block" href="index.html">Interior.DS</a>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+              aria-current="page" href="#">公司介紹</a>
+          </li>
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+              href="#">服務項目</a>
+          </li>
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+              href="#">設計師作品</a>
+          </li>
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+              href="#">合作設計公司</a>
+          </li>
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary px-0 d-inline d-lg-block nav--items nav--items__hover"
+              href="#">部落格</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <a href="reserve-information.html" class="btn btn-outline-secondary rounded-lg me-3 reserve-btn py-2 px-3"
+            type="submit">立即預約</a>
+          <a href="#" class="btn btn-outline-secondary rounded-lg course-btn py-2 px-3" type="submit">聯絡我們</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 右側 icon 列表 -->
+  <div class="position-fixed nav--icon" style="z-index: 1100;">
+    <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center me-3">
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-facebook"></i></a>
+      </li>
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-instagram"></i></a>
+      </li>
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-line"></i></a>
+      </li>
+      <li class="mb-2">
+        <a href="#"
+          class="text-white bg-primary fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black scroll--top-btn"><i
+            class="fas fa-arrow-up"></i>
+
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  
+<!-- 立即預約標題 -->
+<h2 class="mt-9 mb-4 text-primary text-center fw-bold">立即預約</h2>
+
+<!-- 流程標籤 -->
+<div class="container mb-6">
+    <div class="row justify-content-center">
+        <div class="col-4 col-sm-3 col-lg-2">
+            <div class="alert bg-primary text-white text-center rounded-lg" role="alert">填寫資料</div>
+        </div>
+        <div class="col-4 col-sm-3 col-lg-2">
+            <div class="alert bg-secondary text-auxiliary-light text-center rounded-lg" role="alert">確認資料</div>
+        </div>
+        <div class="col-4 col-sm-3 col-lg-2">
+            <div class="alert bg-secondary text-auxiliary-light text-center rounded-lg" role="alert">完成預約</div>
+        </div>
+    </div>
+</div>
+
+<!-- 表單內容 -->
+<form class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="col-12 col-sm-6 col-lg-4 text-gray">
+            <!-- 第一題 -->
+            <div class="form-group mb-6">
+                <h6 class="mb-3">1. 請問您的裝修預算？</h6>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>請選擇預算金額</option>
+                    <option value="50w">50萬以下</option>
+                    <option value="51w~100w">51萬~100萬</option>
+                    <option value="101w~200w">101萬~200萬</option>
+                    <option value="201w~300w">201萬~300萬</option>
+                    <option value="301w~400w">301萬~400萬</option>
+                    <option value="401w~500w">401萬~500萬</option>
+                    <option value="501w~600w">501萬~600萬</option>
+                    <option value="601w">601萬以上</option>
+                </select>
+            </div>
+
+            <!-- 第二題 -->
+            <div class="form-group mb-6">
+                <h6 class="mb-3">2. 請問裝修坪數是多少？</h6>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>請選擇裝修的坪數</option>
+                    <option value="20p">20坪以下</option>
+                    <option value="21p~30p">21坪~30坪</option>
+                    <option value="31p~40p">31坪~40坪</option>
+                    <option value="41p~50p">41坪~50坪</option>
+                    <option value="51p~60p">51坪~60坪</option>
+                    <option value="61p~70p">61坪~70坪</option>
+                    <option value="71p~80p">71坪~80坪</option>
+                    <option value="81p~90p">81坪~90坪</option>
+                    <option value="91p~100p">91坪~100坪</option>
+                    <option value="101p">101坪以上</option>
+                </select>
+            </div>
+
+            <!-- 第三題 -->
+            <div class="form-group mb-6">
+                <h6 class="mb-3">3. 請問要裝修幾個房間？</h6>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>請選擇裝修格局</option>
+                    <option value="1r">1房</option>
+                    <option value="2r">2房</option>
+                    <option value="3r">3房</option>
+                    <option value="4r">4房</option>
+                    <option value="5r">5房</option>
+                    <option value="6r">6房</option>
+                    <option value="7r">6房以上</option>
+                    <option value="commercial space">商業空間</option>
+                    <option value="public space">公共空間</option>
+                </select>
+            </div>
+
+            <!-- 第四題 -->
+            <div class="form-group mb-6">
+                <h6 class="mb-3">4. 請問要裝修的房子屋齡是多少？</h6>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>請選擇房子屋齡</option>
+                    <option value="Pre-sale house">預售屋</option>
+                    <option value="Hairy house">毛胚屋</option>
+                    <option value="New home">5年以下(新成屋)</option>
+                    <option value="Middle Old House">5年~15年(中古屋)</option>
+                    <option value="Old house-16~30">16年~30年(老屋)</option>
+                    <option value="Old house-31~40">31年~40年(老屋)</option>
+                    <option value="Old house-41~50">41年~50年(老屋)</option>
+                    <option value="Old house-51">51年以上(老屋)</option>
+                </select>
+            </div>
+
+            <!-- 第五題 -->
+            <div class="form-group mb-6">
+                <label for="exampleInputEmail1" class="mb-1">5. 請問裝修地址在哪？</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="請輸入裝修的地點地址">
+            </div>
+
+            <!-- 第六題 -->
+            <div class="form-group mb-6">
+                <h6 class="mb-2">6. 施工時間</h6>
+                <h6 class="mb-2">希望丈量時間 - 會請師傅跟設計師到現場評估</h6>
+                <div class="d-block mb-4">
+                    <input type="date" placeholder="MM/DD/YYYY">
+                </div>
+                <h6 class="mb-2">希望施工時間 - 若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</h6>
+                <div class="d-block">
+                    <input type="date" placeholder="MM/DD/YYYY">
+                </div>
+            </div>
+
+            <!-- 第七題 -->
+            <div class="form-group mb-6">
+                <h6 class="mb-2">7. 填寫基本資料</h6>
+                <h6 class="mb-2">完成預約後會請專員聯絡並寄送通知至電子信箱，請留下聯絡人的資訊</h6>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="name" class="mb-1">姓名</label>
+                        <input type="text" class="form-control rounded-sm" placeholder="請輸入您的姓名">
+                    </div>
+                    <div class="col">
+                        <label for="name" class="mb-1">年齡</label>
+                        <input type="text" class="form-control rounded-sm" placeholder="請輸入您的年齡">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="form-group col-6">
+                        <label for="exampleFormControlSelect1" class="mb-1">性別</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>男生</option>
+                            <option>女生</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="exampleFormControlSelect1" class="mb-1">居住縣市</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>台北</option>
+                            <option>新北</option>
+                            <option>高雄</option>
+                            <option>台中</option>
+                            <option>台南</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="exampleInputEmail1" class="mb-1">電子信箱</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="email@example.com">
+                </div>
+
+                <div class="form-group mb-6">
+                    <label for="exampleInputPhone" class="mb-1">手機號碼</label>
+                    <input type="tel" class="form-control" id="exampleInputPhone" aria-describedby="phoneHelp"
+                        placeholder="0912-345-678">
+                </div>
+
+                <a href="#" class="btn btn-primary text-white d-block py-2" style="margin-bottom: 116px;">送出</a>
+            </div>
+        </div>
+    </div>
+</form>
+
+  <!-- 頁尾 -->
+  <footer class="bg-auxiliary-dark">
+    <div class="container">
+      <!-- 訂閱資訊 -->
+      <div class="row py-6 border-bottom align-items-center">
+        <div class="col-12 col-lg-8">
+          <div class="d-flex justify-content-between align-items-lg-center flex-column flex-lg-row">
+            <h3 class="text-white mb-2 mb-lg-0">訂閱電子報，獲得更多設計消息！</h3>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Username"
+              aria-describedby="basic-addon1">
+            <a href="#" class="btn btn-primary text-white py-2 px-3">訂閱</a>
+          </div>
+        </div>
+      </div>
+      <!-- 頁尾導覽列 -->
+      <div class="footer-body d-flex flex-column py-6">
+        <div class="footer-item d-flex justify-content-between">
+          <!-- LOGO -->
+          <a class="navbar-brand me-9 pe-8 logo__font text-white" href="index.html">Interior.DS</a>
+          <!-- icon 連結 -->
+          <ul class="footer-icon list-unstyled d-flex">
+            <li><a href="#" class="text-white h4 me-2 hover--change-color__light px-1 rounded-sm"><i
+                  class="fab fa-facebook"></i></a>
+            </li>
+            <li><a href="#" class="text-white h4 me-2 hover--change-color__light px-1 rounded-sm"><i
+                  class="fab fa-instagram"></i></a>
+            </li>
+            <li><a href="#" class="text-white h4 hover--change-color__light px-1 rounded-sm"><i
+                  class="fab fa-line"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-item d-flex flex-column flex-md-row align-items-md-end">
+          <!-- 導覽列 -->
+          <ul class="list-unstyled m-0">
+            <li class="mb-2"><a href="#" class="text-white nav--items nav--items__hover">公司介紹</a></li>
+            <li class="mb-2"><a href="#" class="text-white nav--items nav--items__hover">服務項目</a></li>
+            <li class="mb-2"><a href="#" class="text-white nav--items nav--items__hover">設計師作品</a></li>
+            <li class="mb-2"><a href="#" class="text-white nav--items nav--items__hover">合作設計公司</a></li>
+            <li class="mb-2"><a href="#" class="text-white nav--items nav--items__hover">部落格</a></li>
+          </ul>
+          <!-- 版權文字 -->
+          <p class="text-white offset-md-3 ps-md-3 offset-lg-4 ps-lg-6 mb-2">© 2021. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- bootstrap-JS -->
+  <script src="./assets/js/vendors.js"></script>
+  <!-- swiper-JS -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <!-- JS -->
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
