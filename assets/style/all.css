@@ -13905,6 +13905,7 @@ a {
 }
 
 .nav--icon {
+  display: none;
   position: absolute;
 }
 

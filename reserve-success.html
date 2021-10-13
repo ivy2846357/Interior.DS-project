@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Interior.DS - 立即預約 - 確認資料</title>
+  <title>Interior.DS - 立即預約 - 預約完成</title>
   <!-- font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <!-- swiper-CSS -->
@@ -86,8 +86,8 @@
   </div>
 
   
-<!-- 確認資料標題 -->
-<h2 class="mt-9 mb-4 text-primary text-center fw-bold">確認資料</h2>
+<!-- 預約成功標題 -->
+<h2 class="mt-9 mb-4 text-primary text-center fw-bold">預約成功</h2>
 
 <!-- 流程標籤 -->
 <div class="container mb-6">
@@ -96,71 +96,34 @@
             <div class="alert bg-auxiliary-dark text-auxiliary-light text-center rounded-lg" role="alert">填寫資料</div>
         </div>
         <div class="col-4 col-sm-3 col-lg-2">
-            <div class="alert bg-primary text-white text-center rounded-lg">確認資料</div>
+            <div class="alert bg-auxiliary-dark text-auxiliary-light text-center rounded-lg">確認資料</div>
         </div>
         <div class="col-4 col-sm-3 col-lg-2">
-            <div class="alert bg-secondary text-auxiliary-light text-center rounded-lg" role="alert">完成預約</div>
+            <div class="alert bg-primary text-white text-center rounded-lg" role="alert">完成預約</div>
         </div>
     </div>
 </div>
 
-<!-- 預約提示 -->
-<h5 class="text-primary text-center mb-6">以下是您的預約資訊，請確認是否填寫正確：</h5>
-
-<!-- 預約資訊 -->
-<div class="container">
+<!-- 預約成功提示 -->
+<h1 class="text-primary text-center mb-4" data-aos="zoom-in"><i class="far fa-check-circle"></i></h1>
+<h5 class="text-primary text-center mb-6">已完成預約，近日會請專員電聯給您<br>如有疑問歡迎聯絡我們：</h5>
+<div class="container-lg">
     <div class="row d-flex justify-content-center">
-        <div class="col-12 col-sm-8 col-lg-6">
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button bg-secondary text-auxiliary-dark" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                            aria-controls="collapseOne">
-                            預約資訊
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="mb-3">
-                                <h6 class="text-gray me-3">您希望是
-                                    <span class="h5 text-primary fw-bold mx-2">請專員評估</span>裝修狀況
-                                </h6>
-                            </div>
-                            <ul class="list-unstyled text-auxiliary-dark">
-                                <li class="mb-2">預約人：Joanne Chen</li>
-                                <li class="mb-2">年齡：18 歲</li>
-                                <li class="mb-2">性別：女</li>
-                                <li class="mb-2">電子信箱：example123@gmail.com</li>
-                                <li class="mb-2 border-bottom pb-3">手機號碼：0912-345-678</li>
-                                <li class="mb-2 pt-3">施工地點：台北市中正區北平西路3號</li>
-                                <li class="mb-2">預期丈量時間：2021/07/21</li>
-                                <li class="mb-2">預期施工時間：2021/07/21</li>
-                                <li>希望的居家風格：北歐風、鄉村風</li>
-                            </ul>
-                        </div>
-                    </div>
+        <div class="col-12 col-lg-5">
+            <div class="card mb-4 text-center">
+                <div class="card-header bg-secondary text-auxiliary-dark">
+                    連絡電話（服務時間：10:00 - 20:00）
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled text-auxiliary-dark">
+                        <li class="mb-2">公司客服專線：1234-5678　分機910</li>
+                        <li class="mb-2">設計部門專線：1234-5678　分機910</li>
+                        <li class="mb-2">評估部門專線：1234-5678　分機910</li>
+                        <li class="mb-2">家具部門專線：1234-5678　分機910</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-
-<!-- 預約注意事項 -->
-<div class="container">
-    <div class="row d-flex justify-content-center">
-        <div class="col-12 col-sm-6 col-lg-4">
-            <h3 class="text-center mt-6 mb-3 text-primary fw-bold">預約注意事項：</h3>
-            <ul class="mb-6 text-gray">
-                <li>會請專員致電給預約顧客，請留下負責人電話</li>
-                <li>詳細的丈量與施工時間會請專員致電給顧客商討</li>
-                <li>預約結果會郵寄至電子信箱</li>
-                <li>除了電話連絡外，也會將商討結果郵寄給顧客</li>
-                <li>如要變更資料，請洽負責專員</li>
-            </ul>
-            <a href="reserve-success.html" class="btn btn-primary text-white d-block py-2"
-                style="margin-bottom: 104px;">確認資料無誤</a>
+            <a href="index.html" class="btn btn-primary text-white d-block py-2" style="margin-bottom: 104px;">回到首頁</a>
         </div>
     </div>
 </div>
