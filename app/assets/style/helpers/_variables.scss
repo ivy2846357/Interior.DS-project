@@ -65,7 +65,8 @@ $colors: ("blue": $blue,
 // scss-docs-start theme-color-variables
 $primary: #3F72AF; // $blue !default;
 $secondary: #DBE2EF; //$gray-600 !default;
-$auxiliary: #112D4E;
+$auxiliary-dark: #112D4E;
+$auxiliary-light: #889EAF;
 
 $success: $green !default;
 $info: $cyan !default;
@@ -82,7 +83,9 @@ $beige: #F5F0E7 !default;
 // scss-docs-start theme-colors-map
 $theme-colors: ("primary": $primary,
   "secondary": $secondary,
-  "auxiliary": $auxiliary,
+  "auxiliary-dark": $auxiliary-dark,
+  "auxiliary-light": $auxiliary-light,
+
   "success": $success,
   "info": $info,
   "warning": $warning,

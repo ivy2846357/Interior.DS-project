@@ -1,4 +1,4 @@
-//hover效果-導覽列連結底線-顯示
+//導覽列hover效果-連結底線-顯示
 .nav--items__hover {
     transition: all .3s;
 
@@ -9,9 +9,37 @@
 
 //卡片hover效果-陰影
 .hover--shadow {
+    &__gray {
+        transition: all .3s;
+
+        &:hover {
+            box-shadow: 0px 0px 6px #BBB;
+        }
+    }
+
+    &__black {
+        transition: all .3s;
+
+        &:hover {
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+//文字hover效果-間距拉開
+.hover--word__separate {
     transition: all .3s;
 
     &:hover {
-        box-shadow: 1px 3px 6px #BBB;
+        letter-spacing: 3px;
+    }
+}
+
+//卡片hover效果-上升
+.hover--rise {
+    transition: all .3s;
+
+    &:hover {
+        transform: translateY(-8px);
     }
 }
