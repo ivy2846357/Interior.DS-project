@@ -16,16 +16,16 @@
 
 <body>
   <!-- 導覽列 -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-auxiliary-dark py-4">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-auxiliary-dark py-4">
     <div class="container">
-      <a class="navbar-brand me-9 pe-8 d-lg-none logo__font text-white" href="index.html">Interior.DS</a>
+      <a class="navbar-brand me-9 pe-8 d-lg-none logo__font text-white fs-2" href="index.html">Interior.DS</a>
       <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon hamburger-color"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-        <a class="navbar-brand logo__font text-white fs-3" href="index.html">Interior.DS</a>
+        <a class="navbar-brand logo__font text-white fs-2 d-none d-lg-block" href="index.html">Interior.DS</a>
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item mb-3 mb-lg-0">
             <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
@@ -38,6 +38,10 @@
           <li class="nav-item mb-3 mb-lg-0">
             <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
               href="#">設計師作品</a>
+          </li>
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+              href="#">合作設計公司</a>
           </li>
           <li class="nav-item mb-3 mb-lg-0">
             <a class="nav-link nav-hover text-secondary px-0 d-inline d-lg-block nav--items nav--items__hover"
@@ -55,22 +59,29 @@
   </nav>
 
   <!-- 右側 icon 列表 -->
-  <div class="position-fixed d-none d-md-block nav--icon" style="z-index: 1100;">
+  <div class="position-fixed nav--icon" style="z-index: 1100;">
     <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center me-3">
-      <li class="mb-2">
+      <li class="mb-2 d-none d-md-block">
         <a href="#"
-          class="text-primary fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
             class="fab fa-facebook"></i></a>
       </li>
-      <li class="mb-2">
+      <li class="mb-2 d-none d-md-block">
         <a href="#"
-          class="text-primary fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
             class="fab fa-instagram"></i></a>
+      </li>
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-line"></i></a>
       </li>
       <li class="mb-2">
         <a href="#"
-          class="text-primary fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
-            class="fab fa-line"></i></a>
+          class="text-white bg-primary fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black scroll--top-btn"><i
+            class="fas fa-arrow-up"></i>
+
+        </a>
       </li>
     </ul>
   </div>
@@ -79,9 +90,9 @@
 <!-- 首頁 Banner -->
 <div class="d-flex align-items-center mb-7 bg-cover parallax-img"
     style="background-image: url(https://images.unsplash.com/photo-1618221469555-7f3ad97540d6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 650px;">
-    <div class="container h-100">
+    <div class="container-lg h-100">
         <div class="row h-100">
-            <div class="col-8 col-lg-5 d-flex flex-column justify-content-center ps-5 bg--translucent">
+            <div class="col-12 col-md-8 col-lg-5 d-flex flex-column justify-content-center ps-5 bg--translucent">
                 <h6 class="text-white text--shadow" data-aos="fade-up">Interior Design For
                     Private &
                     Commercial
@@ -170,7 +181,7 @@
                                     style="background-image: url(https://images.unsplash.com/photo-1574100004472-e536d3b6bacc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80);">
                                 </div>
                                 <div class="teacher-card-body">
-                                    <h5 class="text-gray">AB空間設計 - Carol Tang</h5>
+                                    <h5 class="text-gray">AB 空間設計 - Carol Tang</h5>
                                     <h6 class="text-gray">2020 Idea Tops Award 入圍獎</h6>
                                     <h6 class="text-gray">擅長北歐設計，透過白色與原木的搭配打造出自然休閒的簡潔樸實風</h6>
                                 </div>
@@ -181,7 +192,7 @@
                                     style="background-image: url(https://images.unsplash.com/photo-1600697394936-59934aa5951f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=464&q=80);">
                                 </div>
                                 <div class="teacher-card-body">
-                                    <h5 class="text-gray">CD空間設計 - Carol Tang</h5>
+                                    <h5 class="text-gray">CD 空間設計 - Carol Tang</h5>
                                     <h6 class="text-gray">2020 Idea Tops Award 入圍獎</h6>
                                     <h6 class="text-gray">擅長北歐設計，透過白色與原木的搭配打造出自然休閒的簡潔樸實風</h6>
                                 </div>
@@ -192,7 +203,7 @@
                                     style="background-image: url(https://images.unsplash.com/photo-1621570274614-441323d10052?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80);">
                                 </div>
                                 <div class="teacher-card-body">
-                                    <h5 class="text-gray">Tang設計事務所 - Carol Tang</h5>
+                                    <h5 class="text-gray">Tang 設計事務所 - Carol Tang</h5>
                                     <h6 class="text-gray">2020 Idea Tops Award 入圍獎</h6>
                                     <h6 class="text-gray">擅長北歐設計，透過白色與原木的搭配打造出自然休閒的簡潔樸實風</h6>
                                 </div>
@@ -289,7 +300,7 @@
 <div class="mb-9">
     <div class="container mt-7">
         <h3 class="text-primary fw-bold text-center mb-1" data-aos="fade-up">推薦設計公司</h3>
-        <h5 class="text-primary text-center mb-6" data-aos="fade-up">Interior.DS 可以帶給你...</h5>
+        <h5 class="text-primary text-center mb-6" data-aos="fade-up">目前評價最高的設計公司</h5>
         <!-- 直式選單 -->
         <div class="d-block d-md-none d-lg-block">
             <ul class="list-unstyled row">
@@ -307,7 +318,7 @@
                                     <li><span class="badge bg-success me-2">美式風格</span></li>
                                     <li><span class="badge bg-warning me-2">鄉村風</span></li>
                                 </ul>
-                                <ul class="mb-2">
+                                <ul class="mb-2 list-unstyled text-center">
                                     <li class="text-auxiliary-light">2021 法國Novum Design Award-銀獎</li>
                                     <li class="text-auxiliary-light">2021 法國Novum Design Award-銀獎</li>
                                     <li class="text-auxiliary-light">2021 法國Novum Design Award-銀獎</li>
@@ -315,7 +326,7 @@
                             </div>
                             <div class="card-footer border-0 bg-transparent p-0">
                                 <a href="reserve-class-select.html" role="button"
-                                    class="btn btn-primary text-white d-block py-2 stretched-link">選擇課程</a>
+                                    class="btn btn-primary text-white d-block py-2 stretched-link hover--word__separate">立即預約</a>
                             </div>
                         </div>
                     </div>
@@ -334,7 +345,7 @@
                                     <li><span class="badge bg-success me-2">美式風格</span></li>
                                     <li><span class="badge bg-warning me-2">鄉村風</span></li>
                                 </ul>
-                                <ul class="mb-2">
+                                <ul class="mb-2 list-unstyled text-center">
                                     <li class="text-auxiliary-light">2021 法國Novum Design Award-銀獎</li>
                                     <li class="text-auxiliary-light">2021 法國Novum Design Award-銀獎</li>
                                     <li class="text-auxiliary-light">2021 法國Novum Design Award-銀獎</li>
@@ -342,7 +353,7 @@
                             </div>
                             <div class="card-footer border-0 bg-transparent p-0">
                                 <a href="reserve-class-select.html" role="button"
-                                    class="btn btn-primary text-white d-block py-2 stretched-link">選擇課程</a>
+                                    class="btn btn-primary text-white d-block py-2 stretched-link hover--word__separate">立即預約</a>
                             </div>
                         </div>
                     </div>
@@ -361,7 +372,7 @@
                                     <li><span class="badge bg-success me-2">美式風格</span></li>
                                     <li><span class="badge bg-warning me-2">鄉村風</span></li>
                                 </ul>
-                                <ul class="mb-2">
+                                <ul class="mb-2 list-unstyled text-center">
                                     <li class="text-auxiliary-light">2021 法國Novum Design Award-銀獎</li>
                                     <li class="text-auxiliary-light">2021 法國Novum Design Award-銀獎</li>
                                     <li class="text-auxiliary-light">2021 法國Novum Design Award-銀獎</li>
@@ -369,7 +380,7 @@
                             </div>
                             <div class="card-footer border-0 bg-transparent p-0">
                                 <a href="reserve-class-select.html" role="button"
-                                    class="btn btn-primary text-white d-block py-2 stretched-link">選擇課程</a>
+                                    class="btn btn-primary text-white d-block py-2 stretched-link hover--word__separate">立即預約</a>
                             </div>
                         </div>
                     </div>
@@ -384,20 +395,28 @@
                         <div class="row g-0">
                             <div class="col-md-6 rounded-lg">
                                 <img class="card-img-top bg-cover d-block h-100"
-                                    style="background-image: url(./assets/images/woman\ in\ white\ tank\ top\ and\ white\ leggings\ bending\ her\ body.jpg);">
+                                    style="background-image: url(https://images.unsplash.com/photo-1556741533-6e6a62bd8b49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body p-4">
                                     <div class="card-word">
-                                        <h5 class="card-title text-dark-brick-red mb-1">首次體驗</h5>
-                                        <h5 class="card-title text-brick-red mb-2">NT $450 / 次</h5>
-                                        <h6 class="card-text text-dark-brick-red mb-4">分基礎、中級、高級可以選擇。初次至 DOYOGA
-                                            上課建議選擇此方案。
-                                        </h6>
+                                        <h5 class="card-title text-center text-primary fw-bold">EW 設計空間
+                                        </h5>
+                                        <h5 class="card-title text-center text-primary fs-6">擅長風格</h5>
+                                        <ul class="list-unstyled d-flex align-items-center justify-content-center mb-3">
+                                            <li><span class="badge bg-primary me-2">北歐風</span></li>
+                                            <li><span class="badge bg-success me-2">美式風格</span></li>
+                                            <li><span class="badge bg-warning me-2">鄉村風</span></li>
+                                        </ul>
+                                        <ul class="mb-3 list-unstyled">
+                                            <li class="text-auxiliary-light">2021 法國Novum Design Award-銀獎</li>
+                                            <li class="text-auxiliary-light">2021 法國Novum Design Award-銀獎</li>
+                                            <li class="text-auxiliary-light">2021 法國Novum Design Award-銀獎</li>
+                                        </ul>
                                     </div>
                                     <div class="card-footer border-0 bg-transparent p-0">
                                         <a href="reserve-class-select.html" role="button"
-                                            class="btn btn-dark-brick-red text-white d-block py-2 stretched-link">選擇課程</a>
+                                            class="btn btn-primary text-white d-block py-2 stretched-link hover--word__separate">立即預約</a>
                                     </div>
                                 </div>
                             </div>
@@ -407,19 +426,28 @@
                         <div class="row g-0">
                             <div class="col-md-6">
                                 <img class="card-img-top bg-cover d-block h-100"
-                                    style="background-image: url(./assets/images/woman\ performing\ yoga.jpg);">
+                                    style="background-image: url(https://images.unsplash.com/photo-1573567199032-50a155ba6de1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body p-4">
                                     <div class="card-word">
-                                        <h5 class="card-title text-dark-brick-red mb-1">短期體驗</h5>
-                                        <h5 class="card-title text-brick-red mb-2">NT $1800 / 月</h5>
-                                        <h6 class="card-text text-dark-brick-red mb-4">分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。
-                                        </h6>
+                                        <h5 class="card-title text-center text-primary fw-bold">JY 設計空間
+                                        </h5>
+                                        <h5 class="card-title text-center text-primary fs-6">擅長風格</h5>
+                                        <ul class="list-unstyled d-flex align-items-center justify-content-center mb-3">
+                                            <li><span class="badge bg-primary me-2">北歐風</span></li>
+                                            <li><span class="badge bg-success me-2">美式風格</span></li>
+                                            <li><span class="badge bg-warning me-2">鄉村風</span></li>
+                                        </ul>
+                                        <ul class="mb-3 list-unstyled">
+                                            <li class="text-auxiliary-light">2021 法國Novum Design Award-銀獎</li>
+                                            <li class="text-auxiliary-light">2021 法國Novum Design Award-銀獎</li>
+                                            <li class="text-auxiliary-light">2021 法國Novum Design Award-銀獎</li>
+                                        </ul>
                                     </div>
                                     <div class="card-footer border-0 bg-transparent p-0">
-                                        <a href="#" role="button"
-                                            class="btn btn-dark-brick-red text-white d-block py-2 stretched-link">選擇課程</a>
+                                        <a href="reserve-class-select.html" role="button"
+                                            class="btn btn-primary text-white d-block py-2 stretched-link hover--word__separate">立即預約</a>
                                     </div>
                                 </div>
                             </div>
@@ -429,19 +457,28 @@
                         <div class="row g-0">
                             <div class="col-md-6 rounded-lg">
                                 <img class="card-img-top bg-cover d-block h-100"
-                                    style="background-image: url(./assets/images/woman\ in\ blue\ leggings\ and\ black\ tank\ top\ doing\ yoga.jpg);">
+                                    style="background-image: url(https://images.unsplash.com/photo-1578991624414-276ef23a534f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1327&q=80);">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body p-4">
                                     <div class="card-word">
-                                        <h5 class="card-title text-dark-brick-red mb-1">長期體驗</h5>
-                                        <h5 class="card-title text-brick-red mb-2">NT $5600 / 季</h5>
-                                        <h6 class="card-text text-dark-brick-red mb-4">分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。
-                                        </h6>
+                                        <h5 class="card-title text-center text-primary fw-bold">JY 設計空間
+                                        </h5>
+                                        <h5 class="card-title text-center text-primary fs-6">擅長風格</h5>
+                                        <ul class="list-unstyled d-flex align-items-center justify-content-center mb-3">
+                                            <li><span class="badge bg-primary me-2">北歐風</span></li>
+                                            <li><span class="badge bg-success me-2">美式風格</span></li>
+                                            <li><span class="badge bg-warning me-2">鄉村風</span></li>
+                                        </ul>
+                                        <ul class="mb-3 list-unstyled">
+                                            <li class="text-auxiliary-light">2021 法國Novum Design Award-銀獎</li>
+                                            <li class="text-auxiliary-light">2021 法國Novum Design Award-銀獎</li>
+                                            <li class="text-auxiliary-light">2021 法國Novum Design Award-銀獎</li>
+                                        </ul>
                                     </div>
                                     <div class="card-footer border-0 bg-transparent p-0">
-                                        <a href="#" role="button"
-                                            class="btn btn-dark-brick-red text-white d-block py-2 stretched-link">選擇課程</a>
+                                        <a href="reserve-class-select.html" role="button"
+                                            class="btn btn-primary text-white d-block py-2 stretched-link hover--word__separate">立即預約</a>
                                     </div>
                                 </div>
                             </div>
@@ -453,8 +490,482 @@
     </div>
 </div>
 
+<!-- 聽聽他們怎麼說(設計評價) -->
+<div class="bg-secondary">
+    <div class="container-lg pt-7 pb-9">
+        <h3 class="text-primary fw-bold text-center mb-6" data-aos="fade-up">聽聽屋主怎麼說</h3>
+        <!-- 電腦版設定 -->
+        <div class="d-none d-lg-block">
+            <div class="row mb-3">
+                <div class="col-4 position-relative" data-aos="fade-up">
+                    <div
+                        class="d-flex align-items-center justify-content-between bg-white rounded-lg ps-3 hover--shadow__gray h-100">
+                        <div class="person--img__circle bg-cover"
+                            style="background-image: url(https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);">
+                        </div>
+                        <div class="card-body d-flex flex-column p-3">
+                            <p class="text-primary mb-1">Antonia Feb.04 2019</p>
+                            <h5 class="text-auxiliary-light fs-6">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </h5>
+                            <span class="text-primary mb-2">
+                                因為我覺得新古典很漂亮，就看了很多其他的設計師
+                            </span>
+                            <a href="#" class="btn btn-primary btn-sm stretched-link ms-auto hover--word__separate">SEE
+                                MORE+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 position-relative" data-aos="fade-up">
+                    <div
+                        class="d-flex align-items-center justify-content-between bg-white rounded-lg ps-3 hover--shadow__gray h-100">
+                        <div class="person--img__circle bg-cover"
+                            style="background-image: url(https://images.unsplash.com/photo-1537301636683-5ac98e0466a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80);">
+                        </div>
+                        <div class="card-body d-flex flex-column p-3">
+                            <p class="text-primary mb-1">Amanda Sept.25 2021</p>
+                            <h5 class="text-auxiliary-light fs-6">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </h5>
+                            <span class="text-primary mb-2">
+                                因為我很不喜歡侷限於在單一一種風格，我喜歡在同一個空間內，創造出不同的感覺
+                            </span>
+                            <a href="#" class="btn btn-primary btn-sm stretched-link ms-auto hover--word__separate">SEE
+                                MORE+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 position-relative" data-aos="fade-up">
+                    <div
+                        class="d-flex align-items-center justify-content-between bg-white rounded-lg ps-3 hover--shadow__gray h-100">
+                        <div class="person--img__circle bg-cover"
+                            style="background-image: url(https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);">
+                        </div>
+                        <div class="card-body d-flex flex-column p-3">
+                            <p class="text-primary mb-1">Dora Jan.14 2018</p>
+                            <h5 class="text-auxiliary-light fs-6">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </h5>
+                            <span class="text-primary mb-2">
+                                透過朋友介紹，認識了翁設計師，很喜歡他的設計風格，大器而且實用
+                            </span>
+                            <a href="#" class="btn btn-primary btn-sm stretched-link ms-auto hover--word__separate">SEE
+                                MORE+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 position-relative" data-aos="fade-up">
+                    <div
+                        class="d-flex align-items-center justify-content-between bg-white rounded-lg ps-3 hover--shadow__gray h-100">
+                        <div class="person--img__circle bg-cover"
+                            style="background-image: url(https://images.unsplash.com/photo-1544457070-4cd773b4d71e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=630&q=80);">
+                        </div>
+                        <div class="card-body d-flex flex-column p-3">
+                            <p class="text-primary mb-1">Clare Aug.20 2020</p>
+                            <h5 class="text-auxiliary-light fs-6">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </h5>
+                            <span class="text-primary mb-2">
+                                林設計的團隊有了解，我心裡的訴求是什麼，讓我的家變的很舒服
+                            </span>
+                            <a href="#" class="btn btn-primary btn-sm stretched-link ms-auto hover--word__separate">SEE
+                                MORE+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 position-relative" data-aos="fade-up">
+                    <div
+                        class="d-flex align-items-center justify-content-between bg-white rounded-lg ps-3 hover--shadow__gray h-100">
+                        <div class="person--img__circle bg-cover"
+                            style="background-image: url(https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);">
+                        </div>
+                        <div class="card-body d-flex flex-column p-3">
+                            <p class="text-primary mb-1">Daphne May.29 2019</p>
+                            <h5 class="text-auxiliary-light fs-6">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </h5>
+                            <span class="text-primary mb-2">
+                                我自己是滿挑剔的一個人，我大概住過了全世界很多高級的飯店，看過很多房子
+                            </span>
+                            <a href="#" class="btn btn-primary btn-sm stretched-link ms-auto hover--word__separate">SEE
+                                MORE+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 position-relative" data-aos="fade-up">
+                    <div
+                        class="d-flex align-items-center justify-content-between bg-white rounded-lg ps-3 hover--shadow__gray h-100">
+                        <div class="person--img__circle bg-cover"
+                            style="background-image: url(https://images.unsplash.com/photo-1507149833265-60c372daea22?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80);">
+                        </div>
+                        <div class="card-body d-flex flex-column p-3">
+                            <p class="text-primary mb-1">Constance Apr.04 2019</p>
+                            <h5 class="text-auxiliary-light fs-6">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </h5>
+                            <span class="text-primary mb-2">
+                                設計師就是一個非常有想法的設計師，但是他同時也會尊重屋主的想法
+                            </span>
+                            <a href="#" class="btn btn-primary btn-sm stretched-link ms-auto hover--word__separate">SEE
+                                MORE+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 平版、手機版 swiper設定 -->
+        <div class="d-block d-lg-none">
+            <div class="swiper swiper--recommend__sm">
+                <div class="swiper-wrapper pb-8">
+                    <div class="swiper-slide">
+                        <div class="row" style="width: 85%;">
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="col-12 position-relative mb-3" data-aos="fade-up">
+                                    <div
+                                        class="d-flex flex-column align-items-center justify-content-center bg-white rounded-lg ps-3 hover--shadow__gray">
+                                        <div class="person--img__circle bg-cover mt-3"
+                                            style="background-image: url(https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-3">
+                                            <p class="text-primary mb-1">Antonia Feb.04 2019</p>
+                                            <h5 class="text-auxiliary-light fs-6">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </h5>
+                                            <span class="text-primary mb-2">
+                                                因為我覺得新古典很漂亮，就看了很多其他的設計師，我覺得 Elmer 設計師的作品最合我味
+                                            </span>
+                                            <a href="#"
+                                                class="btn btn-primary btn-sm stretched-link ms-auto hover--word__separate w-100">SEE
+                                                MORE+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 position-relative mb-3" data-aos="fade-up">
+                                    <div
+                                        class="d-flex flex-column align-items-center justify-content-between bg-white rounded-lg ps-3 hover--shadow__gray">
+                                        <div class="person--img__circle bg-cover mt-3"
+                                            style="background-image: url(https://images.unsplash.com/photo-1537301636683-5ac98e0466a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80);">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-3">
+                                            <p class="text-primary mb-1">Amanda Sept.25 2021</p>
+                                            <h5 class="text-auxiliary-light fs-6">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </h5>
+                                            <span class="text-primary mb-2">
+                                                因為我很不喜歡侷限於在單一一種風格，我喜歡在同一個空間內，創造出不同的感覺
+                                            </span>
+                                            <a href="#"
+                                                class="btn btn-primary btn-sm stretched-link ms-auto hover--word__separate w-100">SEE
+                                                MORE+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 position-relative" data-aos="fade-up">
+                                    <div
+                                        class="d-flex flex-column align-items-center justify-content-between bg-white rounded-lg ps-3 hover--shadow__gray">
+                                        <div class="person--img__circle bg-cover mt-3"
+                                            style="background-image: url(https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-3">
+                                            <p class="text-primary mb-1">Dora Jan.14 2018</p>
+                                            <h5 class="text-auxiliary-light fs-6">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </h5>
+                                            <span class="text-primary mb-2">
+                                                透過朋友介紹，認識了 Timmy 設計師，很喜歡他的設計風格，大器而且實用
+                                            </span>
+                                            <a href="#"
+                                                class="btn btn-primary btn-sm stretched-link ms-auto hover--word__separate w-100">SEE
+                                                MORE+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row" style="width: 85%;">
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="col-12 position-relative mb-3" data-aos="fade-up">
+                                    <div
+                                        class="d-flex flex-column align-items-center justify-content-between bg-white rounded-lg ps-3 hover--shadow__gray">
+                                        <div class="person--img__circle bg-cover mt-3"
+                                            style="background-image: url(https://images.unsplash.com/photo-1544457070-4cd773b4d71e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=630&q=80);">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-3">
+                                            <p class="text-primary mb-1">Clare Aug.20 2020</p>
+                                            <h5 class="text-auxiliary-light fs-6">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </h5>
+                                            <span class="text-primary mb-2">
+                                                Wendy 設計的團隊有了解，我心裡的訴求是什麼，讓我的家變的很舒服
+                                            </span>
+                                            <a href="#"
+                                                class="btn btn-primary btn-sm stretched-link ms-auto hover--word__separate w-100">SEE
+                                                MORE+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 position-relative mb-3" data-aos="fade-up">
+                                    <div
+                                        class="d-flex flex-column align-items-center justify-content-between bg-white rounded-lg ps-3 hover--shadow__gray">
+                                        <div class="person--img__circle bg-cover mt-3"
+                                            style="background-image: url(https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-3">
+                                            <p class="text-primary mb-1">Daphne May.29 2019</p>
+                                            <h5 class="text-auxiliary-light fs-6">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </h5>
+                                            <span class="text-primary mb-2">
+                                                我自己是滿挑剔的一個人，我大概住過了全世界很多高級的飯店，看過很多房子
+                                            </span>
+                                            <a href="#"
+                                                class="btn btn-primary btn-sm stretched-link ms-auto hover--word__separate w-100">SEE
+                                                MORE+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 position-relative" data-aos="fade-up">
+                                    <div
+                                        class="d-flex flex-column align-items-center justify-content-between bg-white rounded-lg ps-3 hover--shadow__gray">
+                                        <div class="person--img__circle bg-cover mt-3"
+                                            style="background-image: url(https://images.unsplash.com/photo-1507149833265-60c372daea22?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80);">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-3">
+                                            <p class="text-primary mb-1">Constance Apr.04 2019</p>
+                                            <h5 class="text-auxiliary-light fs-6">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </h5>
+                                            <span class="text-primary mb-2">
+                                                設計師就是一個非常有想法的設計師，但是他同時也會尊重屋主的想法
+                                            </span>
+                                            <a href="#"
+                                                class="btn btn-primary btn-sm stretched-link ms-auto hover--word__separate w-100">SEE
+                                                MORE+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row" style="width: 85%;">
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="col-12 position-relative mb-3" data-aos="fade-up">
+                                    <div
+                                        class="d-flex flex-column align-items-center justify-content-between bg-white rounded-lg ps-3 hover--shadow__gray">
+                                        <div class="person--img__circle bg-cover mt-3"
+                                            style="background-image: url(https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80);">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-3">
+                                            <p class="text-primary mb-1">Antony Aug.20 2020</p>
+                                            <h5 class="text-auxiliary-light fs-6">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </h5>
+                                            <span class="text-primary mb-2">
+                                                設計師非常棒，他知道我和我太太需要有私人的空間，在我們二樓，相對的也有客廳、廚房
+                                            </span>
+                                            <a href="#"
+                                                class="btn btn-primary btn-sm stretched-link ms-auto hover--word__separate w-100">SEE
+                                                MORE+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 position-relative mb-3" data-aos="fade-up">
+                                    <div
+                                        class="d-flex flex-column align-items-center justify-content-between bg-white rounded-lg ps-3 hover--shadow__gray">
+                                        <div class="person--img__circle bg-cover mt-3"
+                                            style="background-image: url(https://images.unsplash.com/photo-1604578762246-41134e37f9cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=435&q=80);">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-3">
+                                            <p class="text-primary mb-1">Darrell May.29 2019</p>
+                                            <h5 class="text-auxiliary-light fs-6">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </h5>
+                                            <span class="text-primary mb-2">
+                                                那時候看到是 Linda 跟 Edwin 他們在新竹做了一個案件，還滿符合我的需求的
+                                            </span>
+                                            <a href="#"
+                                                class="btn btn-primary btn-sm stretched-link ms-auto hover--word__separate w-100">SEE
+                                                MORE+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 position-relative" data-aos="fade-up">
+                                    <div
+                                        class="d-flex flex-column align-items-center justify-content-between bg-white rounded-lg ps-3 hover--shadow__gray">
+                                        <div class="person--img__circle bg-cover mt-3"
+                                            style="background-image: url(https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-3">
+                                            <p class="text-primary mb-1">Frank Apr.04 2019</p>
+                                            <h5 class="text-auxiliary-light fs-6">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </h5>
+                                            <span class="text-primary mb-2">
+                                                因為我在這個節目上，就是看到 Sam 設計師的作品，那我也比較過很多設計師，我覺得他給我的感覺最好
+                                            </span>
+                                            <a href="#"
+                                                class="btn btn-primary btn-sm stretched-link ms-auto hover--word__separate w-100">SEE
+                                                MORE+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row" style="width: 85%;">
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="col-12 position-relative mb-3" data-aos="fade-up">
+                                    <div
+                                        class="d-flex flex-column align-items-center justify-content-between bg-white rounded-lg ps-3 hover--shadow__gray">
+                                        <div class="person--img__circle bg-cover mt-3"
+                                            style="background-image: url(https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80);">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-3">
+                                            <p class="text-primary mb-1">Eugene Aug.20 2020</p>
+                                            <h5 class="text-auxiliary-light fs-6">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </h5>
+                                            <span class="text-primary mb-2">
+                                                因為我們本身就是喜歡看漫畫，我們也很希望就是我們自己收藏的漫畫或是模型等等
+                                            </span>
+                                            <a href="#"
+                                                class="btn btn-primary btn-sm stretched-link ms-auto hover--word__separate w-100">SEE
+                                                MORE+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 position-relative mb-3" data-aos="fade-up">
+                                    <div
+                                        class="d-flex flex-column align-items-center justify-content-between bg-white rounded-lg ps-3 hover--shadow__gray">
+                                        <div class="person--img__circle bg-cover mt-3"
+                                            style="background-image: url(https://images.unsplash.com/photo-1604578762246-41134e37f9cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=435&q=80);">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-3">
+                                            <p class="text-primary mb-1">Jacob May.29 2019</p>
+                                            <h5 class="text-auxiliary-light fs-6">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </h5>
+                                            <span class="text-primary mb-2">
+                                                媽媽喜歡鄉村風，那我爸比較喜歡美式的風格，設計師就把這兩個不同的風格合併起來，做出嶄新的風格
+                                            </span>
+                                            <a href="#"
+                                                class="btn btn-primary btn-sm stretched-link ms-auto hover--word__separate w-100">SEE
+                                                MORE+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 position-relative" data-aos="fade-up">
+                                    <div
+                                        class="d-flex flex-column align-items-center justify-content-between bg-white rounded-lg ps-3 hover--shadow__gray">
+                                        <div class="person--img__circle bg-cover mt-3"
+                                            style="background-image: url(https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);">
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-3">
+                                            <p class="text-primary mb-1">Jerome Apr.04 2019</p>
+                                            <h5 class="text-auxiliary-light fs-6">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </h5>
+                                            <span class="text-primary mb-2">
+                                                我們很喜歡鄉村風呈現出來的效果，感謝 Interior.DS 推薦我們的設計公司，讓我們的家煥然一新
+                                            </span>
+                                            <a href="#"
+                                                class="btn btn-primary btn-sm stretched-link ms-auto hover--word__separate w-100">SEE
+                                                MORE+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination mt-3"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
   <!-- 頁尾 -->
-  <footer class="footer bg-auxiliary-dark">
+  <footer class="bg-auxiliary-dark">
     <div class="container">
       <!-- 訂閱資訊 -->
       <div class="row py-6 border-bottom align-items-center">
@@ -478,9 +989,14 @@
           <a class="navbar-brand me-9 pe-8 logo__font text-white" href="index.html">Interior.DS</a>
           <!-- icon 連結 -->
           <ul class="footer-icon list-unstyled d-flex">
-            <li><a href="#" class="text-white h4 me-2"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#" class="text-white h4 me-2"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#" class="text-white h4"><i class="fab fa-line"></i></a></li>
+            <li><a href="#" class="text-white h4 me-2 hover--change-color__light px-1 rounded-sm"><i
+                  class="fab fa-facebook"></i></a>
+            </li>
+            <li><a href="#" class="text-white h4 me-2 hover--change-color__light px-1 rounded-sm"><i
+                  class="fab fa-instagram"></i></a>
+            </li>
+            <li><a href="#" class="text-white h4 hover--change-color__light px-1 rounded-sm"><i
+                  class="fab fa-line"></i></a></li>
           </ul>
         </div>
         <div class="footer-item d-flex flex-column flex-md-row align-items-md-end">
@@ -498,10 +1014,24 @@
     </div>
   </footer>
 
+  <!-- 配對廣告視窗 -->
+  <nav class="navbar fixed-bottom navbar-light bg-primary required--alert">
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-baseline w-100">
+        <p class="text-white me-3 mb-0">幫我配對設計師，我有裝潢需求！</p>
+        <a class="btn btn-outline-light hover--change-color__primary me-3" href="#">馬上配對</a>
+        <a class="btn btn-outline-light hover--change-color__primary required--alert__close" href="#">關閉視窗</a>
+      </div>
+    </div>
+  </nav>
+
   <!-- bootstrap-JS -->
   <script src="./assets/js/vendors.js"></script>
   <!-- swiper-JS -->
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
   <!-- JS -->
   <script src="./assets/js/all.js"></script>
 </body>

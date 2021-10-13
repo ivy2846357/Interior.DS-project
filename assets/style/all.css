@@ -13841,6 +13841,26 @@ a {
           transform: translateY(-8px);
 }
 
+.hover--change-color__light {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.hover--change-color__light:hover {
+  background-color: #3F72AF;
+}
+
+.hover--change-color__primary {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.hover--change-color__primary:hover {
+  color: #3F72AF;
+}
+
 .text--shadow {
   text-shadow: 0px 0px 8px #000;
 }
@@ -13848,12 +13868,12 @@ a {
 .swiper {
   width: 100%;
   height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
-  background: #fff;
   background-size: cover;
   background-position: center center;
   /* Center slide text vertically */
@@ -13886,17 +13906,28 @@ a {
 
 .nav--icon {
   position: absolute;
-  top: 50%;
-  right: 5%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .nav--icon {
+    top: 50%;
+    bottom: 0;
+    -webkit-transform: translateY(-25%);
+        -ms-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+}
+
+@media (min-width: 500px) {
+  .nav--icon {
+    right: 0;
+    bottom: 0;
+  }
 }
 
 .nav--icon__btn {
   width: 40px;
   height: 40px;
-  background-color: #fff;
   border: 2px solid #DBE2EF;
 }
 
@@ -13910,10 +13941,14 @@ a {
 }
 
 .person--img__circle {
-  width: 90px;
-  height: 90px;
+  min-width: 90px;
+  min-height: 90px;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.required--alert {
+  display: none;
 }
 
 /*# sourceMappingURL=all.css.map */
