@@ -64,6 +64,34 @@ $(document).ready(function () {
     $('html,body').animate({
       scrollTop: 0
     }, 1000);
+  }); //服務項目-點擊到工程施作
+
+  $('.btn--construction-works').click(function (e) {
+    e.preventDefault();
+    $('html,body').animate({
+      scrollTop: 400
+    }, 1000);
+  }); //服務項目-居家格局設計
+
+  $('.btn--layout-planning').click(function (e) {
+    e.preventDefault();
+    $('html,body').animate({
+      scrollTop: 1048
+    }, 1000);
+  }); //服務項目-室內裝潢
+
+  $('.btn--interior-design').click(function (e) {
+    e.preventDefault();
+    $('html,body').animate({
+      scrollTop: 1700
+    }, 1000);
+  }); //服務項目-客製家具
+
+  $('.btn--furniture-making').click(function (e) {
+    e.preventDefault();
+    $('html,body').animate({
+      scrollTop: 2348
+    }, 1000);
   });
 });
 "use strict";
