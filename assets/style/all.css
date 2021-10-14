@@ -13900,6 +13900,10 @@ a {
   width: 80%;
 }
 
+.swiper-slide--business-cooperation {
+  width: 33%;
+}
+
 .nav--items {
   border-bottom: 1px solid transparent;
 }

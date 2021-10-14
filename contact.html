@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <!-- swiper-CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- lightbox-CSS -->
+  <link href="./assets/style/vendors/lightbox.css" rel="stylesheet" />
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
@@ -98,7 +100,7 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.5977642652488!2d121.51404261460945!3d25.047721083965957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xece39c57ea7e4e12!2z5o236YGL5Y-w5YyX6LuK56uZ56uZ!5e0!3m2!1szh-TW!2stw!4v1630419560081!5m2!1szh-TW!2stw"
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 class="mb-4 rounded-lg map-height" data-aos="fade-right"></iframe>
-            <!-- 教室位置 -->
+            <!-- 公司位置 -->
             <div class="text-auxiliary-light row">
                 <div class="col-12">
                     <h4 class="mb-2" data-aos="fade-up">交通資訊</h4>
@@ -199,6 +201,14 @@
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
+  <!-- lightbox-JS -->
+  <script src="./assets/js/lightbox.js"></script>
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+  </script>
   <!-- JS -->
   <script src="./assets/js/all.js"></script>
 </body>
