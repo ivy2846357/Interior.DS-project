@@ -63,3 +63,13 @@
         }
     }
 }
+
+//圖片hover效果-放大
+.hover--img__enlarge {
+    transition: all .3s;
+    background-size: 180%;
+
+    &:hover {
+        background-size: 210%;
+    }
+}

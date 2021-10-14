@@ -1,0 +1,119 @@
+---
+title: Interior.DS - 配對結果
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<!-- 配對結果標題 -->
+<h2 class="mt-9 mb-4 text-primary text-center fw-bold">配對結果</h2>
+
+<!-- 配對結果提示 -->
+<h1 class="text-primary text-center mb-4" data-aos="zoom-in"><i class="far fa-check-circle"></i></h1>
+<h5 class="text-primary text-center mb-6">以下是您的配對結果：</h5>
+
+<!-- 配對資訊 -->
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="col-12 col-sm-8 col-lg-6">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button bg-secondary text-auxiliary-dark" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            您的裝修需求
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="mb-3">
+                                <h6 class="text-gray me-3">有
+                                    <span class="h5 text-primary fw-bold mx-2">３</span>家設計公司符合您的需求
+                                </h6>
+                            </div>
+                            <ul class="list-unstyled text-auxiliary-dark">
+                                <li class="mb-2 pt-3">裝修預算：201萬~300萬</li>
+                                <li class="mb-2">裝修坪數：61坪~70坪</li>
+                                <li class="mb-2">裝修格局：3房</li>
+                                <li>希望的居家風格：北歐風、鄉村風</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 配對公司 -->
+<h2 class="mt-9 mb-2 text-primary text-center fw-bold">符合您要求的公司</h2>
+<h5 class="text-center text-primary mb-6" data-aos="fade-up">獲獎無數，台灣設計業的頂端</h5>
+
+<div class="container">
+    <!-- 各店家資訊 -->
+    <div class="row py-5">
+        <!-- 第一間 -->
+        <div class="col-lg-4 mb-3" data-aos="fade-right" data-aos-delay="200">
+            <div class="card">
+                <!-- 店家圖片 -->
+                <div class="card-img-top bg-cover hover--img__enlarge"
+                    style="background-image: url(https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 300px;">
+                </div>
+                <!-- 店家資訊 -->
+                <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item">AB 設計空間</li>
+                    <li class="list-group-item">主席設計師：Morris Hsu</li>
+                    <li class="list-group-item">擅長風格<br>北歐風、鄉村風、美式風、歐風</li>
+                </ul>
+                <a href="#" class="card-body bg-auxiliary-dark text-white hover--word__separate text-center">查看公司作品<i
+                        class="fas fa-arrow-right fa-arrow ms-2"></i></a>
+            </div>
+        </div>
+        <!-- 第二間 -->
+        <div class="col-lg-4 mb-3" data-aos="fade-right" data-aos-delay="400">
+            <div class="card">
+                <!-- 店家圖片 -->
+                <div class="card-img-top bg-cover hover--img__enlarge"
+                    style="background-image: url(https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80); height: 300px;">
+                </div>
+                <!-- 店家資訊 -->
+                <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item">CD 設計空間</li>
+                    <li class="list-group-item">主席設計師：Mandy Hsu</li>
+                    <li class="list-group-item">擅長風格<br>北歐風、鄉村風、奢華風、美式風、日系無印風</li>
+                </ul>
+                <a href="#" class="card-body bg-auxiliary-dark text-white hover--word__separate text-center">查看公司作品<i
+                        class="fas fa-arrow-right fa-arrow ms-2"></i></a>
+            </div>
+        </div>
+        <!-- 第三間 -->
+        <div class="col-lg-4 mb-3" data-aos="fade-right" data-aos-delay="600">
+            <div class="card">
+                <!-- 店家圖片 -->
+                <div class="card-img-top bg-cover hover--img__enlarge"
+                    style="background-image: url(https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80); height: 300px;">
+                </div>
+                <!-- 店家資訊 -->
+                <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item">EF 設計空間</li>
+                    <li class="list-group-item">主席設計師：Sandy Chen</li>
+                    <li class="list-group-item">擅長風格<br>北歐風、鄉村風、新古典、混搭風</li>
+                </ul>
+                <a href="#" class="card-body bg-auxiliary-dark text-white hover--word__separate text-center">查看公司作品<i
+                        class="fas fa-arrow-right fa-arrow ms-2"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-bottom: 116px;">
+        <div class="offset-2 col-4">
+            <a href="index.html" class="btn btn-auxiliary-light text-white d-block py-2"><i
+                    class="fas fa-arrow-left fa-arrow me-2"></i>回到首頁</a>
+        </div>
+        <div class="col-4">
+            <a href="reserve-information.html" class="btn btn-primary text-white d-block py-2">安排裝修<i
+                    class="fas fa-arrow-right fa-arrow ms-2"></i></a>
+        </div>
+    </div>
+</div>
