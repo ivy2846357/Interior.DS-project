@@ -13922,7 +13922,7 @@ a {
 @media (min-width: 500px) {
   .nav--icon {
     right: 0;
-    bottom: 0;
+    bottom: 5%;
   }
 }
 
