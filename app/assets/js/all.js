@@ -1,4 +1,4 @@
-//居家風格-swiper-電腦版
+//首頁-居家風格-swiper-電腦版
 var swiper = new Swiper(".swiper--room-style__lg", {
     slidesPerView: "auto",
     spaceBetween: 30,
@@ -8,7 +8,7 @@ var swiper = new Swiper(".swiper--room-style__lg", {
     },
 });
 
-//屋主評價-swiper-平板/手機版
+//首頁-屋主評價-swiper-平板/手機版
 var swiper = new Swiper(".swiper--recommend__sm", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -20,6 +20,16 @@ var swiper = new Swiper(".swiper--recommend__sm", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+});
+
+//公司介紹-企業合作-swiper
+var swiper = new Swiper(".swiper--business-cooperation", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
     },
 });
 
