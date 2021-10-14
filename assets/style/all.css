@@ -13861,6 +13861,17 @@ a {
   color: #3F72AF;
 }
 
+.hover--img__enlarge {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  background-size: 180%;
+}
+
+.hover--img__enlarge:hover {
+  background-size: 210%;
+}
+
 .text--shadow {
   text-shadow: 0px 0px 8px #000;
 }
