@@ -43,7 +43,54 @@
     width: 33%;
 }
 
-//設計師介紹-設計師推薦-swiper-電腦版
+//設計師作品-設計師推薦-swiper-電腦版
 .swiper-slide--recommend-designer {
     width: 100%;
+}
+
+//設計師作品-公司作品-swiper
+.swiper-slide--company-portfolio img {
+    width: auto;
+}
+
+.swiper--company-portfolio {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide--company-portfolio {
+    background-size: cover;
+    background-position: cover;
+}
+
+//設計師作品-公司作品-swiper-大圖
+.swiper--company-portfolio__top {
+    height: 500px;
+    width: 100%;
+}
+
+//設計師作品-公司作品-swiper-小圖
+.swiper--company-portfolio__bottom {
+    height: 180px;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.swiper--company-portfolio__bottom .swiper-slide--company-portfolio {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.swiper--company-portfolio__bottom .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+//公司介紹-相關文章-swiper-查看更多文章
+.swiper-slide--article-blog:nth-child(4n) {
+    justify-content: start;
+    -webkit-justify-content: start;
+    -webkit-box-align: start;
 }

@@ -48,6 +48,52 @@ var swiper = new Swiper(".swiper--recommend-designer", {
     },
 });
 
+//公司介紹-作品總攬-swiper
+var swiper = new Swiper(".swiper--company-portfolio__bottom", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".swiper--company-portfolio__top", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: swiper,
+    },
+});
+
+//公司介紹-設計師總攬-swiper
+var swiper = new Swiper(".swiper--company-designers", {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    slidesPerGroup: 5,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+//公司介紹-相關文章-swiper
+var swiper = new Swiper(".swiper--article-blog", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
 
 $(document).ready(function () {
     // 廣告視窗顯示
