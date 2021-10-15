@@ -106,6 +106,27 @@ $(document).ready(function () {
     $('html,body').animate({
       scrollTop: 2348
     }, 1000);
+  }); //設計師作品-分頁點擊效果
+
+  $('.page-link').click(function (e) {
+    e.preventDefault(); //點擊分頁標籤-新增/移除class-active
+
+    $(this).parent().addClass('active');
+    $(this).parent().siblings().removeClass('active'); // let page = $(this).attr('href');
+  }); //聯絡我們
+
+  $('.btn--contact').click(function (e) {
+    e.preventDefault();
+
+    if ($('.name').val().trim() == '' || $('.email').val().trim() == '' || $('.phone').val().trim() == '' || $('.opinion').val().trim() == '') {
+      alert('請填寫完整資料');
+    } else {
+      alert('謝謝您的建議');
+      $('.name').val('');
+      $('.email').val('');
+      $('.phone').val('');
+      $('.opinion').val('');
+    }
   });
 });
 "use strict";

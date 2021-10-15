@@ -13783,6 +13783,14 @@ a {
   background-attachment: fixed;
 }
 
+.bg--translucent {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.display-none {
+  display: none;
+}
+
 .logo__font {
   font-family: 'Dancing Script', cursive;
 }
@@ -13949,10 +13957,6 @@ a {
   width: 40px;
   height: 40px;
   border: 2px solid #DBE2EF;
-}
-
-.bg--translucent {
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .banner--border {
