@@ -1,8 +1,3 @@
-//半透明黑色背景
-.bg--translucent {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 //banner白色底線
 .banner--border {
     width: 100px;
@@ -17,6 +12,7 @@
     overflow: hidden;
 }
 
+//廣告列表-隱藏
 .required--alert {
     display: none;
 }
