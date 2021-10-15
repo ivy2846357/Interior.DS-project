@@ -33,6 +33,21 @@ var swiper = new Swiper(".swiper--business-cooperation", {
     },
 });
 
+//設計師作品-推薦設計師-swiper
+var swiper = new Swiper(".swiper--recommend-designer", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
 $(document).ready(function () {
     // 廣告視窗顯示
     $('.required--alert').slideDown();
