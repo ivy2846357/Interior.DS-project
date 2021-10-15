@@ -13915,6 +13915,10 @@ a {
   width: 33%;
 }
 
+.swiper-slide--recommend-designer {
+  width: 100%;
+}
+
 .nav--items {
   border-bottom: 1px solid transparent;
 }

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Interior.DS - 設計師作品</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!-- swiper-CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- lightbox-CSS -->
+  <link href="./assets/style/vendors/lightbox.css" rel="stylesheet" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <!-- 導覽列 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-auxiliary-dark py-4">
+    <div class="container">
+      <a class="navbar-brand me-9 pe-8 d-lg-none logo__font text-white fs-2" href="index.html">Interior.DS</a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon hamburger-color"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <a class="navbar-brand logo__font text-white fs-2 d-none d-lg-block" href="index.html">Interior.DS</a>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+              aria-current="page" href="company-profile.html">公司介紹</a>
+          </li>
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+              href="company-services.html">服務項目</a>
+          </li>
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+              href="designer-portfolio.html">設計師作品</a>
+          </li>
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+              href="#">合作公司介紹</a>
+          </li>
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary px-0 d-inline d-lg-block nav--items nav--items__hover"
+              href="#">部落格</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <a href="reserve-information.html" class="btn btn-outline-secondary rounded-lg me-3 reserve-btn py-2 px-3"
+            type="submit">立即預約</a>
+          <a href="contact.html" class="btn btn-outline-secondary rounded-lg course-btn py-2 px-3"
+            type="submit">聯絡我們</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 右側 icon 列表 -->
+  <div class="position-fixed nav--icon" style="z-index: 1100;">
+    <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center me-3">
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-facebook"></i></a>
+      </li>
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-instagram"></i></a>
+      </li>
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-line"></i></a>
+      </li>
+      <li class="mb-2">
+        <a href="#"
+          class="text-white bg-primary fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black scroll--top-btn"><i
+            class="fas fa-arrow-up"></i>
+
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  
+<!-- 推薦設計師標題 -->
+<h2 class="mt-9 mb-2 text-primary text-center fw-bold">本月推薦設計師</h2>
+<h5 class="text-center text-primary mb-6" data-aos="fade-up"><span class="fw-bold me-2">10</span>月屋主推薦設計師</h5>
+
+<!-- 推薦設計師介紹 -->
+<div class="container mb-9">
+    <div class="row" data-aos="fade-up">
+        <div class="swiper swiper--recommend-designer">
+            <div class="swiper-wrapper pb-9">
+                <div class="swiper-slide swiper-slide--recommend-designer">
+                    <div class="col-12 col-sm-6 col-lg-7 mb-2 mb-sm-0 me-4">
+                        <div class="card-img bg-cover rounded-lg"
+                            style="background-image: url(https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 350px;">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="d-flex align-items-center justify-content-center flex-column">
+                            <p class="text-primary fs-3 mb-0">Tom Chen<small class="text-auxiliary-light fs-6">（AB
+                                    設計空間）</small></p>
+                            <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                <li><span class="badge bg-primary me-2">北歐風</span></li>
+                                <li><span class="badge bg-success me-2">美式風格</span></li>
+                                <li><span class="badge bg-warning me-2">鄉村風</span></li>
+                            </ul>
+                            <ul class="h6 text-gray list-unstyled mb-3 d-flex flex-column align-items-start">
+                                <li class="mb-1">2019 Best of Canada Design Award - 獲獎</li>
+                                <li class="mb-1">2019 英國 - London Design Award - 金獎</li>
+                                <li class="mb-1">2019 日本 - Kukan Design Award - 優選</li>
+                                <li class="mb-1">2018 英國 - LICC - 優選</li>
+                                <li class="mb-1">2016 Best of Canada Design Award - 優選</li>
+                                <li class="mb-1">2016 JCD International Design Award</li>
+                            </ul>
+                            <div class="d-flex justify-content-center w-100">
+                                <a href="#"
+                                    class="btn btn-primary d-inline text-white py-2 px-4 hover--word__separate me-3">立即預約</a>
+                                <a href="#"
+                                    class="btn btn-auxiliary-dark d-inline text-white py-2 px-4 hover--word__separate">查看設計師作品</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide--recommend-designer">
+                    <div class="col-12 col-sm-6 col-lg-7 mb-2 mb-sm-0 me-4">
+                        <div class="card-img bg-cover rounded-lg"
+                            style="background-image: url(https://images.unsplash.com/photo-1618221710640-c0eaaa2adb49?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 350px;">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="d-flex align-items-center justify-content-center flex-column">
+                            <p class="text-primary fs-3 mb-0">Mary Hsu<small class="text-auxiliary-light fs-6">（CD
+                                    設計空間）</small></p>
+                            <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                <li><span class="badge bg-primary me-2">北歐風</span></li>
+                                <li><span class="badge bg-success me-2">美式風格</span></li>
+                                <li><span class="badge bg-danger me-2">奢華風</span></li>
+                            </ul>
+                            <ul class="h6 text-gray list-unstyled mb-3 d-flex flex-column align-items-start">
+                                <li class="mb-1">2019 Best of Canada Design Award - 獲獎</li>
+                                <li class="mb-1">2019 英國 - London Design Award - 金獎</li>
+                                <li class="mb-1">2019 日本 - Kukan Design Award - 優選</li>
+                                <li class="mb-1">2018 英國 - LICC - 優選</li>
+                                <li class="mb-1">2016 Best of Canada Design Award - 優選</li>
+                                <li class="mb-1">2016 JCD International Design Award</li>
+                            </ul>
+                            <div class="d-flex justify-content-center w-100">
+                                <a href="#"
+                                    class="btn btn-primary d-inline text-white py-2 px-4 hover--word__separate me-3">立即預約</a>
+                                <a href="#"
+                                    class="btn btn-auxiliary-dark d-inline text-white py-2 px-4 hover--word__separate">查看設計師作品</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide--recommend-designer">
+                    <div class="col-12 col-sm-6 col-lg-7 mb-2 mb-sm-0 me-4">
+                        <div class="card-img bg-cover rounded-lg"
+                            style="background-image: url(https://images.unsplash.com/photo-1618219740975-d40978bb7378?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=80); height: 350px;">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="d-flex align-items-center justify-content-center flex-column">
+                            <p class="text-primary fs-3 mb-0">Morris Tony<small class="text-auxiliary-light fs-6">（EF
+                                    設計空間）</small></p>
+                            <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                <li><span class="badge bg-primary me-2">北歐風</span></li>
+                                <li><span class="badge bg-success me-2">美式風格</span></li>
+                                <li><span class="badge bg-danger me-2">奢華風</span></li>
+                                <li><span class="badge bg-auxiliary-light me-2">日系無印風</span></li>
+                            </ul>
+                            <ul class="h6 text-gray list-unstyled mb-3 d-flex flex-column align-items-start">
+                                <li class="mb-1">2019 Best of Canada Design Award - 獲獎</li>
+                                <li class="mb-1">2019 英國 - London Design Award - 金獎</li>
+                                <li class="mb-1">2019 日本 - Kukan Design Award - 優選</li>
+                                <li class="mb-1">2018 英國 - LICC - 優選</li>
+                                <li class="mb-1">2016 Best of Canada Design Award - 優選</li>
+                                <li class="mb-1">2016 JCD International Design Award</li>
+                            </ul>
+                            <div class="d-flex justify-content-center w-100">
+                                <a href="#"
+                                    class="btn btn-primary d-inline text-white py-2 px-4 hover--word__separate me-3">立即預約</a>
+                                <a href="#"
+                                    class="btn btn-auxiliary-dark d-inline text-white py-2 px-4 hover--word__separate">查看設計師作品</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide--recommend-designer">
+                    <div class="col-12 col-sm-6 col-lg-7 mb-2 mb-sm-0 me-4">
+                        <div class="card-img bg-cover rounded-lg"
+                            style="background-image: url(https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80); height: 350px;">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="d-flex align-items-center justify-content-center flex-column">
+                            <p class="text-primary fs-3 mb-0">Andrew Bert<small class="text-auxiliary-light fs-6">（GH
+                                    設計空間）</small></p>
+                            <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                <li><span class="badge bg-primary me-2">北歐風</span></li>
+                                <li><span class="badge bg-success me-2">美式風格</span></li>
+                                <li><span class="badge bg-warning me-2">鄉村風</span></li>
+                            </ul>
+                            <ul class="h6 text-gray list-unstyled mb-3 d-flex flex-column align-items-start">
+                                <li class="mb-1">2019 Best of Canada Design Award - 獲獎</li>
+                                <li class="mb-1">2019 英國 - London Design Award - 金獎</li>
+                                <li class="mb-1">2019 日本 - Kukan Design Award - 優選</li>
+                                <li class="mb-1">2018 英國 - LICC - 優選</li>
+                                <li class="mb-1">2016 Best of Canada Design Award - 優選</li>
+                                <li class="mb-1">2016 JCD International Design Award</li>
+                            </ul>
+                            <div class="d-flex justify-content-center w-100">
+                                <a href="#"
+                                    class="btn btn-primary d-inline text-white py-2 px-4 hover--word__separate me-3">立即預約</a>
+                                <a href="#"
+                                    class="btn btn-auxiliary-dark d-inline text-white py-2 px-4 hover--word__separate">查看設計師作品</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide--recommend-designer">
+                    <div class="col-12 col-sm-6 col-lg-7 mb-2 mb-sm-0 me-4">
+                        <div class="card-img bg-cover rounded-lg"
+                            style="background-image: url(https://images.unsplash.com/photo-1618221118493-9cfa1a1c00da?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 350px;">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="d-flex align-items-center justify-content-center flex-column">
+                            <p class="text-primary fs-3 mb-0">Frankie Gaston<small class="text-auxiliary-light fs-6">（IJ
+                                    設計空間）</small></p>
+                            <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                <li><span class="badge bg-primary me-2">北歐風</span></li>
+                                <li><span class="badge bg-success me-2">美式風格</span></li>
+                                <li><span class="badge bg-danger me-2">奢華風</span></li>
+                            </ul>
+                            <ul class="h6 text-gray list-unstyled mb-3 d-flex flex-column align-items-start">
+                                <li class="mb-1">2019 Best of Canada Design Award - 獲獎</li>
+                                <li class="mb-1">2019 英國 - London Design Award - 金獎</li>
+                                <li class="mb-1">2019 日本 - Kukan Design Award - 優選</li>
+                                <li class="mb-1">2018 英國 - LICC - 優選</li>
+                                <li class="mb-1">2016 Best of Canada Design Award - 優選</li>
+                                <li class="mb-1">2016 JCD International Design Award</li>
+                            </ul>
+                            <div class="d-flex justify-content-center w-100">
+                                <a href="#"
+                                    class="btn btn-primary d-inline text-white py-2 px-4 hover--word__separate me-3">立即預約</a>
+                                <a href="#"
+                                    class="btn btn-auxiliary-dark d-inline text-white py-2 px-4 hover--word__separate">查看設計師作品</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+
+<!-- 設計師搜尋 -->
+<div class="class-select bg-secondary py-3" data-aos="fade-up">
+    <div class="container">
+        <div class="row">
+            <div class="d-flex align-items-baseline">
+                <div class="col-8 col-sm-5 col-lg-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="請輸入要搜尋的設計公司" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                        <a href="#" class="btn btn-primary text-white py-2 px-3">搜尋</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="dropdown ms-3">
+                        <button class="btn btn-light text-auxiliary-light dropdown-toggle" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            居家風格
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">北歐風</a></li>
+                            <li><a class="dropdown-item" href="#">現代風</a></li>
+                            <li><a class="dropdown-item" href="#">新古典</a></li>
+                            <li><a class="dropdown-item" href="#">美式風</a></li>
+                            <li><a class="dropdown-item" href="#">鄉村風</a></li>
+                            <li><a class="dropdown-item" href="#">混搭風</a></li>
+                            <li><a class="dropdown-item" href="#">奢華風</a></li>
+                            <li><a class="dropdown-item" href="#">簡約風</a></li>
+                            <li><a class="dropdown-item" href="#">工業風</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-7">
+    <div class="container">
+        <div class="row">
+            <!-- 設計師介紹 -->
+            <div class="col-12 col-lg-9" style="margin-bottom: 116px;">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-7" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#" data-bs-toggle="modal" role="button" data-bs-target="#exampleModal">
+                            <div class="card bg-transparent text-white bg-cover rounded-lg mb-5"
+                                style="background-image: url(https://images.unsplash.com/photo-1614255976202-8ce52bfcb655?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80); height: 300px;">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <div class="card-text p-4 mt-auto">
+                                        <h3 class="m-0">AB 設計空間</h3>
+                                        <h6 class="m-0">設計師：Carol Tang</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-5" data-aos="fade-up" data-aos-delay="100">
+                        <a href="#">
+                            <div class="card bg-transparent text-white bg-cover rounded-lg mb-5"
+                                style="background-image: url(https://images.unsplash.com/photo-1617098900591-3f90928e8c54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80); height: 300px;">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <div class="card-text p-4 mt-auto">
+                                        <h3 class="m-0">CD 設計空間</h3>
+                                        <h6 class="m-0">設計師：Kanae</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-5" data-aos="fade-up" data-aos-delay="100">
+                        <a href="#">
+                            <div class="card bg-transparent text-white bg-cover rounded-lg mb-5"
+                                style="background-image: url(https://images.unsplash.com/photo-1615529162924-f8605388461d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <div class="card-text p-4 mt-auto">
+                                        <h3 class="m-0">EF 設計空間</h3>
+                                        <h6 class="m-0">設計師：Kuzuha</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-7" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#">
+                            <div class="card bg-transparent text-white bg-cover rounded-lg mb-5"
+                                style="background-image: url(https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80); height: 300px;">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <div class="card-text p-4 mt-auto">
+                                        <h3 class="m-0">GH 設計空間</h3>
+                                        <h6 class="m-0">設計師：Kuzuha</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-7" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#">
+                            <div class="card bg-transparent text-white bg-cover rounded-lg mb-5"
+                                style="background-image: url(https://images.unsplash.com/photo-1617806118233-18e1de247200?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 300px;">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <div class="card-text p-4 mt-auto">
+                                        <h3 class="m-0">IJ 設計空間</h3>
+                                        <h6 class="m-0">設計師：Kuzuha、Kanae</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-5" data-aos="fade-up" data-aos-delay="100">
+                        <a href="#">
+                            <div class="card bg-transparent text-white bg-cover rounded-lg mb-5"
+                                style="background-image: url(https://images.unsplash.com/photo-1616486701797-0f33f61038ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <div class="card-text p-4 mt-auto">
+                                        <h3 class="m-0">KL 設計空間</h3>
+                                        <h6 class="m-0">設計師：Kanae</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-5" data-aos="fade-up" data-aos-delay="100">
+                        <a href="#">
+                            <div class="card bg-transparent text-white bg-cover rounded-lg mb-5"
+                                style="background-image: url(https://images.unsplash.com/photo-1620380925682-2ccd56244186?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=405&q=80); height: 300px;">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <div class="card-text p-4 mt-auto">
+                                        <h3 class="m-0">MN 設計空間</h3>
+                                        <h6 class="m-0">設計師：Asa Chen</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-7" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#">
+                            <div class="card bg-transparent  text-white bg-cover rounded-lg mb-5"
+                                style="background-image: url(https://images.unsplash.com/photo-1618220985423-db5473de7fb7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 300px;">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <div class="card-text p-4 mt-auto">
+                                        <h3 class="m-0">OP 設計空間</h3>
+                                        <h6 class="m-0">設計師：Asa Chen</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 標語 -->
+            <div class="offset-sm-3 offset-lg-0 col-12 col-sm-6 col-lg-3" data-aos="fade-up">
+                <div class="d-flex flex-column align-items-center align-items-lg-start">
+                    <h5 class="text-primary">標語：</h5>
+                    <ul class="text-gray list-unstyled">
+                        <li class="mb-1">
+                            <h6>「生活是空間結構核心的起點」我們的設計重視實用性</h6>
+                        </li>
+                        <li class="mb-1">
+                            <h6>只做合理的裝飾，保持熱愛設計的初心</h6>
+                        </li>
+                        <li class="mb-1">
+                            <h6>用謙虛、真誠的態度交流，表達我們對設計、對空間一貫的理念</h6>
+                        </li>
+                        <li class="mb-1">
+                            <h6>因為重視真實的價值，不緊追趨勢下的主流</h6>
+                        </li>
+                        <li class="mb-1">
+                            <h6>希望以獨特的品味，創造被感動的記憶</h6>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- 頁尾 -->
+  <footer class="bg-auxiliary-dark">
+    <div class="container">
+      <!-- 訂閱資訊 -->
+      <div class="row py-6 border-bottom align-items-center">
+        <div class="col-12 col-lg-8">
+          <div class="d-flex justify-content-between align-items-lg-center flex-column flex-lg-row">
+            <h3 class="text-white mb-2 mb-lg-0">訂閱電子報，獲得更多設計消息！</h3>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Username"
+              aria-describedby="basic-addon1">
+            <a href="#" class="btn btn-primary text-white py-2 px-3">訂閱</a>
+          </div>
+        </div>
+      </div>
+      <!-- 頁尾導覽列 -->
+      <div class="footer-body d-flex flex-column py-6">
+        <div class="footer-item d-flex justify-content-between">
+          <!-- LOGO -->
+          <a class="navbar-brand me-9 pe-8 logo__font text-white" href="index.html">Interior.DS</a>
+          <!-- icon 連結 -->
+          <ul class="footer-icon list-unstyled d-flex">
+            <li><a href="#" class="text-white h4 me-2 hover--change-color__light px-1 rounded-sm"><i
+                  class="fab fa-facebook"></i></a>
+            </li>
+            <li><a href="#" class="text-white h4 me-2 hover--change-color__light px-1 rounded-sm"><i
+                  class="fab fa-instagram"></i></a>
+            </li>
+            <li><a href="#" class="text-white h4 hover--change-color__light px-1 rounded-sm"><i
+                  class="fab fa-line"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-item d-flex flex-column flex-md-row align-items-md-end">
+          <!-- 導覽列 -->
+          <ul class="list-unstyled m-0">
+            <li class="mb-2"><a href="#" class="text-white nav--items nav--items__hover">公司介紹</a></li>
+            <li class="mb-2"><a href="#" class="text-white nav--items nav--items__hover">服務項目</a></li>
+            <li class="mb-2"><a href="#" class="text-white nav--items nav--items__hover">設計師作品</a></li>
+            <li class="mb-2"><a href="#" class="text-white nav--items nav--items__hover">合作公司介紹</a></li>
+            <li class="mb-2"><a href="#" class="text-white nav--items nav--items__hover">部落格</a></li>
+          </ul>
+          <!-- 版權文字 -->
+          <p class="text-white offset-md-3 ps-md-3 offset-lg-4 ps-lg-6 mb-2">© 2021. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- bootstrap-JS -->
+  <script src="./assets/js/vendors.js"></script>
+  <!-- swiper-JS -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <!-- lightbox-JS -->
+  <script src="./assets/js/lightbox.js"></script>
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+  </script>
+  <!-- JS -->
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
