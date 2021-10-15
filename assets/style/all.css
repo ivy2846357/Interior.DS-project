@@ -13927,6 +13927,52 @@ a {
   width: 100%;
 }
 
+.swiper-slide--company-portfolio img {
+  width: auto;
+}
+
+.swiper--company-portfolio {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide--company-portfolio {
+  background-size: cover;
+  background-position: cover;
+}
+
+.swiper--company-portfolio__top {
+  height: 500px;
+  width: 100%;
+}
+
+.swiper--company-portfolio__bottom {
+  height: 180px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.swiper--company-portfolio__bottom .swiper-slide--company-portfolio {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.swiper--company-portfolio__bottom .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide--article-blog:nth-child(4n) {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-justify-content: start;
+  -webkit-box-align: start;
+}
+
 .nav--items {
   border-bottom: 1px solid transparent;
 }
