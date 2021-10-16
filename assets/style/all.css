@@ -13923,7 +13923,8 @@ a {
   width: 33%;
 }
 
-.swiper-slide--recommend-designer {
+.swiper-slide--recommend-designer,
+.swiper-slide--article {
   width: 100%;
 }
 
@@ -13971,6 +13972,16 @@ a {
           justify-content: start;
   -webkit-justify-content: start;
   -webkit-box-align: start;
+}
+
+.card--article__like {
+  position: absolute;
+  top: 20;
+  left: 200;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
 }
 
 .nav--items {
