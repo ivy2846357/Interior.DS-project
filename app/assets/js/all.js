@@ -95,6 +95,21 @@ var swiper = new Swiper(".swiper--article-blog", {
     },
 });
 
+//部落格-推薦文章
+var swiper = new Swiper(".swiper--article", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
 $(document).ready(function () {
     // 廣告視窗顯示
     $('.required--alert').slideDown();

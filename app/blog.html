@@ -1,0 +1,1015 @@
+---
+title: Interior.DS - 部落格
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<!-- 部落格精選文章標題 -->
+<h2 class="mt-9 mb-6 text-primary text-center fw-bold">本月精選文章</h2>
+
+<!-- 精選文章內容 -->
+<div class="container border-bottom pb-7">
+    <div class="row g-0">
+        <!-- 文章分類 -->
+        <div class="col-3">
+            <div class="list-group list-group-flush h-100" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active py-7 fw-bold" id="list-home-list"
+                    data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">最新消息</a>
+                <a class="list-group-item list-group-item-action py-7 fw-bold" id="list-profile-list"
+                    data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">好屋分享</a>
+                <a class="list-group-item list-group-item-action py-7 fw-bold" id="list-messages-list"
+                    data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">居家安全</a>
+                <a class="list-group-item list-group-item-action py-7 fw-bold" id="list-settings-list"
+                    data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">小編推薦</a>
+            </div>
+        </div>
+        <!-- 文章內容 -->
+        <div class="col-9">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                    <div class="swiper swiper--article">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide--article"
+                                style="background-image: url(https://images.unsplash.com/photo-1618221999490-9418f64786aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 419px;">
+                            </div>
+                            <div class="swiper-slide swiper-slide--article"
+                                style="background-image: url(https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 419px;">
+                            </div>
+                            <div class="swiper-slide swiper-slide--article"
+                                style="background-image: url(https://images.unsplash.com/photo-1618221381711-42ca8ab6e908?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 419px;">
+                            </div>
+                            <div class="swiper-slide swiper-slide--article"
+                                style="background-image: url(https://images.unsplash.com/photo-1618219740975-d40978bb7378?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80); height: 419px;">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                    <div class="swiper swiper--article">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide--article"
+                                style="background-image: url(https://images.unsplash.com/photo-1618221999490-9418f64786aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 419px;">
+                            </div>
+                            <div class="swiper-slide swiper-slide--article"
+                                style="background-image: url(https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 419px;">
+                            </div>
+                            <div class="swiper-slide swiper-slide--article"
+                                style="background-image: url(https://images.unsplash.com/photo-1618221381711-42ca8ab6e908?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 419px;">
+                            </div>
+                            <div class="swiper-slide swiper-slide--article"
+                                style="background-image: url(https://images.unsplash.com/photo-1618219740975-d40978bb7378?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80); height: 419px;">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                    <div class="swiper swiper--article">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide--article"
+                                style="background-image: url(https://images.unsplash.com/photo-1618221999490-9418f64786aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 419px;">
+                            </div>
+                            <div class="swiper-slide swiper-slide--article"
+                                style="background-image: url(https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 419px;">
+                            </div>
+                            <div class="swiper-slide swiper-slide--article"
+                                style="background-image: url(https://images.unsplash.com/photo-1618221381711-42ca8ab6e908?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 419px;">
+                            </div>
+                            <div class="swiper-slide swiper-slide--article"
+                                style="background-image: url(https://images.unsplash.com/photo-1618219740975-d40978bb7378?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80); height: 419px;">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                    <div class="swiper swiper--article">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide--article"
+                                style="background-image: url(https://images.unsplash.com/photo-1618221999490-9418f64786aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 419px;">
+                            </div>
+                            <div class="swiper-slide swiper-slide--article"
+                                style="background-image: url(https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 419px;">
+                            </div>
+                            <div class="swiper-slide swiper-slide--article"
+                                style="background-image: url(https://images.unsplash.com/photo-1618221381711-42ca8ab6e908?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 419px;">
+                            </div>
+                            <div class="swiper-slide swiper-slide--article"
+                                style="background-image: url(https://images.unsplash.com/photo-1618219740975-d40978bb7378?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80); height: 419px;">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 文章總攬 -->
+<div class="container mt-7">
+    <div class="row" style="margin-bottom: 116px;">
+        <!-- 左側功能列 -->
+        <div class="col-12 col-lg-3">
+            <div class="d-flex flex-column align-items-center">
+                <!-- 搜尋欄 -->
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="請輸入關鍵字">
+                    <button class="btn btn-auxiliary-light text-white" type="button"><i
+                            class="fas fa-search"></i></button>
+                </div>
+                <!-- 文章分類 -->
+                <div class="list-group mb-5 w-100" id="list-tab" role="tablist">
+                    <!-- 全部文章 -->
+                    <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center active"
+                        id="list-all-list" data-bs-toggle="list" href="#list--article__all" role="tab"
+                        aria-controls="list--article__all">
+                        全部文章
+                        <span class="badge bg-auxiliary-dark rounded-pill">101</span>
+                    </a>
+                    <!-- 好屋分享-->
+                    <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                        id="list-all-list" data-bs-toggle="list" href="#list--article__house" role="tab"
+                        aria-controls="list--article__house">好屋分享
+                        <span class="badge bg-auxiliary-dark rounded-pill">50</span>
+                    </a>
+                    <!-- 居家安全 -->
+                    <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                        id="list-security-list" data-bs-toggle="list" href="#list--article__security" role="tab"
+                        aria-controls="list--article__security">
+                        居家安全
+                        <span class="badge bg-auxiliary-dark rounded-pill">14</span>
+                    </a>
+                    <!-- 小編推薦 -->
+                    <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                        id="list-recommend-list" data-bs-toggle="list" href="#list--article__recommend" role="tab"
+                        aria-controls="list--article__recommend">
+                        小編推薦
+                        <span class="badge bg-auxiliary-dark rounded-pill">20</span>
+                    </a>
+                </div>
+                <!-- 熱門文章 -->
+                <div class="d-none d-lg-block">
+                    <h3 class="text-primary fw-bold align-self-start mb-4">熱門文章</h3>
+                    <div class="col-11">
+                        <a href="#">
+                            <div class="card mb-3 border-0">
+                                <div class="card-img-top bg-cover"
+                                    style="background-image: url(https://images.unsplash.com/photo-1617806118233-18e1de247200?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80); height: 150px;">
+                                </div>
+                                <div class="card-body px-0">
+                                    <div class="card-title fw-bold mb-0">跳脫空間的拘束，重新繪製寬敞舒適的居家寢室</div>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 days
+                                            ago</small></p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="card mb-3 border-0">
+                                <div class="card-img-top bg-cover"
+                                    style="background-image: url(https://images.unsplash.com/photo-1611048267604-2e59a19a4f97?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1172&q=80); height: 150px;">
+                                </div>
+                                <div class="card-body px-0">
+                                    <div class="card-title fw-bold mb-0">40 年老屋翻修綻放繽紛色彩！找回生活的清閒浪漫</div>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 days
+                                            ago</small></p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="card mb-3 border-0">
+                                <div class="card-img-top bg-cover"
+                                    style="background-image: url(https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=658&q=80); height: 150px;">
+                                </div>
+                                <div class="card-body px-0">
+                                    <div class="card-title fw-bold mb-0">讓時間的腳步慢下來！閱讀居家的精緻人文氣質！</div>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 days
+                                            ago</small></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 右側文章總攬 -->
+        <div class="col-12 col-lg-9">
+            <div class="tab-content" id="nav-tabContent">
+                <!-- 全部文章總攬 -->
+                <div class="tab-pane fade show active" id="list--article__all" role="tabpanel"
+                    aria-labelledby="list-all-list">
+                    <!-- 文章列表 -->
+                    <div class="row">
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">跳脫空間的拘束，重新繪製寬敞舒適的居家寢室</div>
+                                            <p class="card-text">
+                                                以經典都市元素黑、白、灰作為主調，並打破先前動線不佳的格局重新為案主描繪最適居住空間，建立生活品質</p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616486701797-0f33f61038ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">40 年老屋翻修綻放繽紛色彩！找回生活的清閒浪漫</div>
+                                            <p class="card-text">
+                                                第二次委託我們改造居住多年的高齡老屋，運用屋主喜愛的色彩、生活中不可或缺的藝術藏品作為軟裝布置，不僅讓老屋重燃生命力，同時也將家人間珍貴的相處回憶注入生活環境裡
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1609103110697-518155dfe5b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=327&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">讓時間的腳步慢下來！閱讀居家的精緻人文氣質！</div>
+                                            <p class="card-text">
+                                                在舒適沉靜的 64
+                                                坪混搭風住宅，擁有一處屬於自己的靜謐書房、精品般的廚房，以及低調寧靜的燈光細節，讓時間的腳步也緩慢了下來，更能夠慢慢品味、享受日常生活的每一刻
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">跳脫空間的拘束，重新繪製寬敞舒適的居家寢室</div>
+                                            <p class="card-text">
+                                                以經典都市元素黑、白、灰作為主調，並打破先前動線不佳的格局重新為案主描繪最適居住空間，建立生活品質</p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616486701797-0f33f61038ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">40 年老屋翻修綻放繽紛色彩！找回生活的清閒浪漫</div>
+                                            <p class="card-text">
+                                                第二次委託我們改造居住多年的高齡老屋，運用屋主喜愛的色彩、生活中不可或缺的藝術藏品作為軟裝布置，不僅讓老屋重燃生命力，同時也將家人間珍貴的相處回憶注入生活環境裡
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1609103110697-518155dfe5b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=327&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">讓時間的腳步慢下來！閱讀居家的精緻人文氣質！</div>
+                                            <p class="card-text">
+                                                在舒適沉靜的 64
+                                                坪混搭風住宅，擁有一處屬於自己的靜謐書房、精品般的廚房，以及低調寧靜的燈光細節，讓時間的腳步也緩慢了下來，更能夠慢慢品味、享受日常生活的每一刻
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">跳脫空間的拘束，重新繪製寬敞舒適的居家寢室</div>
+                                            <p class="card-text">
+                                                以經典都市元素黑、白、灰作為主調，並打破先前動線不佳的格局重新為案主描繪最適居住空間，建立生活品質</p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616486701797-0f33f61038ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">40 年老屋翻修綻放繽紛色彩！找回生活的清閒浪漫</div>
+                                            <p class="card-text">
+                                                第二次委託我們改造居住多年的高齡老屋，運用屋主喜愛的色彩、生活中不可或缺的藝術藏品作為軟裝布置，不僅讓老屋重燃生命力，同時也將家人間珍貴的相處回憶注入生活環境裡
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1609103110697-518155dfe5b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=327&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">讓時間的腳步慢下來！閱讀居家的精緻人文氣質！</div>
+                                            <p class="card-text">
+                                                在舒適沉靜的 64
+                                                坪混搭風住宅，擁有一處屬於自己的靜謐書房、精品般的廚房，以及低調寧靜的燈光細節，讓時間的腳步也緩慢了下來，更能夠慢慢品味、享受日常生活的每一刻
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 分頁標示 -->
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination pagination-lg justify-content-center">
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- 好屋分享文章總攬 -->
+                <div class="tab-pane fade" id="list--article__house" role="tabpanel" aria-labelledby="list-house-list">
+                    <!-- 文章列表 -->
+                    <div class="row">
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">跳脫空間的拘束，重新繪製寬敞舒適的居家寢室</div>
+                                            <p class="card-text">
+                                                以經典都市元素黑、白、灰作為主調，並打破先前動線不佳的格局重新為案主描繪最適居住空間，建立生活品質</p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616486701797-0f33f61038ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">40 年老屋翻修綻放繽紛色彩！找回生活的清閒浪漫</div>
+                                            <p class="card-text">
+                                                第二次委託我們改造居住多年的高齡老屋，運用屋主喜愛的色彩、生活中不可或缺的藝術藏品作為軟裝布置，不僅讓老屋重燃生命力，同時也將家人間珍貴的相處回憶注入生活環境裡
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1609103110697-518155dfe5b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=327&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">讓時間的腳步慢下來！閱讀居家的精緻人文氣質！</div>
+                                            <p class="card-text">
+                                                在舒適沉靜的 64
+                                                坪混搭風住宅，擁有一處屬於自己的靜謐書房、精品般的廚房，以及低調寧靜的燈光細節，讓時間的腳步也緩慢了下來，更能夠慢慢品味、享受日常生活的每一刻
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">跳脫空間的拘束，重新繪製寬敞舒適的居家寢室</div>
+                                            <p class="card-text">
+                                                以經典都市元素黑、白、灰作為主調，並打破先前動線不佳的格局重新為案主描繪最適居住空間，建立生活品質</p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616486701797-0f33f61038ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">40 年老屋翻修綻放繽紛色彩！找回生活的清閒浪漫</div>
+                                            <p class="card-text">
+                                                第二次委託我們改造居住多年的高齡老屋，運用屋主喜愛的色彩、生活中不可或缺的藝術藏品作為軟裝布置，不僅讓老屋重燃生命力，同時也將家人間珍貴的相處回憶注入生活環境裡
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1609103110697-518155dfe5b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=327&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">讓時間的腳步慢下來！閱讀居家的精緻人文氣質！</div>
+                                            <p class="card-text">
+                                                在舒適沉靜的 64
+                                                坪混搭風住宅，擁有一處屬於自己的靜謐書房、精品般的廚房，以及低調寧靜的燈光細節，讓時間的腳步也緩慢了下來，更能夠慢慢品味、享受日常生活的每一刻
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">跳脫空間的拘束，重新繪製寬敞舒適的居家寢室</div>
+                                            <p class="card-text">
+                                                以經典都市元素黑、白、灰作為主調，並打破先前動線不佳的格局重新為案主描繪最適居住空間，建立生活品質</p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616486701797-0f33f61038ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">40 年老屋翻修綻放繽紛色彩！找回生活的清閒浪漫</div>
+                                            <p class="card-text">
+                                                第二次委託我們改造居住多年的高齡老屋，運用屋主喜愛的色彩、生活中不可或缺的藝術藏品作為軟裝布置，不僅讓老屋重燃生命力，同時也將家人間珍貴的相處回憶注入生活環境裡
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1609103110697-518155dfe5b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=327&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">讓時間的腳步慢下來！閱讀居家的精緻人文氣質！</div>
+                                            <p class="card-text">
+                                                在舒適沉靜的 64
+                                                坪混搭風住宅，擁有一處屬於自己的靜謐書房、精品般的廚房，以及低調寧靜的燈光細節，讓時間的腳步也緩慢了下來，更能夠慢慢品味、享受日常生活的每一刻
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 分頁標示 -->
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination pagination-lg justify-content-center">
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- 居家安全文章總攬 -->
+                <div class="tab-pane fade" id="list--article__security" role="tabpanel"
+                    aria-labelledby="list-security-list">
+                    <!-- 文章列表 -->
+                    <div class="row">
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">跳脫空間的拘束，重新繪製寬敞舒適的居家寢室</div>
+                                            <p class="card-text">
+                                                以經典都市元素黑、白、灰作為主調，並打破先前動線不佳的格局重新為案主描繪最適居住空間，建立生活品質</p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616486701797-0f33f61038ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">40 年老屋翻修綻放繽紛色彩！找回生活的清閒浪漫</div>
+                                            <p class="card-text">
+                                                第二次委託我們改造居住多年的高齡老屋，運用屋主喜愛的色彩、生活中不可或缺的藝術藏品作為軟裝布置，不僅讓老屋重燃生命力，同時也將家人間珍貴的相處回憶注入生活環境裡
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1609103110697-518155dfe5b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=327&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">讓時間的腳步慢下來！閱讀居家的精緻人文氣質！</div>
+                                            <p class="card-text">
+                                                在舒適沉靜的 64
+                                                坪混搭風住宅，擁有一處屬於自己的靜謐書房、精品般的廚房，以及低調寧靜的燈光細節，讓時間的腳步也緩慢了下來，更能夠慢慢品味、享受日常生活的每一刻
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">跳脫空間的拘束，重新繪製寬敞舒適的居家寢室</div>
+                                            <p class="card-text">
+                                                以經典都市元素黑、白、灰作為主調，並打破先前動線不佳的格局重新為案主描繪最適居住空間，建立生活品質</p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616486701797-0f33f61038ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">40 年老屋翻修綻放繽紛色彩！找回生活的清閒浪漫</div>
+                                            <p class="card-text">
+                                                第二次委託我們改造居住多年的高齡老屋，運用屋主喜愛的色彩、生活中不可或缺的藝術藏品作為軟裝布置，不僅讓老屋重燃生命力，同時也將家人間珍貴的相處回憶注入生活環境裡
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1609103110697-518155dfe5b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=327&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">讓時間的腳步慢下來！閱讀居家的精緻人文氣質！</div>
+                                            <p class="card-text">
+                                                在舒適沉靜的 64
+                                                坪混搭風住宅，擁有一處屬於自己的靜謐書房、精品般的廚房，以及低調寧靜的燈光細節，讓時間的腳步也緩慢了下來，更能夠慢慢品味、享受日常生活的每一刻
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">跳脫空間的拘束，重新繪製寬敞舒適的居家寢室</div>
+                                            <p class="card-text">
+                                                以經典都市元素黑、白、灰作為主調，並打破先前動線不佳的格局重新為案主描繪最適居住空間，建立生活品質</p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616486701797-0f33f61038ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">40 年老屋翻修綻放繽紛色彩！找回生活的清閒浪漫</div>
+                                            <p class="card-text">
+                                                第二次委託我們改造居住多年的高齡老屋，運用屋主喜愛的色彩、生活中不可或缺的藝術藏品作為軟裝布置，不僅讓老屋重燃生命力，同時也將家人間珍貴的相處回憶注入生活環境裡
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1609103110697-518155dfe5b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=327&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">讓時間的腳步慢下來！閱讀居家的精緻人文氣質！</div>
+                                            <p class="card-text">
+                                                在舒適沉靜的 64
+                                                坪混搭風住宅，擁有一處屬於自己的靜謐書房、精品般的廚房，以及低調寧靜的燈光細節，讓時間的腳步也緩慢了下來，更能夠慢慢品味、享受日常生活的每一刻
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 分頁標示 -->
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination pagination-lg justify-content-center">
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- 小編推薦文章總攬 -->
+                <div class="tab-pane fade" id="list--article__recommend" role="tabpanel"
+                    aria-labelledby="list-recommend-list">
+                    <!-- 文章列表 -->
+                    <div class="row">
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">跳脫空間的拘束，重新繪製寬敞舒適的居家寢室</div>
+                                            <p class="card-text">
+                                                以經典都市元素黑、白、灰作為主調，並打破先前動線不佳的格局重新為案主描繪最適居住空間，建立生活品質</p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616486701797-0f33f61038ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">40 年老屋翻修綻放繽紛色彩！找回生活的清閒浪漫</div>
+                                            <p class="card-text">
+                                                第二次委託我們改造居住多年的高齡老屋，運用屋主喜愛的色彩、生活中不可或缺的藝術藏品作為軟裝布置，不僅讓老屋重燃生命力，同時也將家人間珍貴的相處回憶注入生活環境裡
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1609103110697-518155dfe5b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=327&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">讓時間的腳步慢下來！閱讀居家的精緻人文氣質！</div>
+                                            <p class="card-text">
+                                                在舒適沉靜的 64
+                                                坪混搭風住宅，擁有一處屬於自己的靜謐書房、精品般的廚房，以及低調寧靜的燈光細節，讓時間的腳步也緩慢了下來，更能夠慢慢品味、享受日常生活的每一刻
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">跳脫空間的拘束，重新繪製寬敞舒適的居家寢室</div>
+                                            <p class="card-text">
+                                                以經典都市元素黑、白、灰作為主調，並打破先前動線不佳的格局重新為案主描繪最適居住空間，建立生活品質</p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616486701797-0f33f61038ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">40 年老屋翻修綻放繽紛色彩！找回生活的清閒浪漫</div>
+                                            <p class="card-text">
+                                                第二次委託我們改造居住多年的高齡老屋，運用屋主喜愛的色彩、生活中不可或缺的藝術藏品作為軟裝布置，不僅讓老屋重燃生命力，同時也將家人間珍貴的相處回憶注入生活環境裡
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1609103110697-518155dfe5b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=327&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">讓時間的腳步慢下來！閱讀居家的精緻人文氣質！</div>
+                                            <p class="card-text">
+                                                在舒適沉靜的 64
+                                                坪混搭風住宅，擁有一處屬於自己的靜謐書房、精品般的廚房，以及低調寧靜的燈光細節，讓時間的腳步也緩慢了下來，更能夠慢慢品味、享受日常生活的每一刻
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">跳脫空間的拘束，重新繪製寬敞舒適的居家寢室</div>
+                                            <p class="card-text">
+                                                以經典都市元素黑、白、灰作為主調，並打破先前動線不佳的格局重新為案主描繪最適居住空間，建立生活品質</p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1616486701797-0f33f61038ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">40 年老屋翻修綻放繽紛色彩！找回生活的清閒浪漫</div>
+                                            <p class="card-text">
+                                                第二次委託我們改造居住多年的高齡老屋，運用屋主喜愛的色彩、生活中不可或缺的藝術藏品作為軟裝布置，不僅讓老屋重燃生命力，同時也將家人間珍貴的相處回憶注入生活環境裡
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
+                                <!-- <div class="card--article__like"></div> -->
+                                <div class="card h-100">
+                                    <div class="card-img-top bg-cover"
+                                        style="background-image: url(https://images.unsplash.com/photo-1609103110697-518155dfe5b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=327&q=80); height: 300px;">
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div class="card--word mb-2">
+                                            <div class="card-title fw-bold">讓時間的腳步慢下來！閱讀居家的精緻人文氣質！</div>
+                                            <p class="card-text">
+                                                在舒適沉靜的 64
+                                                坪混搭風住宅，擁有一處屬於自己的靜謐書房、精品般的廚房，以及低調寧靜的燈光細節，讓時間的腳步也緩慢了下來，更能夠慢慢品味、享受日常生活的每一刻
+                                            </p>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 days
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 分頁標示 -->
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination pagination-lg justify-content-center">
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
