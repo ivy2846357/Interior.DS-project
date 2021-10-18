@@ -13984,6 +13984,11 @@ a {
   background-color: #000;
 }
 
+.card--company__logo {
+  width: 120px !important;
+  height: 120px !important;
+}
+
 .nav--items {
   border-bottom: 1px solid transparent;
 }

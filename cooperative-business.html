@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Interior.DS - 關於合作商家</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!-- swiper-CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- lightbox-CSS -->
+  <link href="./assets/style/vendors/lightbox.css" rel="stylesheet" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <!-- 導覽列 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-auxiliary-dark py-4">
+    <div class="container">
+      <a class="navbar-brand me-9 pe-8 d-lg-none logo__font text-white fs-2" href="index.html">Interior.DS</a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon hamburger-color"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <a class="navbar-brand logo__font text-white fs-2 d-none d-lg-block" href="index.html">Interior.DS</a>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+              aria-current="page" href="company-profile.html">公司介紹</a>
+          </li>
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+              href="company-services.html">服務項目</a>
+          </li>
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+              href="designer-list.html">設計作品</a>
+          </li>
+          <!-- <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+              href="#">合作公司介紹</a>
+          </li> -->
+          <li class="nav-item dropdown mb-3 mb-lg-0">
+            <a class="nav-link dropdown-toggle nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+              href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              合作公司介紹
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="cooperative-business.html">關於合作商家</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">水電裝修</a></li>
+              <li><a class="dropdown-item" href="#">格局及室內裝修</a></li>
+              <li><a class="dropdown-item" href="#">家具訂製</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link nav-hover text-secondary px-0 d-inline d-lg-block nav--items nav--items__hover"
+              href="blog.html">部落格</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <a href="reserve-information.html" class="btn btn-outline-secondary rounded-lg me-3 reserve-btn py-2 px-3"
+            type="submit">立即預約</a>
+          <a href="contact.html" class="btn btn-outline-secondary rounded-lg course-btn py-2 px-3"
+            type="submit">聯絡我們</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 右側 icon 列表 -->
+  <div class="position-fixed nav--icon" style="z-index: 1100;">
+    <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center me-3">
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-facebook"></i></a>
+      </li>
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-instagram"></i></a>
+      </li>
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-line"></i></a>
+      </li>
+      <li class="mb-2">
+        <a href="#"
+          class="text-white bg-primary fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black scroll--top-btn"><i
+            class="fas fa-arrow-up"></i>
+
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  
+<!-- 合作商家標題 -->
+<h2 class="mt-9 mb-2 text-primary text-center fw-bold">合作商家</h2>
+<h5 class="text-center text-primary mb-6" data-aos="fade-up">一系列服務，全程把關</h5>
+
+<!-- 合作商家內容 -->
+<div class="container mb-7 border-bottom pb-5">
+    <div class="row">
+        <div class="d-flex align-items-center">
+            <div class="col-12 col-lg-6 text-gray order-2 order-lg-1 p-4">
+                <h4 class="text-primary fw-bold">與各業界合作，所有問題一次解決</h4>
+                <p class="text-primary">Interior.DS 與多個裝潢、水電、室內設計及家具業合作，幫您解決住家的一切事物</p>
+                <p>過去，<span class="text-primary">Interior.DS
+                        最大的使命就是解決你的裝修問題</span>。讓大家便利、快速、輕鬆的深入了解各類裝修問題。即使到現在裝修資訊依舊收集不易，資訊不對稱，需要透過網際網路到不同平台做足功課，才能滿足一個家，在不同階段的需求。
+                </p>
+                <p>現在，我們想要做得更多，Interior.DS
+                    提供詳細、周全、快速的各類情報，<span
+                        class="text-primary">從想要買屋開始，希望客變尋找設計師，啟發裝修靈感，到確認設計師，到如何監工、如何驗收，以及軟裝以及家具的採購</span>，甚至住了幾年之後開始需要收納，修繕等，甚至想要自己ＤＩＹ做些簡單的改造及維護，以及到一個循環又需要老屋翻新，或是換屋，再次尋找靈感以及設計師，我們都隨時陪伴在你的左右，並且伸出援手。
+                </p>
+            </div>
+            <div class="col-12 col-lg-6 bg-cover order-1 order-lg-2 mb-4 mb-lg-0"
+                style="background-image: url(https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80); height: 480px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper swiper--cooperative-business">
+        <div class="swiper-wrapper py-5">
+            <div class="swiper-slide">
+                <a href="#" class="hover--rise">
+                    <div class="card mb-3 d-flex justify-content-center px-4">
+                        <div class="row g-0 d-flex align-items-center">
+                            <div class="col-md-4">
+                                <img src="./assets/images/logo-1.svg" alt="LOGO" class="card--company__logo">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title text-primary fw-bold">AA 股份有限公司</h5>
+                                    <p class="card-text text-gray">秉持著專業技術承攬大小房屋修繕工程，施工上注重每個細節不馬乎</p>
+                                    <p class="card-text"><small class="text-muted">專業：水電裝修、格局規劃</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="hover--rise">
+                    <div class="card mb-3 d-flex justify-content-center px-4">
+                        <div class="row g-0 d-flex align-items-center">
+                            <div class="col-md-4">
+                                <img src="./assets/images/logo-2.svg" alt="LOGO" class="card--company__logo">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title text-primary fw-bold">BB 股份有限公司</h5>
+                                    <p class="card-text text-gray">秉持著專業技術承攬大小房屋修繕工程，施工上注重每個細節不馬乎</p>
+                                    <p class="card-text"><small class="text-muted">專業：室內設計</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="hover--rise">
+                    <div class="card mb-3 d-flex justify-content-center px-4">
+                        <div class="row g-0 d-flex align-items-center">
+                            <div class="col-md-4">
+                                <img src="./assets/images/logo-3.svg" alt="LOGO" class="card--company__logo">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title text-primary fw-bold">CC 股份有限公司</h5>
+                                    <p class="card-text text-gray">秉持著專業技術承攬大小房屋修繕工程，施工上注重每個細節不馬乎</p>
+                                    <p class="card-text"><small class="text-muted">專業：格局規劃、室內設計</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="hover--rise">
+                    <div class="card mb-3 d-flex justify-content-center px-4">
+                        <div class="row g-0 d-flex align-items-center">
+                            <div class="col-md-4">
+                                <img src="./assets/images/logo-4.svg" alt="LOGO" class="card--company__logo">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title text-primary fw-bold">DD 股份有限公司</h5>
+                                    <p class="card-text text-gray">秉持著專業技術承攬大小房屋修繕工程，施工上注重每個細節不馬乎</p>
+                                    <p class="card-text"><small class="text-muted">專業：室內設計、家具客製</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="hover--rise">
+                    <div class="card mb-3 d-flex justify-content-center px-4">
+                        <div class="row g-0 d-flex align-items-center">
+                            <div class="col-md-4">
+                                <img src="./assets/images/logo-5.svg" alt="LOGO" class="card--company__logo">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title text-primary fw-bold">EE 股份有限公司</h5>
+                                    <p class="card-text text-gray">秉持著專業技術承攬大小房屋修繕工程，施工上注重每個細節不馬乎</p>
+                                    <p class="card-text"><small class="text-muted">專業：水電裝修、格局規劃</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="hover--rise">
+                    <div class="card mb-3 d-flex justify-content-center px-4">
+                        <div class="row g-0 d-flex align-items-center">
+                            <div class="col-md-4">
+                                <img src="./assets/images/logo-6.svg" alt="LOGO" class="card--company__logo">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title text-primary fw-bold">FF 股份有限公司</h5>
+                                    <p class="card-text text-gray">秉持著專業技術承攬大小房屋修繕工程，施工上注重每個細節不馬乎</p>
+                                    <p class="card-text"><small class="text-muted">專業：家具客製</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="hover--rise">
+                    <div class="card mb-3 d-flex justify-content-center px-4">
+                        <div class="row g-0 d-flex align-items-center">
+                            <div class="col-md-4">
+                                <img src="./assets/images/logo-7.svg" alt="LOGO" class="card--company__logo">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title text-primary fw-bold">GG 股份有限公司</h5>
+                                    <p class="card-text text-gray">秉持著專業技術承攬大小房屋修繕工程，施工上注重每個細節不馬乎</p>
+                                    <p class="card-text"><small class="text-muted">專業：家具客製</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="hover--rise">
+                    <div class="card mb-3 d-flex justify-content-center px-4">
+                        <div class="row g-0 d-flex align-items-center">
+                            <div class="col-md-4">
+                                <img src="./assets/images/logo-8.svg" alt="LOGO" class="card--company__logo">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title text-primary fw-bold">HH 股份有限公司</h5>
+                                    <p class="card-text text-gray">秉持著專業技術承攬大小房屋修繕工程，施工上注重每個細節不馬乎</p>
+                                    <p class="card-text"><small class="text-muted">專業：家具客製</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="hover--rise">
+                    <div class="card mb-3 d-flex justify-content-center px-4">
+                        <div class="row g-0 d-flex align-items-center">
+                            <div class="col-md-4">
+                                <img src="./assets/images/logo-9.svg" alt="LOGO" class="card--company__logo">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title text-primary fw-bold">II 股份有限公司</h5>
+                                    <p class="card-text text-gray">秉持著專業技術承攬大小房屋修繕工程，施工上注重每個細節不馬乎</p>
+                                    <p class="card-text"><small class="text-muted">專業：家具客製</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="hover--rise">
+                    <div class="card mb-3 d-flex justify-content-center px-4">
+                        <div class="row g-0 d-flex align-items-center">
+                            <div class="col-md-4">
+                                <img src="./assets/images/logo-10.svg" alt="LOGO" class="card--company__logo">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title text-primary fw-bold">JJ 股份有限公司</h5>
+                                    <p class="card-text text-gray">秉持著專業技術承攬大小房屋修繕工程，施工上注重每個細節不馬乎</p>
+                                    <p class="card-text"><small class="text-muted">專業：家具客製</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="hover--rise">
+                    <div class="card mb-3 d-flex justify-content-center px-4">
+                        <div class="row g-0 d-flex align-items-center">
+                            <div class="col-md-4">
+                                <img src="./assets/images/logo-1.svg" alt="LOGO" class="card--company__logo">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title text-primary fw-bold">KK 股份有限公司</h5>
+                                    <p class="card-text text-gray">秉持著專業技術承攬大小房屋修繕工程，施工上注重每個細節不馬乎</p>
+                                    <p class="card-text"><small class="text-muted">專業：家具客製</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="hover--rise">
+                    <div class="card mb-3 d-flex justify-content-center px-4">
+                        <div class="row g-0 d-flex align-items-center">
+                            <div class="col-md-4">
+                                <img src="./assets/images/logo-2.svg" alt="LOGO" class="card--company__logo">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title text-primary fw-bold">LL 股份有限公司</h5>
+                                    <p class="card-text text-gray">秉持著專業技術承攬大小房屋修繕工程，施工上注重每個細節不馬乎</p>
+                                    <p class="card-text"><small class="text-muted">專業：家具客製</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<!-- 申請合作商家標題 -->
+<h2 class="mt-9 mb-2 text-primary text-center fw-bold">申請合作商家</h2>
+<h5 class="text-center text-primary mb-6" data-aos="fade-up">歡迎各大商家加入 Interior.DS 的行列</h5>
+
+<!-- 申請合作商家表單 -->
+<div class="container mt-7">
+    <form class="row needs-validation" style="margin-bottom: 104px;" novalidate>
+        <!-- 表單資訊 -->
+        <div class="col-12 col-lg-5">
+            <!-- 公司資訊 -->
+            <h4 class="text-primary fw-bold mb-3">公司資訊</h4>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">公司名稱</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="請輸入公司名稱" required>
+                <div class="invalid-feedback">
+                    請輸入公司名稱
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">公司地址</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="請輸入公司地址" required>
+                <div class="invalid-feedback">
+                    請輸入公司地址
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">負責業務</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="水電裝修／格局規劃／室內設計／家具製造等"
+                    required>
+                <div class="invalid-feedback">
+                    請輸入公司業務
+                </div>
+            </div>
+            <hr class="my-5">
+            <!-- 聯絡人資訊 -->
+            <h4 class="text-primary fw-bold mb-3">聯絡人資訊</h4>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">聯絡人名稱</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="請輸入聯絡人名稱"
+                            required>
+                        <div class="invalid-feedback">
+                            請輸入聯絡人名稱
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">聯絡人電話</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="請輸入聯絡人電話"
+                            required>
+                        <div class="invalid-feedback">
+                            請輸入聯絡人電話
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">聯絡人信箱</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="請輸入聯絡人信箱" required>
+                <div class="invalid-feedback">
+                    請輸入聯絡人信箱
+                </div>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                    我們已閱讀並同意合作條款
+                </label>
+                <div class="invalid-feedback">
+                    請閱讀或同意合作條款
+                </div>
+            </div>
+        </div>
+        <!-- 條款內容 -->
+        <div class="col-12 col-lg-7">
+            <h4 class="text-primary fw-bold text-center">Interior.DS 商家合作條款</h4>
+            <p class="text-primary text-center mb-3">請先閱讀以下條款以保障雙方權益</p>
+            <ul class="list-unstyled px-4 text-gray">
+                <li class="mb-3">1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi vero soluta ipsa
+                    reprehenderit asperiores? Nam unde beatae fugiat, debitis, quaerat consequuntur ad nemo voluptate
+                    cupiditate aspernatur voluptates iusto atque quia!
+                </li>
+                <li class="mb-3">2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus repellendus
+                    incidunt qui possimus, labore repellat, atque consequatur inventore distinctio animi earum
+                    voluptatem quam nobis reprehenderit tempora tempore nam repudiandae! Placeat quia molestiae beatae
+                    quibusdam, sequi autem culpa consequuntur natus voluptate accusamus saepe porro magnam? Qui dolor
+                    quis obcaecati est necessitatibus.
+                </li>
+                <li class="mb-3">3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur error a velit
+                    eveniet
+                    laborum corporis totam dolores quaerat, sed quisquam hic vero quae, ipsum maiores dolorum, explicabo
+                    quos repellendus sequi aspernatur repudiandae! Amet, aspernatur deleniti!</li>
+                <li class="mb-3">4. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus vitae, reprehenderit
+                    est repellat vel alias doloremque praesentium illum quisquam optio?</li>
+                <li class="mb-3">5. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam doloremque beatae
+                    officia perferendis nulla dolor expedita veniam amet quisquam possimus, fugiat eius numquam
+                    accusamus dolores?</li>
+                <li class="mb-3">6. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam doloremque beatae
+                    officia perferendis nulla dolor expedita veniam amet quisquam possimus, fugiat eius numquam
+                    accusamus dolores?</li>
+            </ul>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <button type="submit" class="btn btn-secondary text-auxiliary-dark px-7 me-3">重新填寫</button>
+            <button type="submit" class="btn btn-primary px-7">送出資料</button>
+        </div>
+    </form>
+</div>
+
+  <!-- 頁尾 -->
+  <footer class="bg-auxiliary-dark">
+    <div class="container">
+      <!-- 訂閱資訊 -->
+      <div class="row py-6 border-bottom align-items-center">
+        <div class="col-12 col-lg-8">
+          <div class="d-flex justify-content-between align-items-lg-center flex-column flex-lg-row">
+            <h3 class="text-white mb-2 mb-lg-0">訂閱電子報，獲得更多設計消息！</h3>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Username"
+              aria-describedby="basic-addon1">
+            <a href="#" class="btn btn-primary text-white py-2 px-3">訂閱</a>
+          </div>
+        </div>
+      </div>
+      <!-- 頁尾導覽列 -->
+      <div class="footer-body d-flex flex-column py-6">
+        <div class="footer-item d-flex justify-content-between">
+          <!-- LOGO -->
+          <a class="navbar-brand me-9 pe-8 logo__font text-white" href="index.html">Interior.DS</a>
+          <!-- icon 連結 -->
+          <ul class="footer-icon list-unstyled d-flex">
+            <li><a href="#" class="text-white h4 me-2 hover--change-color__light px-1 rounded-sm"><i
+                  class="fab fa-facebook"></i></a>
+            </li>
+            <li><a href="#" class="text-white h4 me-2 hover--change-color__light px-1 rounded-sm"><i
+                  class="fab fa-instagram"></i></a>
+            </li>
+            <li><a href="#" class="text-white h4 hover--change-color__light px-1 rounded-sm"><i
+                  class="fab fa-line"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-item d-flex flex-column flex-md-row align-items-md-end">
+          <!-- 導覽列 -->
+          <ul class="list-unstyled m-0">
+            <li class="mb-2"><a href="#" class="text-white nav--items nav--items__hover">公司介紹</a></li>
+            <li class="mb-2"><a href="#" class="text-white nav--items nav--items__hover">服務項目</a></li>
+            <li class="mb-2"><a href="#" class="text-white nav--items nav--items__hover">設計作品</a></li>
+            <li class="mb-2"><a href="#" class="text-white nav--items nav--items__hover">合作公司介紹</a></li>
+            <li class="mb-2"><a href="#" class="text-white nav--items nav--items__hover">部落格</a></li>
+          </ul>
+          <!-- 版權文字 -->
+          <p class="text-white offset-md-3 ps-md-3 offset-lg-4 ps-lg-6 mb-2">© 2021. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- bootstrap-JS -->
+  <script src="./assets/js/vendors.js"></script>
+  <!-- swiper-JS -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <!-- lightbox-JS -->
+  <script src="./assets/js/lightbox.js"></script>
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+  </script>
+  <!-- JS -->
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
