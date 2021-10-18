@@ -1,3 +1,24 @@
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+})()
+
 //首頁-居家風格-swiper-電腦版
 var swiper = new Swiper(".swiper--room-style__lg", {
     slidesPerView: "auto",
@@ -92,6 +113,23 @@ var swiper = new Swiper(".swiper--article-blog", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
+    },
+});
+
+//合作商家-商家swiper
+var swiper = new Swiper(".swiper--cooperative-business", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 });
 
