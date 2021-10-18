@@ -13989,6 +13989,10 @@ a {
   height: 120px !important;
 }
 
+.icon--size {
+  font-size: 80px;
+}
+
 .nav--items {
   border-bottom: 1px solid transparent;
 }
