@@ -13919,6 +13919,10 @@ a {
   width: 80%;
 }
 
+.swiper-slide--room-style__sm {
+  width: 100%;
+}
+
 .swiper-slide--business-cooperation {
   width: 33%;
 }
