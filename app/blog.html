@@ -9,10 +9,10 @@ current: index
 <h2 class="mt-9 mb-6 text-primary text-center fw-bold">本月精選文章</h2>
 
 <!-- 精選文章內容 -->
-<div class="container border-bottom pb-7">
+<div class="container-lg border-bottom pb-7">
     <div class="row g-0">
         <!-- 文章分類 -->
-        <div class="col-3">
+        <div class="col-3 d-none d-md-block">
             <div class="list-group list-group-flush h-100" id="list-tab" role="tablist">
                 <a class="list-group-item list-group-item-action active py-7 fw-bold" id="list-home-list"
                     data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">最新消息</a>
@@ -25,7 +25,8 @@ current: index
             </div>
         </div>
         <!-- 文章內容 -->
-        <div class="col-9">
+        <!-- 電腦版-swiper -->
+        <div class="col-9 d-none d-md-block">
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
                     <div class="swiper swiper--article">
@@ -112,6 +113,26 @@ current: index
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- 平板/手機板-swiper -->
+        <div class="swiper swiper--article d-md-none">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide--article"
+                    style="background-image: url(https://images.unsplash.com/photo-1618221999490-9418f64786aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 419px;">
+                </div>
+                <div class="swiper-slide swiper-slide--article"
+                    style="background-image: url(https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 419px;">
+                </div>
+                <div class="swiper-slide swiper-slide--article"
+                    style="background-image: url(https://images.unsplash.com/photo-1618221381711-42ca8ab6e908?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 419px;">
+                </div>
+                <div class="swiper-slide swiper-slide--article"
+                    style="background-image: url(https://images.unsplash.com/photo-1618219740975-d40978bb7378?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80); height: 419px;">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 </div>
@@ -211,8 +232,8 @@ current: index
                     aria-labelledby="list-all-list">
                     <!-- 文章列表 -->
                     <div class="row">
-                        <div class="col-12 col-lg-4 mb-3">
-                            <a href="blog-article.html" class="position-relative">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
+                            <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
                                     <div class="card-img-top bg-cover"
@@ -230,7 +251,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -250,7 +271,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -271,9 +292,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -292,7 +311,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -312,7 +331,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -333,9 +352,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -354,7 +371,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -374,7 +391,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -411,7 +428,7 @@ current: index
                 <div class="tab-pane fade" id="list--article__house" role="tabpanel" aria-labelledby="list-house-list">
                     <!-- 文章列表 -->
                     <div class="row">
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -430,7 +447,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -450,7 +467,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -471,9 +488,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -492,7 +507,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -512,7 +527,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -533,9 +548,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -554,7 +567,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -574,7 +587,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -612,7 +625,7 @@ current: index
                     aria-labelledby="list-security-list">
                     <!-- 文章列表 -->
                     <div class="row">
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -631,7 +644,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -651,7 +664,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -672,9 +685,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -693,7 +704,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -713,7 +724,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -734,9 +745,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -755,7 +764,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -775,7 +784,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -813,7 +822,7 @@ current: index
                     aria-labelledby="list-recommend-list">
                     <!-- 文章列表 -->
                     <div class="row">
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -832,7 +841,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -852,7 +861,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -873,9 +882,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -894,7 +901,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -914,7 +921,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -935,9 +942,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -956,7 +961,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
@@ -976,7 +981,7 @@ current: index
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
                             <a href="#" class="position-relative">
                                 <!-- <div class="card--article__like"></div> -->
                                 <div class="card h-100">
