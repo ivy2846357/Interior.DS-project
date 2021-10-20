@@ -90,12 +90,27 @@ var swiper2 = new Swiper(".swiper--company-portfolio__top", {
 });
 
 //公司介紹-設計師總攬-swiper
-var swiper = new Swiper(".swiper--company-designers", {
-    slidesPerView: 5,
+var swiper = new Swiper(".swiper--company-designers__lg", {
+    slidesPerView: 4,
     spaceBetween: 30,
-    slidesPerGroup: 5,
+    slidesPerGroup: 4,
     loop: true,
     loopFillGroupWithBlank: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+//公司介紹-設計師總攬-swiper
+var swiper = new Swiper(".swiper--company-designers__sm", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
