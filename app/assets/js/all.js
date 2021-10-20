@@ -20,7 +20,7 @@
 })()
 
 //首頁-居家風格-swiper-電腦版
-var swiper = new Swiper(".swiper--room-style__lg", {
+var swiper = new Swiper(".swiper--room-style", {
     slidesPerView: "auto",
     spaceBetween: 30,
     pagination: {
