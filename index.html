@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <!-- lightbox-CSS -->
   <link href="./assets/style/vendors/lightbox.css" rel="stylesheet" />
+  <!-- AOS-CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
@@ -111,7 +113,7 @@
                     Private &
                     Commercial
                     Commissions</h6>
-                <div class="banner--border my-2"></div>
+                <div class="banner--border my-2" data-aos="fade-up" data-aos-delay="100"></div>
                 <h2 class="text-white fw-bold text--shadow" data-aos="fade-up" data-aos-delay="200">Interior.DS 打造品味空間
                 </h2>
                 <h4 class="text-white mb-4 fw-bold text--shadow" data-aos="fade-up" data-aos-delay="200">
@@ -173,17 +175,17 @@
 </div>
 
 <!-- 網友熱搜設計師 -->
-<div class="bg-secondary py-9">
+<div class="bg-secondary py-9 overflow-x-hidden">
     <div class="container-lg d-flex">
-        <div class="row" data-aos="fade-up">
-            <div class="col-lg-6">
+        <div class="row">
+            <div class="col-lg-6" data-aos="fade-right">
                 <div class="d-none d-lg-block rounded-lg bg-cover"
                     style="background-image: url(https://images.unsplash.com/photo-1611048267604-2e59a19a4f97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80); height: 700px;">
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="row">
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center" data-aos="fade-left">
                         <div class="py-4 col-8 col-lg-12">
                             <h3 class="text-primary mb-1 text-center text-lg-start fw-bold">網友熱搜設計師</h3>
                             <h5 class="text-primary">專業設計師與師傅共同合作，替每個屋主打造專屬於他們的生活空間</h5>
@@ -191,8 +193,8 @@
                     </div>
                     <div class="d-flex justify-content-center justify-content-lg-end">
                         <ul class="list-unstyled d-flex flex-column align-items-lg-end col-12 col-sm-11 col-lg-12">
-                            <li
-                                class="bg-white d-flex align-items-center rounded-lg py-7 px-6 px-sm-8 mb-4 hover--shadow__gray">
+                            <li class="bg-white d-flex align-items-center rounded-lg py-5 px-6 px-sm-8 mb-4 hover--shadow__gray"
+                                data-aos="fade-left">
                                 <div class="person--img__circle bg-cover me-6"
                                     style="background-image: url(https://images.unsplash.com/photo-1574100004472-e536d3b6bacc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80);">
                                 </div>
@@ -202,8 +204,8 @@
                                     <h6 class="text-gray">擅長北歐設計，透過白色與原木的搭配打造出自然休閒的簡潔樸實風</h6>
                                 </div>
                             </li>
-                            <li
-                                class="bg-white d-flex align-items-center rounded-lg py-5 px-6 px-sm-8 mb-4 hover--shadow__gray">
+                            <li class="bg-white d-flex align-items-center rounded-lg py-3 px-6 px-sm-8 mb-4 hover--shadow__gray"
+                                data-aos="fade-left">
                                 <div class="person--img__circle bg-cover me-6"
                                     style="background-image: url(https://images.unsplash.com/photo-1600697394936-59934aa5951f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=464&q=80);">
                                 </div>
@@ -213,8 +215,8 @@
                                     <h6 class="text-gray">擅長北歐設計，透過白色與原木的搭配打造出自然休閒的簡潔樸實風</h6>
                                 </div>
                             </li>
-                            <li
-                                class="bg-white d-flex align-items-center rounded-lg py-5 px-6 px-sm-8 mb-4 hover--shadow__gray">
+                            <li class="bg-white d-flex align-items-center rounded-lg py-3 px-6 px-sm-8 mb-4 hover--shadow__gray"
+                                data-aos="fade-left">
                                 <div class="person--img__circle bg-cover me-6"
                                     style="background-image: url(https://images.unsplash.com/photo-1621570274614-441323d10052?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80);">
                                 </div>
@@ -233,7 +235,7 @@
 </div>
 
 <!-- 公司環境 -->
-<div class="py-9">
+<div class="py-9 overflow-x-hidden">
     <div class="container-lg">
         <div class="row d-flex flex-column flex-sm-row">
             <!-- 大圖 -->
@@ -246,11 +248,11 @@
             <div class="col-2 order-3 order-sm-2 d-none d-lg-block">
                 <div class="card-img-md bg-cover rounded-lg mb-5"
                     style="background-image: url(https://images.unsplash.com/photo-1571624436279-b272aff752b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1172&q=80); height: 200px;"
-                    data-aos="fade-left" data-aos-delay="100">
+                    data-aos="fade-left" data-aos-delay="200">
                 </div>
                 <div class="card-img-md bg-cover rounded-lg "
                     style="background-image: url(https://images.unsplash.com/photo-1594235046782-8ee6fa676300?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80); height: 200px;"
-                    data-aos="fade-left" data-aos-delay="200">
+                    data-aos="fade-left">
                 </div>
             </div>
             <!-- 內文 -->
@@ -267,12 +269,12 @@
 </div>
 
 <!-- 居家風格介紹 -->
-<div class="bg-secondary py-9">
+<div class="bg-secondary py-9 overflow-x-hidden">
     <div class="container-lg">
         <div class="row d-flex flex-column flex-sm-row">
             <!-- 內文 -->
             <div class="col-12 col-sm-6 col-lg-5 d-flex flex-column justify-content-center offset-lg-1 order-1"
-                data-aos="fade-right">
+                data-aos="fade-right" data-aos-delay="200">
                 <h3 class="text-primary mb-1 fw-bold">各種風格，選你所愛</h3>
                 <h5 class="text-primary mb-4">除了現代最流行的北歐風及現代風，也有設計師專精鄉村風、歐風、美式等風格設計</h5>
                 <a href="#" class="text-auxiliary-dark mb-3 mb-sm-0 hover--word__separate fs-6">居家風格介紹<span><i
@@ -280,7 +282,7 @@
             </div>
             <div class="col-12 col-sm-6 order-2">
                 <!--電腦版 swiper設定-->
-                <div class="swiper swiper--room-style d-none d-lg-block" style="height: 400px;">
+                <div class="swiper swiper--room-style d-none d-lg-block" style="height: 400px;" data-aos="fade-left">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiper-slide--room-style__lg rounded-lg"
                             style="background-image: url(https://images.unsplash.com/photo-1618221999490-9418f64786aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80);">
@@ -307,7 +309,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
                 <!--平板、手機版設定-->
-                <div class="swiper swiper--room-style d-lg-none" style="height: 400px;">
+                <div class="swiper swiper--room-style d-lg-none" style="height: 400px;" data-aos="fade-left">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiper-slide--room-style__sm rounded-lg"
                             style="background-image: url(https://images.unsplash.com/photo-1618221999490-9418f64786aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80);">
@@ -373,7 +375,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="col-12 col-sm-4 mb-3 mb-sm-0" data-aos="fade-up">
+                <li class="col-12 col-sm-4 mb-3 mb-sm-0" data-aos="fade-up" data-aos-delay="200">
                     <div class="card rounded-lg overflow-hidden">
                         <img class="bg-cover"
                             style="background-image: url(https://images.unsplash.com/photo-1573567199032-50a155ba6de1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80); height: 300px;">
@@ -400,7 +402,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="col-12 col-sm-4 mb-3 mb-sm-0" data-aos="fade-up">
+                <li class="col-12 col-sm-4 mb-3 mb-sm-0" data-aos="fade-up" data-aos-delay="400">
                     <div class="card rounded-lg overflow-hidden">
                         <img class="bg-cover"
                             style="background-image: url(https://images.unsplash.com/photo-1578991624414-276ef23a534f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1327&q=80); height: 300px;">
@@ -433,7 +435,7 @@
         <div class="d-none d-sm-block d-lg-none">
             <ul class="list-unstyled row">
                 <li class="col-12">
-                    <div class="card mb-4 rounded-lg overflow-hidden">
+                    <div class="card mb-4 rounded-lg overflow-hidden" data-aos="fade-up">
                         <div class="row g-0">
                             <div class="col-md-6">
                                 <img class="card-img-top bg-cover d-block h-100"
@@ -464,7 +466,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-4 rounded-lg overflow-hidden">
+                    <div class="card mb-4 rounded-lg overflow-hidden" data-aos="fade-up">
                         <div class="row g-0">
                             <div class="col-md-6">
                                 <img class="card-img-top bg-cover d-block h-100"
@@ -495,7 +497,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card rounded-lg overflow-hidden">
+                    <div class="card rounded-lg overflow-hidden" data-aos="fade-up">
                         <div class="row g-0">
                             <div class="col-md-6 rounded-lg">
                                 <img class="card-img-top bg-cover d-block h-100"
@@ -532,7 +534,7 @@
     </div>
 </div>
 
-<!-- 聽聽他們怎麼說(設計評價) -->
+<!-- 聽聽屋主怎麼說(設計評價) -->
 <div class="bg-secondary">
     <div class="container-lg pt-7 pb-9">
         <h3 class="text-primary fw-bold text-center mb-6" data-aos="fade-up">聽聽屋主怎麼說</h3>
@@ -1085,6 +1087,11 @@
       'resizeDuration': 200,
       'wrapAround': true
     })
+  </script>
+  <!-- AOS-JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
   </script>
   <!-- JS -->
   <script src="./assets/js/all.js"></script>
