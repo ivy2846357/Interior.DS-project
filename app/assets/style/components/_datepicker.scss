@@ -1,0 +1,46 @@
+.datepicker-cell.selected,
+.datepicker-cell.selected:hover {
+    background-color: #3F72AF;
+}
+
+.datepicker-cell.focused:not(.selected) {
+    background-color: #3F72AF;
+    color: #FFF;
+}
+
+input {
+    color: #707070;
+}
+
+.next-btn,
+.prev-btn {
+    color: #112D4E !important;
+}
+
+.view-switch,
+.dow {
+    color: #3F72AF !important;
+}
+
+.day {
+    color: #707070;
+}
+
+.prev,
+.next {
+    color: #889EAF !important;
+}
+
+// .datepicker-header .datepicker-controls .button:hover,
+// .datepicker-cell:not(.disabled):hover {
+//     background-color: #DBE2EF;
+// }
+
+.datepicker--border {
+    outline: none;
+    border: 1px solid #ced4da;
+}
+
+.datepicker--word__spacing {
+    letter-spacing: 1px;
+}

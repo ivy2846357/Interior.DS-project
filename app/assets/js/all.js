@@ -119,7 +119,27 @@ var swiper = new Swiper(".swiper--infinite-loop-slides-per-group__3", {
     },
 });
 
+//vanillajs-datepicker
+const datepickerMeasure = document.querySelector('input[name="datepickerMeasure"]');
+const datepickerMeasureElem = new Datepicker(datepickerMeasure, {
+    autohide: true,
+    nextArrow: '>',
+    prevArrow: '<'
+});
+
+const datepickerConstruction = document.querySelector('input[name="datepickerConstruction"]');
+const datepickerConstructionElem = new Datepicker(datepickerConstruction, {
+    autohide: true,
+    nextArrow: '>',
+    prevArrow: '<'
+});
+
 $(document).ready(function () {
+    //下拉選單箭頭旋轉動畫
+    $('.dropdown').click(function (e) {
+        $('.caret').stop().toggleClass('caret-change__active');
+    });
+
     // 廣告視窗顯示
     $('.required--alert').slideDown();
     // 點擊關閉廣告視窗
