@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <!-- swiper-CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-  <!-- lightbox-CSS -->
-  <link href="./assets/style/vendors/lightbox.css" rel="stylesheet" />
   <!-- AOS-CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- vanillajs-datepicker-CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
@@ -44,9 +44,9 @@
               href="designer-list.html">設計作品</a>
           </li>
           <li class="nav-item dropdown mb-3 mb-lg-0">
-            <a class="nav-link dropdown-toggle nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
               href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              合作商家介紹
+              合作商家介紹<i class="fas fa-caret-down ms-2 caret caret-change"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="cooperative-business.html">關於合作商家</a></li>
@@ -132,20 +132,20 @@
             <div class="bg-secondary rounded-lg p-6 text-auxiliary-dark" data-aos="fade-left">
                 <h5 class="mb-4">意見回饋&問題詢問</h5>
                 <div class="mb-3">
-                    <label for="name" class="form-label">姓名</label>
-                    <input type="text" class="form-control name" id="name" placeholder="請輸入您的姓名">
+                    <label for="user--name" class="form-label">姓名</label>
+                    <input type="text" class="form-control" id="user--name" placeholder="請輸入您的姓名">
                 </div>
                 <div class="mb-3">
-                    <label for="email" class="form-label">電子信箱</label>
-                    <input type="email" class="form-control email" id="email" placeholder="email@example.com">
+                    <label for="user--email" class="form-label">電子信箱</label>
+                    <input type="email" class="form-control" id="user--email" placeholder="email@example.com">
                 </div>
                 <div class="mb-3">
-                    <label for="phone" class="form-label">手機號碼</label>
-                    <input type="tel" class="form-control phone" id="phone" placeholder="0912-345-678">
+                    <label for="user--phone" class="form-label">手機號碼</label>
+                    <input type="tel" class="form-control" id="user--phone" placeholder="0912-345-678">
                 </div>
                 <div class="mb-3">
-                    <label for="opinion" class="form-label">意見回饋</label>
-                    <textarea class="form-control opinion" id="opinion" rows="11" style="resize: none"></textarea>
+                    <label for="user--opinion" class="form-label">意見回饋</label>
+                    <textarea class="form-control" id="user--opinion" rows="11" style="resize: none"></textarea>
                 </div>
                 <div class="mb-3 d-flex justify-content-end">
                     <a href="#" class="btn btn-primary text-white btn--contact">送出</a>
@@ -224,6 +224,8 @@
       'wrapAround': true
     })
   </script>
+  <!-- vanillajs-datepicker-JS -->
+  <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
   <!-- AOS-JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <!-- swiper-CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-  <!-- lightbox-CSS -->
-  <link href="./assets/style/vendors/lightbox.css" rel="stylesheet" />
   <!-- AOS-CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- vanillajs-datepicker-CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
@@ -44,9 +44,9 @@
               href="designer-list.html">設計作品</a>
           </li>
           <li class="nav-item dropdown mb-3 mb-lg-0">
-            <a class="nav-link dropdown-toggle nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
               href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              合作商家介紹
+              合作商家介紹<i class="fas fa-caret-down ms-2 caret caret-change"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="cooperative-business.html">關於合作商家</a></li>
@@ -214,6 +214,8 @@
       'wrapAround': true
     })
   </script>
+  <!-- vanillajs-datepicker-JS -->
+  <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
   <!-- AOS-JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

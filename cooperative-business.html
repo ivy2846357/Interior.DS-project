@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <!-- swiper-CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-  <!-- lightbox-CSS -->
-  <link href="./assets/style/vendors/lightbox.css" rel="stylesheet" />
   <!-- AOS-CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- vanillajs-datepicker-CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
@@ -44,9 +44,9 @@
               href="designer-list.html">設計作品</a>
           </li>
           <li class="nav-item dropdown mb-3 mb-lg-0">
-            <a class="nav-link dropdown-toggle nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
               href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              合作商家介紹
+              合作商家介紹<i class="fas fa-caret-down ms-2 caret caret-change"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="cooperative-business.html">關於合作商家</a></li>
@@ -588,23 +588,22 @@
             <!-- 公司資訊 -->
             <h4 class="text-primary fw-bold mb-3">公司資訊</h4>
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">公司名稱</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="請輸入公司名稱" required>
+                <label for="company--name" class="form-label">公司名稱</label>
+                <input type="text" class="form-control" id="company--name" placeholder="請輸入公司名稱" required>
                 <div class="invalid-feedback">
                     請輸入公司名稱
                 </div>
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">公司地址</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="請輸入公司地址" required>
+                <label for="company--address" class="form-label">公司地址</label>
+                <input type="text" class="form-control" id="company--address" placeholder="請輸入公司地址" required>
                 <div class="invalid-feedback">
                     請輸入公司地址
                 </div>
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">負責業務</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="水電裝修／格局規劃／室內設計／家具製造等"
-                    required>
+                <label for="company--work" class="form-label">負責業務</label>
+                <input type="text" class="form-control" id="company--work" placeholder="水電裝修／格局規劃／室內設計／傢具製造等" required>
                 <div class="invalid-feedback">
                     請輸入公司業務
                 </div>
@@ -615,8 +614,8 @@
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">聯絡人名稱</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="請輸入聯絡人名稱"
+                        <label for="contact-person--name" class="form-label">聯絡人名稱</label>
+                        <input type="text" class="form-control" id="contact-person--name" placeholder="請輸入聯絡人名稱"
                             required>
                         <div class="invalid-feedback">
                             請輸入聯絡人名稱
@@ -625,8 +624,8 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">聯絡人電話</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="請輸入聯絡人電話"
+                        <label for="contact-person--phone" class="form-label">聯絡人電話</label>
+                        <input type="text" class="form-control" id="contact-person--phone" placeholder="請輸入聯絡人電話"
                             required>
                         <div class="invalid-feedback">
                             請輸入聯絡人電話
@@ -635,8 +634,8 @@
                 </div>
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">聯絡人信箱</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="請輸入聯絡人信箱" required>
+                <label for="contact-person--email" class="form-label">聯絡人信箱</label>
+                <input type="email" class="form-control" id="contact-person--email" placeholder="請輸入聯絡人信箱" required>
                 <div class="invalid-feedback">
                     請輸入聯絡人信箱
                 </div>
@@ -759,6 +758,8 @@
       'wrapAround': true
     })
   </script>
+  <!-- vanillajs-datepicker-JS -->
+  <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
   <!-- AOS-JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

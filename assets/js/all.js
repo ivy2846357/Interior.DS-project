@@ -111,9 +111,26 @@ var swiper = new Swiper(".swiper--infinite-loop-slides-per-group__3", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
   }
+}); //vanillajs-datepicker
+
+var datepickerMeasure = document.querySelector('input[name="datepickerMeasure"]');
+var datepickerMeasureElem = new Datepicker(datepickerMeasure, {
+  autohide: true,
+  nextArrow: '>',
+  prevArrow: '<'
+});
+var datepickerConstruction = document.querySelector('input[name="datepickerConstruction"]');
+var datepickerConstructionElem = new Datepicker(datepickerConstruction, {
+  autohide: true,
+  nextArrow: '>',
+  prevArrow: '<'
 });
 $(document).ready(function () {
-  // 廣告視窗顯示
+  //下拉選單箭頭旋轉動畫
+  $('.dropdown').click(function (e) {
+    $('.caret').stop().toggleClass('caret-change__active');
+  }); // 廣告視窗顯示
+
   $('.required--alert').slideDown(); // 點擊關閉廣告視窗
 
   $('.required--alert__close').click(function (e) {

@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <!-- swiper-CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-  <!-- lightbox-CSS -->
-  <link href="./assets/style/vendors/lightbox.css" rel="stylesheet" />
   <!-- AOS-CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- vanillajs-datepicker-CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
@@ -44,9 +44,9 @@
               href="designer-list.html">設計作品</a>
           </li>
           <li class="nav-item dropdown mb-3 mb-lg-0">
-            <a class="nav-link dropdown-toggle nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
               href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              合作商家介紹
+              合作商家介紹<i class="fas fa-caret-down ms-2 caret caret-change"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="cooperative-business.html">關於合作商家</a></li>
@@ -128,7 +128,7 @@
             <!-- 第一題 -->
             <div class="form-group mb-6">
                 <h6 class="mb-3">1. 請問您的裝修預算？</h6>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select decoration--budget" aria-label="Default select decoration--budget">
                     <option selected>請選擇預算金額</option>
                     <option value="50w">50萬以下</option>
                     <option value="51w~100w">51萬~100萬</option>
@@ -144,7 +144,7 @@
             <!-- 第二題 -->
             <div class="form-group mb-6">
                 <h6 class="mb-3">2. 請問裝修坪數是多少？</h6>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select decoration--pings" aria-label="Default select decoration--pings">
                     <option selected>請選擇裝修的坪數</option>
                     <option value="20p">20坪以下</option>
                     <option value="21p~30p">21坪~30坪</option>
@@ -162,7 +162,8 @@
             <!-- 第三題 -->
             <div class="form-group mb-6">
                 <h6 class="mb-3">3. 請問要裝修幾個房間？</h6>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select decoration--room__number"
+                    aria-label="Default select decoration--room__number">
                     <option selected>請選擇裝修格局</option>
                     <option value="1r">1房</option>
                     <option value="2r">2房</option>
@@ -179,7 +180,7 @@
             <!-- 第四題 -->
             <div class="form-group mb-6">
                 <h6 class="mb-3">4. 請問要裝修的房子屋齡是多少？</h6>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select decoration--house__age" aria-label="Default select decoration--house__age">
                     <option selected>請選擇房子屋齡</option>
                     <option value="Pre-sale house">預售屋</option>
                     <option value="Hairy house">毛胚屋</option>
@@ -194,8 +195,8 @@
 
             <!-- 第五題 -->
             <div class="form-group mb-6">
-                <label for="exampleInputEmail1" class="mb-1">5. 請問施工地點在哪？</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                <label for="decoration--house__adress" class="mb-1">5. 請問施工地點在哪？</label>
+                <input type="text" class="form-control" id="decoration--house__adress" aria-describedby="text"
                     placeholder="請輸入施工地址">
             </div>
 
@@ -204,18 +205,20 @@
                 <h6 class="mb-2">6. 施工時間</h6>
                 <h6 class="mb-2">希望丈量時間 - 會請師傅跟設計師到現場評估</h6>
                 <div class="d-block mb-4">
-                    <input type="date" placeholder="MM/DD/YYYY">
+                    <input type="text" placeholder="MM/DD/YYYY" name="datepickerMeasure"
+                        class="rounded-md p-2 datepicker--border datepicker--word__spacing">
                 </div>
                 <h6 class="mb-2">希望施工時間 - 若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</h6>
-                <div class="d-inline">
-                    <input type="date" placeholder="MM/DD/YYYY">
+                <div class="d-block mb-4">
+                    <input type="text" placeholder="MM/DD/YYYY" name="datepickerConstruction"
+                        class="rounded-md p-2 datepicker--border datepicker--word__spacing">
                 </div>
             </div>
 
             <!-- 第七題 -->
             <div class="form-group mb-6">
                 <h6 class="mb-3">7. 請問您有想給哪間設計公司處理嗎？</h6>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select decoration--interior-company" aria-label="Default select example">
                     <option selected>請選擇設計公司</option>
                     <option value="AB">AB 設計空間</option>
                     <option value="CD">CD 設計空間</option>
@@ -233,52 +236,52 @@
             <div class="form-group mb-6">
                 <h6 class="mb-3">8. 請問您有希望設計成什麼風格？</h6>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label mb-2" for="inlineCheckbox1">北歐風</label>
+                    <input class="form-check-input" type="checkbox" id="style--nordic" value="option1">
+                    <label class="form-check-label mb-2" for="style--nordic">北歐風</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label mb-2" for="inlineCheckbox2">現代風</label>
+                    <input class="form-check-input" type="checkbox" id="style--modern" value="option2">
+                    <label class="form-check-label mb-2" for="style--modern">現代風</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option3">
-                    <label class="form-check-label mb-2" for="inlineCheckbox2">新古典</label>
+                    <input class="form-check-input" type="checkbox" id="style--neoclassical" value="option3">
+                    <label class="form-check-label mb-2" for="style--neoclassical">新古典</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option4">
-                    <label class="form-check-label mb-2" for="inlineCheckbox2">美式風</label>
+                    <input class="form-check-input" type="checkbox" id="style--american" value="option4">
+                    <label class="form-check-label mb-2" for="style--american">美式風</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option5">
-                    <label class="form-check-label mb-2" for="inlineCheckbox2">鄉村風</label>
+                    <input class="form-check-input" type="checkbox" id="style--country" value="option5">
+                    <label class="form-check-label mb-2" for="style--country">鄉村風</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option6">
-                    <label class="form-check-labe mb-2l" for="inlineCheckbox2">混搭風</label>
+                    <input class="form-check-input" type="checkbox" id="style--mashup" value="option6">
+                    <label class="form-check-labe mb-2l" for="style--mashup">混搭風</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option7">
-                    <label class="form-check-label mb-2" for="inlineCheckbox2">奢華風</label>
+                    <input class="form-check-input" type="checkbox" id="style--luxurious" value="option7">
+                    <label class="form-check-label mb-2" for="style--luxurious">奢華風</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option8">
-                    <label class="form-check-label mb-2" for="inlineCheckbox2">簡約風</label>
+                    <input class="form-check-input" type="checkbox" id="style--minimalism" value="option8">
+                    <label class="form-check-label mb-2" for="style--minimalism">簡約風</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option9">
-                    <label class="form-check-label mb-2" for="inlineCheckbox2">工業風</label>
+                    <input class="form-check-input" type="checkbox" id="style--industrial" value="option9">
+                    <label class="form-check-label mb-2" for="style--industrial">工業風</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option10">
-                    <label class="form-check-label mb-2" for="inlineCheckbox2">中式風</label>
+                    <input class="form-check-input" type="checkbox" id="style--chinese" value="option10">
+                    <label class="form-check-label mb-2" for="style--chinese">中式風</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option11">
-                    <label class="form-check-label mb-2" for="inlineCheckbox2">日式無印</label>
+                    <input class="form-check-input" type="checkbox" id="style--japanese" value="option11">
+                    <label class="form-check-label mb-2" for="style--japanese">日式無印</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option12">
-                    <label class="form-check-label mb-2" for="inlineCheckbox2">人文禪風</label>
+                    <input class="form-check-input" type="checkbox" id="style--humanistic" value="option12">
+                    <label class="form-check-label mb-2" for="style--humanistic">人文禪風</label>
                 </div>
             </div>
 
@@ -288,25 +291,25 @@
                 <h6 class="mb-2">完成預約後會請專員聯絡並寄送通知至電子信箱，請留下聯絡人的資訊</h6>
                 <div class="row mb-3">
                     <div class="col">
-                        <label for="name" class="mb-1">姓名</label>
-                        <input type="text" class="form-control rounded-sm" placeholder="請輸入您的姓名">
+                        <label for="user--name" class="mb-1">姓名</label>
+                        <input type="text" class="form-control rounded-sm" id="user--name" placeholder="請輸入您的姓名">
                     </div>
                     <div class="col">
-                        <label for="name" class="mb-1">年齡</label>
-                        <input type="text" class="form-control rounded-sm" placeholder="請輸入您的年齡">
+                        <label for="user--age" class="mb-1">年齡</label>
+                        <input type="text" class="form-control rounded-sm" id="user--age" placeholder="請輸入您的年齡">
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="form-group col-6">
-                        <label for="exampleFormControlSelect1" class="mb-1">性別</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <label for="user--gender" class="mb-1">性別</label>
+                        <select class="form-control" id="user--gender">
                             <option>男生</option>
                             <option>女生</option>
                         </select>
                     </div>
                     <div class="form-group col-6">
-                        <label for="exampleFormControlSelect1" class="mb-1">居住縣市</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <label for="user--area" class="mb-1">居住縣市</label>
+                        <select class="form-control" id="user--area">
                             <option>台北</option>
                             <option>新北</option>
                             <option>高雄</option>
@@ -317,14 +320,14 @@
                 </div>
 
                 <div class="form-group mb-3">
-                    <label for="exampleInputEmail1" class="mb-1">電子信箱</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    <label for="user--email" class="mb-1">電子信箱</label>
+                    <input type="email" class="form-control" id="user--email" aria-describedby="emailHelp"
                         placeholder="email@example.com">
                 </div>
 
                 <div class="form-group mb-6">
-                    <label for="exampleInputPhone" class="mb-1">手機號碼</label>
-                    <input type="tel" class="form-control" id="exampleInputPhone" aria-describedby="phoneHelp"
+                    <label for="user--phone" class="mb-1">手機號碼</label>
+                    <input type="tel" class="form-control" id="user--phone" aria-describedby="phoneHelp"
                         placeholder="0912-345-678">
                 </div>
 
@@ -404,6 +407,8 @@
       'wrapAround': true
     })
   </script>
+  <!-- vanillajs-datepicker-JS -->
+  <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
   <!-- AOS-JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
