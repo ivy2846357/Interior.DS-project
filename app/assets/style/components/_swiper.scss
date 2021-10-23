@@ -1,3 +1,4 @@
+// swiper設定
 .swiper {
     width: 100%;
     height: 100%;
@@ -33,54 +34,49 @@
     object-fit: cover;
 }
 
-//首頁-居家風格-swiper-電腦版
-.swiper-slide--room-style__lg {
+//swiper圖片-寬度80%
+.swiper-slide--w__80 {
     width: 80%;
 }
 
-//首頁-居家風格-swiper-電腦版
-.swiper-slide--room-style__sm {
+//swiper圖片-寬度100%
+.swiper-slide--w__100 {
     width: 100%;
 }
 
-//設計師作品-設計師推薦-swiper-電腦版
-.swiper-slide--recommend-designer,
-.swiper-slide--article {
-    width: 100%;
-}
-
-.swiper--company-portfolio {
+//swiper幻燈片設定
+.swiper--thumbs-gallery-loop {
     width: 100%;
     height: 300px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.swiper-slide--company-portfolio {
+.swiper-slide--thumbs-gallery-loop {
     background-size: cover;
     background-position: cover;
 }
 
-//設計師作品-公司作品-swiper-大圖
-.swiper--company-portfolio__top {
+//swiper幻燈片-大圖設定
+.swiper--thumbs-gallery-loop__top {
     height: 500px;
     width: 100%;
 }
 
-//設計師作品-公司作品-swiper-小圖
-.swiper--company-portfolio__bottom {
+//swiper幻燈片-小圖設定
+.swiper--thumbs-gallery-loop__bottom {
     height: 180px;
     box-sizing: border-box;
     padding: 10px 0;
 }
 
-.swiper--company-portfolio__bottom .swiper-slide--company-portfolio {
+.swiper--thumbs-gallery-loop__bottom .swiper-slide--thumbs-gallery-loop {
     width: 25%;
     height: 100%;
     opacity: 0.4;
 }
 
-.swiper--company-portfolio__bottom .swiper-slide-thumb-active {
+.swiper--thumbs-gallery-loop__bottom .swiper-slide-thumb-active {
     opacity: 1;
 }
 
