@@ -1,13 +1,13 @@
 //LOGO字型
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
-//英文字型
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
-
 .logo__font {
     font-family: 'Dancing Script', cursive;
 }
 
-// body {
-//     font-family: 'Oswald', sans-serif;
-// }
+//連結文字顏色
+.link--word {
+    &__gray {
+        color: #707070;
+    }
+}
