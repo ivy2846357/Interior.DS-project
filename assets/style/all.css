@@ -13915,50 +13915,45 @@ a {
      object-fit: cover;
 }
 
-.swiper-slide--room-style__lg {
+.swiper-slide--w__80 {
   width: 80%;
 }
 
-.swiper-slide--room-style__sm {
+.swiper-slide--w__100 {
   width: 100%;
 }
 
-.swiper-slide--recommend-designer,
-.swiper-slide--article {
-  width: 100%;
-}
-
-.swiper--company-portfolio {
+.swiper--thumbs-gallery-loop {
   width: 100%;
   height: 300px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.swiper-slide--company-portfolio {
+.swiper-slide--thumbs-gallery-loop {
   background-size: cover;
   background-position: cover;
 }
 
-.swiper--company-portfolio__top {
+.swiper--thumbs-gallery-loop__top {
   height: 500px;
   width: 100%;
 }
 
-.swiper--company-portfolio__bottom {
+.swiper--thumbs-gallery-loop__bottom {
   height: 180px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px 0;
 }
 
-.swiper--company-portfolio__bottom .swiper-slide--company-portfolio {
+.swiper--thumbs-gallery-loop__bottom .swiper-slide--thumbs-gallery-loop {
   width: 25%;
   height: 100%;
   opacity: 0.4;
 }
 
-.swiper--company-portfolio__bottom .swiper-slide-thumb-active {
+.swiper--thumbs-gallery-loop__bottom .swiper-slide-thumb-active {
   opacity: 1;
 }
 

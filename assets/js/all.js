@@ -1,5 +1,6 @@
 "use strict";
 
+// 表單驗證JS
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
   'use strict'; // Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -16,19 +17,24 @@
       form.classList.add('was-validated');
     }, false);
   });
-})(); //首頁-居家風格-swiper-電腦版
+})(); //沒有箭頭、有進度條
+//首頁-居家風格-swiper-電腦版
 
 
-var swiper = new Swiper(".swiper--room-style", {
+var swiper = new Swiper(".swiper--pagination", {
   slidesPerView: "auto",
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
     clickable: true
   }
-}); //首頁-屋主評價-swiper-平板/手機版
+}); //有箭頭、有進度條、單排、無限制
+//首頁-屋主評價-平板/手機版
+//設計師作品-推薦設計師
+//部落格-推薦文章
+//公司介紹-設計師總攬
 
-var swiper = new Swiper(".swiper--recommend__sm", {
+var swiper = new Swiper(".swiper--infinite-loop", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
@@ -40,39 +46,28 @@ var swiper = new Swiper(".swiper--recommend__sm", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
   }
-}); //公司介紹-企業合作-swiper
+}); //無箭頭、有進度條、三個一排
+//公司介紹-企業合作
+//設計作品-公司介紹-相關文章
 
-var swiper = new Swiper(".swiper--business-cooperation", {
+var swiper = new Swiper(".swiper--slides-per-view", {
   slidesPerView: 3,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
     clickable: true
   }
-}); //設計師作品-推薦設計師-swiper
+}); //幻燈片式swiper
+//公司介紹-作品總攬-swiper
 
-var swiper = new Swiper(".swiper--recommend-designer", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
-}); //公司介紹-作品總攬-swiper
-
-var swiper = new Swiper(".swiper--company-portfolio__bottom", {
+var swiper = new Swiper(".swiper--thumbs-gallery-loop__bottom", {
   loop: true,
   spaceBetween: 10,
   slidesPerView: 4,
   freeMode: true,
   watchSlidesProgress: true
 });
-var swiper2 = new Swiper(".swiper--company-portfolio__top", {
+var swiper2 = new Swiper(".swiper--thumbs-gallery-loop__top", {
   loop: true,
   spaceBetween: 10,
   navigation: {
@@ -82,9 +77,10 @@ var swiper2 = new Swiper(".swiper--company-portfolio__top", {
   thumbs: {
     swiper: swiper
   }
-}); //公司介紹-設計師總攬-swiper
+}); //有箭頭、有進度條、一排四個
+//公司介紹-設計師總攬-swiper
 
-var swiper = new Swiper(".swiper--company-designers__lg", {
+var swiper = new Swiper(".swiper--infinite-loop-slides-per-group__4", {
   slidesPerView: 4,
   spaceBetween: 30,
   slidesPerGroup: 4,
@@ -98,51 +94,15 @@ var swiper = new Swiper(".swiper--company-designers__lg", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
   }
-}); //公司介紹-設計師總攬-swiper
+}); //有箭頭、有進度條、一排三個
+//合作商家-商家swiper
 
-var swiper = new Swiper(".swiper--company-designers__sm", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
-}); //公司介紹-相關文章-swiper
-
-var swiper = new Swiper(".swiper--article-blog", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  }
-}); //合作商家-商家swiper
-
-var swiper = new Swiper(".swiper--cooperative-business", {
+var swiper = new Swiper(".swiper--infinite-loop-slides-per-group__3", {
   slidesPerView: 3,
   spaceBetween: 30,
   slidesPerGroup: 3,
   loop: true,
   loopFillGroupWithBlank: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
-}); //部落格-推薦文章
-
-var swiper = new Swiper(".swiper--article", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true
