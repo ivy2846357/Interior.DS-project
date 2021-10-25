@@ -223,7 +223,26 @@ $(document).ready(function () {
     });
 
 
-})
+    //vanillajs-datepicker
+    const datepickerMeasure = document.querySelector('input[name="datepickerMeasure"]');
+    if (datepickerMeasure) {
+        const datepickerMeasureElem = new Datepicker(datepickerMeasure, {
+            autohide: true,
+            nextArrow: '>',
+            prevArrow: '<'
+        });
+    }
+
+
+    const datepickerConstruction = document.querySelector('input[name="datepickerConstruction"]');
+    if (datepickerConstruction) {
+        const datepickerConstructionElem = new Datepicker(datepickerConstruction, {
+            autohide: true,
+            nextArrow: '>',
+            prevArrow: '<'
+        });
+    }
+});
 
 //AOS效果
 AOS.init();
@@ -253,17 +272,17 @@ AOS.init({
 
 });
 
-//vanillajs-datepicker
-const datepickerMeasure = document.querySelector('input[name="datepickerMeasure"]');
-const datepickerMeasureElem = new Datepicker(datepickerMeasure, {
-    autohide: true,
-    nextArrow: '>',
-    prevArrow: '<'
-});
+// //vanillajs-datepicker
+// const datepickerMeasure = document.querySelector('input[name="datepickerMeasure"]');
+// const datepickerMeasureElem = new Datepicker(datepickerMeasure, {
+//     autohide: true,
+//     nextArrow: '>',
+//     prevArrow: '<'
+// });
 
-const datepickerConstruction = document.querySelector('input[name="datepickerConstruction"]');
-const datepickerConstructionElem = new Datepicker(datepickerConstruction, {
-    autohide: true,
-    nextArrow: '>',
-    prevArrow: '<'
-});
+// const datepickerConstruction = document.querySelector('input[name="datepickerConstruction"]');
+// const datepickerConstructionElem = new Datepicker(datepickerConstruction, {
+//     autohide: true,
+//     nextArrow: '>',
+//     prevArrow: '<'
+// });
