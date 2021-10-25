@@ -201,7 +201,27 @@ $(document).ready(function () {
   lightbox.option({
     'resizeDuration': 200,
     'wrapAround': true
-  });
+  }); //vanillajs-datepicker
+
+  var datepickerMeasure = document.querySelector('input[name="datepickerMeasure"]');
+
+  if (datepickerMeasure) {
+    var datepickerMeasureElem = new Datepicker(datepickerMeasure, {
+      autohide: true,
+      nextArrow: '>',
+      prevArrow: '<'
+    });
+  }
+
+  var datepickerConstruction = document.querySelector('input[name="datepickerConstruction"]');
+
+  if (datepickerConstruction) {
+    var datepickerConstructionElem = new Datepicker(datepickerConstruction, {
+      autohide: true,
+      nextArrow: '>',
+      prevArrow: '<'
+    });
+  }
 }); //AOS效果
 
 AOS.init(); // You can also pass an optional settings object
@@ -240,18 +260,17 @@ AOS.init({
   // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom' // defines which position of the element regarding to window should trigger the animation
 
-}); //vanillajs-datepicker
-
-var datepickerMeasure = document.querySelector('input[name="datepickerMeasure"]');
-var datepickerMeasureElem = new Datepicker(datepickerMeasure, {
-  autohide: true,
-  nextArrow: '>',
-  prevArrow: '<'
-});
-var datepickerConstruction = document.querySelector('input[name="datepickerConstruction"]');
-var datepickerConstructionElem = new Datepicker(datepickerConstruction, {
-  autohide: true,
-  nextArrow: '>',
-  prevArrow: '<'
-});
+}); // //vanillajs-datepicker
+// const datepickerMeasure = document.querySelector('input[name="datepickerMeasure"]');
+// const datepickerMeasureElem = new Datepicker(datepickerMeasure, {
+//     autohide: true,
+//     nextArrow: '>',
+//     prevArrow: '<'
+// });
+// const datepickerConstruction = document.querySelector('input[name="datepickerConstruction"]');
+// const datepickerConstructionElem = new Datepicker(datepickerConstruction, {
+//     autohide: true,
+//     nextArrow: '>',
+//     prevArrow: '<'
+// });
 //# sourceMappingURL=all.js.map
