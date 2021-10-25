@@ -13672,23 +13672,17 @@ input {
 
 .nav--icon {
   display: none;
-  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-@media (min-width: 768px) {
+@media (max-width: 500px) {
   .nav--icon {
-    top: 50%;
-    bottom: 0;
-    -webkit-transform: translateY(-25%);
-        -ms-transform: translateY(-25%);
-            transform: translateY(-25%);
-  }
-}
-
-@media (min-width: 500px) {
-  .nav--icon {
+    top: 95%;
     right: 0;
-    bottom: 5%;
   }
 }
 

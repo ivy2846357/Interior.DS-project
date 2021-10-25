@@ -18,7 +18,35 @@
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
-<body>
+<body class="position-relative">
+  <!-- 右側 icon 列表 -->
+  <div class="position-fixed nav--icon" style="z-index: 1100;">
+    <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center me-3">
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-facebook"></i></a>
+      </li>
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-instagram"></i></a>
+      </li>
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-line"></i></a>
+      </li>
+      <li class="mb-2">
+        <a href="#"
+          class="text-white bg-primary fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black scroll--top-btn"><i
+            class="fas fa-arrow-up"></i>
+
+        </a>
+      </li>
+    </ul>
+  </div>
+
   <!-- 導覽列 -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-auxiliary-dark py-4">
     <div class="container-lg">
@@ -72,34 +100,6 @@
       </div>
     </div>
   </nav>
-
-  <!-- 右側 icon 列表 -->
-  <div class="position-fixed nav--icon" style="z-index: 1100;">
-    <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center me-3">
-      <li class="mb-2 d-none d-md-block">
-        <a href="#"
-          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
-            class="fab fa-facebook"></i></a>
-      </li>
-      <li class="mb-2 d-none d-md-block">
-        <a href="#"
-          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
-            class="fab fa-instagram"></i></a>
-      </li>
-      <li class="mb-2 d-none d-md-block">
-        <a href="#"
-          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
-            class="fab fa-line"></i></a>
-      </li>
-      <li class="mb-2">
-        <a href="#"
-          class="text-white bg-primary fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black scroll--top-btn"><i
-            class="fas fa-arrow-up"></i>
-
-        </a>
-      </li>
-    </ul>
-  </div>
 
   
 <!-- 首頁 Banner -->
@@ -185,7 +185,7 @@
             <div class="col-lg-6">
                 <div class="row">
                     <div class="d-flex justify-content-center" data-aos="fade-left">
-                        <div class="py-4 col-8 col-lg-12">
+                        <div class="py-4 col-10 col-lg-12">
                             <h3 class="text-primary mb-1 text-center text-lg-start fw-bold">網友熱搜設計師</h3>
                             <h5 class="text-primary">專業設計師與師傅共同合作，替每個屋主打造專屬於他們的生活空間</h5>
                         </div>
@@ -197,7 +197,7 @@
                                 <div class="person--img__circle bg-cover me-6"
                                     style="background-image: url(https://images.unsplash.com/photo-1574100004472-e536d3b6bacc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80);">
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body p-0 p-lg-2">
                                     <h5 class="text-gray">AB 空間設計 - Carol Tang</h5>
                                     <h6 class="text-gray">2020 Idea Tops Award 入圍獎</h6>
                                     <h6 class="text-gray">擅長北歐設計，透過白色與原木的搭配打造出自然休閒的簡潔樸實風</h6>
@@ -208,7 +208,7 @@
                                 <div class="person--img__circle bg-cover me-6"
                                     style="background-image: url(https://images.unsplash.com/photo-1600697394936-59934aa5951f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=464&q=80);">
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body p-0 p-lg-2">
                                     <h5 class="text-gray">CD 空間設計 - Carol Tang</h5>
                                     <h6 class="text-gray">2020 Idea Tops Award 入圍獎</h6>
                                     <h6 class="text-gray">擅長北歐設計，透過白色與原木的搭配打造出自然休閒的簡潔樸實風</h6>
@@ -219,7 +219,7 @@
                                 <div class="person--img__circle bg-cover me-6"
                                     style="background-image: url(https://images.unsplash.com/photo-1621570274614-441323d10052?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80);">
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body p-0 p-lg-2">
                                     <h5 class="text-gray">Tang 設計事務所 - Carol Tang</h5>
                                     <h6 class="text-gray">2020 Idea Tops Award 入圍獎</h6>
                                     <h6 class="text-gray">擅長北歐設計，透過白色與原木的搭配打造出自然休閒的簡潔樸實風</h6>
@@ -238,7 +238,7 @@
     <div class="container-lg">
         <div class="row d-flex flex-column flex-sm-row">
             <!-- 大圖 -->
-            <div class="col-12 col-sm-6 col-lg-4 order-2 order-sm-1" data-aos="fade-right">
+            <div class="col-12 col-sm-6 col-lg-4 order-2 order-sm-1" data-aos="fade-right" data-aos-delay="100">
                 <div class="card-img-lg bg-cover rounded-lg "
                     style="background-image: url(https://images.unsplash.com/photo-1554232456-8727aae0cfa4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=435&q=80); height: 435px;">
                 </div>
@@ -247,16 +247,16 @@
             <div class="col-2 order-3 order-sm-2 d-none d-lg-block">
                 <div class="card-img-md bg-cover rounded-lg mb-5"
                     style="background-image: url(https://images.unsplash.com/photo-1571624436279-b272aff752b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1172&q=80); height: 200px;"
-                    data-aos="fade-left" data-aos-delay="200">
+                    data-aos="fade-right" data-aos-delay="200">
                 </div>
                 <div class="card-img-md bg-cover rounded-lg "
                     style="background-image: url(https://images.unsplash.com/photo-1594235046782-8ee6fa676300?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80); height: 200px;"
-                    data-aos="fade-left">
+                    data-aos="fade-right" data-aos-delay="300">
                 </div>
             </div>
             <!-- 內文 -->
             <div class="col-12 col-sm-6 col-lg-5 d-flex flex-column justify-content-center order-1 order-sm-3 mb-3 mb-sm-0"
-                data-aos="fade-left" data-aos-delay="400">
+                data-aos="fade-left">
                 <h3 class="text-primary mb-1 fw-bold">舒適空間、靜心商討</h3>
                 <h5 class="text-primary mb-4">公司除了接待室外，也有提供獨立的房間讓顧客與設計師進行討論</h5>
                 <a href="company-profile.html#company-environment"
@@ -1010,10 +1010,13 @@
 <!-- 配對廣告視窗 -->
 <nav class="navbar fixed-bottom navbar-light bg-primary required--alert">
     <div class="container">
-        <div class="d-flex justify-content-center align-items-baseline w-100">
-            <p class="text-white me-3 mb-0">幫我配對設計師，我有裝潢需求！</p>
-            <a class="btn btn-outline-light hover--change-color__primary me-3" href="company-matching.html">馬上配對</a>
-            <a class="btn btn-outline-light hover--change-color__primary required--alert__close" href="#">關閉</a>
+        <div
+            class="d-flex flex-column flex-lg-row justify-content-center align-items-center align-items-lg-baseline w-100">
+            <p class="text-white me-0 me-lg-3 mb-2 mb-lg-0 fs-6">幫我配對設計師，我有裝潢需求！</p>
+            <div class="">
+                <a class="btn btn-outline-light hover--change-color__primary me-3" href="company-matching.html">馬上配對</a>
+                <a class="btn btn-outline-light hover--change-color__primary required--alert__close" href="#">關閉</a>
+            </div>
         </div>
     </div>
 </nav>
@@ -1080,6 +1083,7 @@
   <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
   <!-- AOS-JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
   <!-- JS -->
   <script src="./assets/js/all.js"></script>
 

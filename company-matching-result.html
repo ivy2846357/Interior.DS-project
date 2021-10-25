@@ -18,7 +18,35 @@
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
-<body>
+<body class="position-relative">
+  <!-- 右側 icon 列表 -->
+  <div class="position-fixed nav--icon" style="z-index: 1100;">
+    <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center me-3">
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-facebook"></i></a>
+      </li>
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-instagram"></i></a>
+      </li>
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-line"></i></a>
+      </li>
+      <li class="mb-2">
+        <a href="#"
+          class="text-white bg-primary fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black scroll--top-btn"><i
+            class="fas fa-arrow-up"></i>
+
+        </a>
+      </li>
+    </ul>
+  </div>
+
   <!-- 導覽列 -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-auxiliary-dark py-4">
     <div class="container-lg">
@@ -73,34 +101,6 @@
     </div>
   </nav>
 
-  <!-- 右側 icon 列表 -->
-  <div class="position-fixed nav--icon" style="z-index: 1100;">
-    <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center me-3">
-      <li class="mb-2 d-none d-md-block">
-        <a href="#"
-          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
-            class="fab fa-facebook"></i></a>
-      </li>
-      <li class="mb-2 d-none d-md-block">
-        <a href="#"
-          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
-            class="fab fa-instagram"></i></a>
-      </li>
-      <li class="mb-2 d-none d-md-block">
-        <a href="#"
-          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
-            class="fab fa-line"></i></a>
-      </li>
-      <li class="mb-2">
-        <a href="#"
-          class="text-white bg-primary fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black scroll--top-btn"><i
-            class="fas fa-arrow-up"></i>
-
-        </a>
-      </li>
-    </ul>
-  </div>
-
   
 <!-- 配對結果標題 -->
 <h2 class="mt-9 mb-4 text-primary text-center fw-bold">配對結果</h2>
@@ -146,7 +146,6 @@
 
 <!-- 配對公司 -->
 <h2 class="mt-9 mb-2 text-primary text-center fw-bold" data-aos="fade-up">符合您要求的公司</h2>
-<h5 class="text-center text-primary mb-6" data-aos="fade-up">獲獎無數，台灣設計業的頂端</h5>
 
 <!-- 各店家資訊 -->
 <div class="container">
@@ -218,13 +217,13 @@
     <div class="row" style="margin-bottom: 116px;">
         <div class="d-flex justify-content-center">
             <!-- 回到首頁按鈕 -->
-            <div class="col-3" data-aos="fade-up">
+            <div class="col-6 col-md-3" data-aos="fade-up">
                 <a href="index.html"
                     class="d-block btn btn-auxiliary-light text-white py-2 hover--word__separate me-3"><i
                         class="fas fa-arrow-left fa-arrow me-2"></i>回到首頁</a>
             </div>
             <!-- 安排裝修按鈕 -->
-            <div class="col-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
                 <a href="reserve-information.html"
                     class="d-block btn btn-primary text-white py-2 hover--word__separate">安排裝修<i
                         class="fas fa-arrow-right fa-arrow ms-2"></i></a>
@@ -295,6 +294,7 @@
   <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
   <!-- AOS-JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
   <!-- JS -->
   <script src="./assets/js/all.js"></script>
 
