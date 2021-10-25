@@ -6,23 +6,16 @@
 //右側icon列表位置
 .nav--icon {
     display: none;
-    position: absolute;
-}
-
-//平板/電腦版icon列表位置
-@media (min-width: 768px) {
-    .nav--icon {
-        top: 50%;
-        bottom: 0;
-        transform: translateY(-25%);
-    }
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
 }
 
 //手機版icon列表位置
-@media (min-width: 500px) {
+@media (max-width: 500px) {
     .nav--icon {
+        top: 95%;
         right: 0;
-        bottom: 5%;
     }
 }
 
