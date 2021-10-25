@@ -73,7 +73,6 @@
     </div>
   </nav>
 
-
   <!-- 右側 icon 列表 -->
   <div class="position-fixed nav--icon" style="z-index: 1100;">
     <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center me-3">
@@ -433,7 +432,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-lg-5 pb-8">
+                <div class="col-12 col-lg-5 pb-8 pb-lg-0">
                     <div
                         class="d-flex flex-column justify-content-center align-items-center align-items-lg-start py-0 py-lg-4 pe-4 h-100">
                         <h4 class="text-primary fw-bold">專業能力</h4>
@@ -515,51 +514,13 @@
   <script src="./assets/js/vendors.js"></script>
   <!-- swiper-JS -->
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  <!-- jquery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
-  <!-- lightbox-JS -->
-  <script src="./assets/js/lightbox.js"></script>
-  <script>
-    lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true
-    })
-  </script>
   <!-- vanillajs-datepicker-JS -->
   <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
   <!-- AOS-JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-
-    // You can also pass an optional settings object
-    // below listed default settings
-    AOS.init({
-      // Global settings:
-      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-      initClassName: 'aos-init', // class applied after initialization
-      animatedClassName: 'aos-animate', // class applied on animation
-      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-
-      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-      offset: 120, // offset (in px) from the original trigger point
-      delay: 0, // values from 0 to 3000, with step 50ms
-      duration: 400, // values from 0 to 3000, with step 50ms
-      easing: 'ease', // default easing for AOS animations
-      once: true, // whether animation should happen only once - while scrolling down
-      mirror: false, // whether elements should animate out while scrolling past them
-      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
-    });
-  </script>
   <!-- JS -->
   <script src="./assets/js/all.js"></script>
+
 </body>
 
 </html>
