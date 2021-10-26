@@ -13590,14 +13590,29 @@ a {
   -webkit-box-align: start;
 }
 
-.card--article__like {
+.card--like {
   position: absolute;
-  top: 20;
-  left: 200;
+  top: 10px;
+  left: 245px;
   z-index: 10;
   width: 50px;
   height: 50px;
-  background-color: #000;
+  background-color: #FFF;
+  border-radius: 50%;
+  -webkit-transform: translateX(70px);
+      -ms-transform: translateX(70px);
+          transform: translateX(70px);
+}
+
+.card--like__move {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.card--like__click {
+  background-color: #3F72AF;
+  color: #FFF;
 }
 
 .card--company__logo {

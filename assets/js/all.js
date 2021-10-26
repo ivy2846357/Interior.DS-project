@@ -197,32 +197,46 @@ $(document).ready(function () {
       $('.phone').val('');
       $('.opinion').val('');
     }
-  });
+  }); //lightbox-JS
+
   lightbox.option({
     'resizeDuration': 200,
     'wrapAround': true
-  }); //vanillajs-datepicker
+  }); //文章-加入收藏按鈕-動畫(移入移出)
 
-  var datepickerMeasure = document.querySelector('input[name="datepickerMeasure"]');
+  $('.blog--article').mouseover(function (e) {
+    $(this).find('.card > .card--like').addClass('card--like__move');
+  });
+  $('.blog--article').mouseout(function (e) {
+    $(this).find('.card > .card--like').removeClass('card--like__move');
+  }); //文章-加入收藏按鈕-點擊換色
 
-  if (datepickerMeasure) {
-    var datepickerMeasureElem = new Datepicker(datepickerMeasure, {
-      autohide: true,
-      nextArrow: '>',
-      prevArrow: '<'
-    });
-  }
+  $('.card--like').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('card--like__click');
+  });
+}); //vanillajs-datepicker
 
-  var datepickerConstruction = document.querySelector('input[name="datepickerConstruction"]');
+var datepickerMeasure = document.querySelector('input[name="datepickerMeasure"]');
 
-  if (datepickerConstruction) {
-    var datepickerConstructionElem = new Datepicker(datepickerConstruction, {
-      autohide: true,
-      nextArrow: '>',
-      prevArrow: '<'
-    });
-  }
-}); //AOS效果
+if (datepickerMeasure) {
+  var datepickerMeasureElem = new Datepicker(datepickerMeasure, {
+    autohide: true,
+    nextArrow: '>',
+    prevArrow: '<'
+  });
+}
+
+var datepickerConstruction = document.querySelector('input[name="datepickerConstruction"]');
+
+if (datepickerConstruction) {
+  var datepickerConstructionElem = new Datepicker(datepickerConstruction, {
+    autohide: true,
+    nextArrow: '>',
+    prevArrow: '<'
+  });
+} //AOS效果
+
 
 AOS.init(); // You can also pass an optional settings object
 // below listed default settings
