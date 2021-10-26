@@ -105,11 +105,18 @@
           </li>
         </ul>
         <!-- 連結按鈕 -->
-        <div class="d-flex">
+        <!-- 電腦版按鈕 -->
+        <div class="d-none d-lg-flex">
           <a href="reserve-information.html" class="btn btn-outline-secondary rounded-lg me-3 reserve-btn py-2 px-3"
             type="submit">立即預約</a>
           <a href="contact.html" class="btn btn-outline-secondary rounded-lg course-btn py-2 px-3"
             type="submit">聯絡我們</a>
+        </div>
+        <!-- 平板/手機版按鈕 -->
+        <div class="d-lg-none">
+          <a href="reserve-information.html" class="btn btn-primary rounded-lg me-3 reserve-btn py-2 px-3"
+            type="submit">立即預約</a>
+          <a href="contact.html" class="btn btn-primary rounded-lg course-btn py-2 px-3" type="submit">聯絡我們</a>
         </div>
       </div>
     </div>

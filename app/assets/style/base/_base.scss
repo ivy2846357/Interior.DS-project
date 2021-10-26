@@ -23,6 +23,9 @@ a {
 //圖片置中
 .bg-cover {
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-position: center center;
 }
 
@@ -62,8 +65,4 @@ a {
 //display設定none
 .display-none {
     display: none;
-}
-
-html {
-    height: 100%;
 }
