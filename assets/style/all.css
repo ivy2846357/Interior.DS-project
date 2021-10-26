@@ -13505,6 +13505,11 @@ a {
   background-position: center center;
 }
 
+.bg--fill {
+  width: 100%;
+  height: auto;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
