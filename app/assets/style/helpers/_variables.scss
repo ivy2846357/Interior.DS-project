@@ -67,6 +67,7 @@ $primary: #3F72AF; // $blue !default;
 $secondary: #DBE2EF; //$gray-600 !default;
 $auxiliary-dark: #112D4E;
 $auxiliary-light: #889EAF;
+$pink: #FF9292;
 
 $success: $green !default;
 $info: $cyan !default;
@@ -82,6 +83,7 @@ $theme-colors: ("primary": $primary,
   "secondary": $secondary,
   "auxiliary-dark": $auxiliary-dark,
   "auxiliary-light": $auxiliary-light,
+  "pink": $pink,
 
   "success": $success,
   "info": $info,

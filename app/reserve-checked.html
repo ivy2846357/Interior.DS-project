@@ -11,12 +11,15 @@ current: index
 <!-- 流程標籤 -->
 <div class="container-lg mb-6">
     <div class="row justify-content-center">
+        <!-- 填寫資料 -->
         <div class="col-4 col-sm-3 col-lg-2">
             <div class="alert bg-auxiliary-dark text-auxiliary-light text-center rounded-lg" role="alert">填寫資料</div>
         </div>
+        <!-- 確認資料 -->
         <div class="col-4 col-sm-3 col-lg-2">
             <div class="alert bg-primary text-white text-center rounded-lg">確認資料</div>
         </div>
+        <!-- 完成預約 -->
         <div class="col-4 col-sm-3 col-lg-2">
             <div class="alert bg-secondary text-auxiliary-light text-center rounded-lg" role="alert">完成預約</div>
         </div>
@@ -24,7 +27,7 @@ current: index
 </div>
 
 <!-- 預約提示 -->
-<h5 class="text-primary text-center mb-6" data-aos="fade-up">以下是您的預約資訊，請確認是否填寫正確：</h5>
+<h5 class="text-primary text-center mb-6" data-aos="fade-up">以下是您的預約資訊<br>請確認資料是否填寫正確：</h5>
 
 <!-- 預約資訊 -->
 <div class="container-lg" data-aos="fade-up" data-aos-delay="100">
@@ -32,6 +35,7 @@ current: index
         <div class="col-12 col-sm-8 col-lg-6">
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
+                    <!-- 預約標題 -->
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button bg-secondary text-auxiliary-dark" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
@@ -39,6 +43,7 @@ current: index
                             預約資訊
                         </button>
                     </h2>
+                    <!-- 預約資訊 -->
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
@@ -47,6 +52,7 @@ current: index
                                     <span class="h5 text-primary fw-bold mx-2">請專員評估</span>裝修狀況
                                 </h6>
                             </div>
+                            <!-- 聯絡人資訊 -->
                             <ul class="list-unstyled text-auxiliary-dark">
                                 <li class="mb-2">預約人：Joanne Chen</li>
                                 <li class="mb-2">年齡：18 歲</li>
@@ -78,6 +84,7 @@ current: index
                 <li>除了電話連絡外，也會將商討結果郵寄給顧客</li>
                 <li>如要變更資料，請洽負責專員</li>
             </ul>
+            <!-- 連結按鈕 -->
             <a href="reserve-success.html" class="btn btn-primary text-white d-block py-2" data-aos="fade-up">確認資料無誤</a>
         </div>
     </div>

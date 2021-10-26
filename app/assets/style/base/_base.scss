@@ -2,6 +2,7 @@
 $primary: #3F72AF;
 $secondary: #DBE2EF;
 $auxiliary: #112D4E;
+$pink: #FF9292;
 
 //黑色遮色片
 @mixin bg-dark {
@@ -25,6 +26,7 @@ a {
     background-position: center center;
 }
 
+//隱藏X軸/Y軸
 .overflow-x-hidden {
     overflow-x: hidden;
 }
@@ -57,6 +59,11 @@ a {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+//display設定none
 .display-none {
     display: none;
+}
+
+html {
+    height: 100%;
 }
