@@ -217,32 +217,46 @@ $(document).ready(function () {
         }
     })
 
+    //lightbox-JS
     lightbox.option({
         'resizeDuration': 200,
         'wrapAround': true
     });
 
+    //文章-加入收藏按鈕-動畫(移入移出)
+    $('.blog--article').mouseover(function (e) {
+        $(this).find('.card > .card--like').addClass('card--like__move');
+    })
+    $('.blog--article').mouseout(function (e) {
+        $(this).find('.card > .card--like').removeClass('card--like__move');
+    })
 
-    //vanillajs-datepicker
-    const datepickerMeasure = document.querySelector('input[name="datepickerMeasure"]');
-    if (datepickerMeasure) {
-        const datepickerMeasureElem = new Datepicker(datepickerMeasure, {
-            autohide: true,
-            nextArrow: '>',
-            prevArrow: '<'
-        });
-    }
-
-
-    const datepickerConstruction = document.querySelector('input[name="datepickerConstruction"]');
-    if (datepickerConstruction) {
-        const datepickerConstructionElem = new Datepicker(datepickerConstruction, {
-            autohide: true,
-            nextArrow: '>',
-            prevArrow: '<'
-        });
-    }
+    //文章-加入收藏按鈕-點擊換色
+    $('.card--like').click(function (e) {
+        e.preventDefault();
+        $(this).toggleClass('card--like__click');
+    })
 });
+
+//vanillajs-datepicker
+const datepickerMeasure = document.querySelector('input[name="datepickerMeasure"]');
+if (datepickerMeasure) {
+    const datepickerMeasureElem = new Datepicker(datepickerMeasure, {
+        autohide: true,
+        nextArrow: '>',
+        prevArrow: '<'
+    });
+}
+
+
+const datepickerConstruction = document.querySelector('input[name="datepickerConstruction"]');
+if (datepickerConstruction) {
+    const datepickerConstructionElem = new Datepicker(datepickerConstruction, {
+        autohide: true,
+        nextArrow: '>',
+        prevArrow: '<'
+    });
+}
 
 //AOS效果
 AOS.init();
