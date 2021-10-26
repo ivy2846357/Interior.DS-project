@@ -123,12 +123,15 @@
 <!-- 流程標籤 -->
 <div class="container-lg mb-6">
     <div class="row justify-content-center">
+        <!-- 填寫資料 -->
         <div class="col-4 col-sm-3 col-lg-2">
             <div class="alert bg-primary text-white text-center rounded-lg" role="alert">填寫資料</div>
         </div>
+        <!-- 確認資料 -->
         <div class="col-4 col-sm-3 col-lg-2">
             <div class="alert bg-secondary text-auxiliary-light text-center rounded-lg" role="alert">確認資料</div>
         </div>
+        <!-- 完成預約 -->
         <div class="col-4 col-sm-3 col-lg-2">
             <div class="alert bg-secondary text-auxiliary-light text-center rounded-lg" role="alert">完成預約</div>
         </div>
@@ -139,7 +142,7 @@
 <form class="container-lg" data-aos="fade-up">
     <div class="row d-flex justify-content-center">
         <div class="col-12 col-lg-6 text-gray px-6">
-            <!-- 第一題 -->
+            <!-- 第一題：裝修預算 -->
             <div class="form-group mb-6">
                 <h6 class="mb-3">1. 請問您的裝修預算？</h6>
                 <select class="form-select decoration--budget" aria-label="Default select decoration--budget">
@@ -155,7 +158,7 @@
                 </select>
             </div>
 
-            <!-- 第二題 -->
+            <!-- 第二題：裝修坪數 -->
             <div class="form-group mb-6">
                 <h6 class="mb-3">2. 請問裝修坪數是多少？</h6>
                 <select class="form-select decoration--pings" aria-label="Default select decoration--pings">
@@ -173,7 +176,7 @@
                 </select>
             </div>
 
-            <!-- 第三題 -->
+            <!-- 第三題：裝修房間數量 -->
             <div class="form-group mb-6">
                 <h6 class="mb-3">3. 請問要裝修幾個房間？</h6>
                 <select class="form-select decoration--room__number"
@@ -191,7 +194,7 @@
                 </select>
             </div>
 
-            <!-- 第四題 -->
+            <!-- 第四題：確認屋齡 -->
             <div class="form-group mb-6">
                 <h6 class="mb-3">4. 請問要裝修的房子屋齡是多少？</h6>
                 <select class="form-select decoration--house__age" aria-label="Default select decoration--house__age">
@@ -207,14 +210,14 @@
                 </select>
             </div>
 
-            <!-- 第五題 -->
+            <!-- 第五題：施工地點 -->
             <div class="form-group mb-6">
                 <label for="decoration--house__adress" class="mb-1">5. 請問施工地點在哪？</label>
                 <input type="text" class="form-control" id="decoration--house__adress" aria-describedby="text"
                     placeholder="請輸入施工地址">
             </div>
 
-            <!-- 第六題 -->
+            <!-- 第六題：丈量及施工時間 -->
             <div class="form-group mb-6">
                 <h6 class="mb-2">6. 施工時間</h6>
                 <h6 class="mb-2">希望丈量時間 - 會請師傅跟設計師到現場評估</h6>
@@ -229,7 +232,7 @@
                 </div>
             </div>
 
-            <!-- 第七題 -->
+            <!-- 第七題：設計公司選擇 -->
             <div class="form-group mb-6">
                 <h6 class="mb-3">7. 請問您有想給哪間設計公司處理嗎？</h6>
                 <select class="form-select decoration--interior-company" aria-label="Default select example">
@@ -246,7 +249,7 @@
                 </select>
             </div>
 
-            <!-- 第八題 -->
+            <!-- 第八題：居家風格 -->
             <div class="form-group mb-6">
                 <h6 class="mb-3">8. 請問您有希望設計成什麼風格？</h6>
                 <div class="form-check form-check-inline">
@@ -299,31 +302,35 @@
                 </div>
             </div>
 
-            <!-- 第九題 -->
+            <!-- 第九題：聯絡人資料 -->
             <div class="form-group mb-6">
                 <h6 class="mb-2">9. 填寫基本資料</h6>
                 <h6 class="mb-2">完成預約後會請專員聯絡並寄送通知至電子信箱，請留下聯絡人的資訊</h6>
                 <div class="row mb-3">
+                    <!-- 姓名 -->
                     <div class="col">
                         <label for="user--name" class="mb-1">姓名</label>
                         <input type="text" class="form-control rounded-sm" id="user--name" placeholder="請輸入您的姓名">
                     </div>
+                    <!-- 年齡 -->
                     <div class="col">
                         <label for="user--age" class="mb-1">年齡</label>
                         <input type="text" class="form-control rounded-sm" id="user--age" placeholder="請輸入您的年齡">
                     </div>
                 </div>
                 <div class="row mb-3">
+                    <!-- 性別 -->
                     <div class="form-group col-6">
                         <label for="user--gender" class="mb-1">性別</label>
-                        <select class="form-control" id="user--gender">
+                        <select class="form-select" id="user--gender">
                             <option>男生</option>
                             <option>女生</option>
                         </select>
                     </div>
+                    <!-- 居住縣市 -->
                     <div class="form-group col-6">
                         <label for="user--area" class="mb-1">居住縣市</label>
-                        <select class="form-control" id="user--area">
+                        <select class="form-select" id="user--area">
                             <option>台北</option>
                             <option>新北</option>
                             <option>高雄</option>
@@ -332,19 +339,19 @@
                         </select>
                     </div>
                 </div>
-
+                <!-- 電子信箱 -->
                 <div class="form-group mb-3">
                     <label for="user--email" class="mb-1">電子信箱</label>
                     <input type="email" class="form-control" id="user--email" aria-describedby="emailHelp"
                         placeholder="email@example.com">
                 </div>
-
+                <!-- 電話號碼 -->
                 <div class="form-group mb-6">
-                    <label for="user--phone" class="mb-1">手機號碼</label>
+                    <label for="user--phone" class="mb-1">電話號碼</label>
                     <input type="tel" class="form-control" id="user--phone" aria-describedby="phoneHelp"
                         placeholder="0912-345-678">
                 </div>
-
+                <!-- 確認資料 -->
                 <a href="reserve-checked.html" class="btn btn-primary text-white d-block py-2"
                     style="margin-bottom: 116px;">確認資料</a>
             </div>
