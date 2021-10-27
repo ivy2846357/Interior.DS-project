@@ -19,40 +19,9 @@
 </head>
 
 <body class="position-relative">
-  <!-- 右側 icon 列表 -->
-  <div class="position-fixed nav--icon" style="z-index: 1100;">
-    <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center me-3">
-      <!-- FB連結按鈕 -->
-      <li class="mb-2 d-none d-md-block">
-        <a href="#"
-          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
-            class="fab fa-facebook"></i></a>
-      </li>
-      <!-- IG連結按鈕 -->
-      <li class="mb-2 d-none d-md-block">
-        <a href="#"
-          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
-            class="fab fa-instagram"></i></a>
-      </li>
-      <!-- LINE連結按鈕 -->
-      <li class="mb-2 d-none d-md-block">
-        <a href="#"
-          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
-            class="fab fa-line"></i></a>
-      </li>
-      <!-- 回到最上面按鈕 -->
-      <li class="mb-2">
-        <a href="#"
-          class="text-white bg-primary fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black scroll--top-btn"><i
-            class="fas fa-arrow-up"></i>
-
-        </a>
-      </li>
-    </ul>
-  </div>
 
   <!-- 導覽列 -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-auxiliary-dark py-4">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-auxiliary-dark sticky-top nav--padding">
     <div class="container-lg">
       <!-- LOGO -->
       <a class="navbar-brand me-9 pe-8 d-lg-none logo__font text-white fs-2" href="index.html">Interior.DS</a>
@@ -106,17 +75,11 @@
         </ul>
         <!-- 連結按鈕 -->
         <!-- 電腦版按鈕 -->
-        <div class="d-none d-lg-flex">
+        <div class="d-flex mb-3 mb-lg-0">
           <a href="reserve-information.html" class="btn btn-outline-secondary rounded-lg me-3 reserve-btn py-2 px-3"
             type="submit">立即預約</a>
           <a href="contact.html" class="btn btn-outline-secondary rounded-lg course-btn py-2 px-3"
             type="submit">聯絡我們</a>
-        </div>
-        <!-- 平板/手機版按鈕 -->
-        <div class="d-lg-none">
-          <a href="reserve-information.html" class="btn btn-primary rounded-lg me-3 reserve-btn py-2 px-3"
-            type="submit">立即預約</a>
-          <a href="contact.html" class="btn btn-primary rounded-lg course-btn py-2 px-3" type="submit">聯絡我們</a>
         </div>
       </div>
     </div>
@@ -125,35 +88,33 @@
   <!-- 內容 -->
   
 <!-- 首頁 Banner -->
-<div class="container-fluid p-0">
-    <div class="d-flex align-items-center mb-7 bg-cover parallax-img"
-        style="background-image: url(https://images.unsplash.com/photo-1618221469555-7f3ad97540d6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 650px;">
-        <!-- Banner 內容 -->
-        <div class="container-lg h-100">
-            <div class="row h-100">
-                <div class="col-12 col-md-8 col-lg-5 d-flex flex-column justify-content-center ps-5 bg--translucent">
-                    <!-- 英文介紹 -->
-                    <h6 class="text-white text--shadow" data-aos="fade-up">Interior Design For
-                        Private &
-                        Commercial
-                        Commissions</h6>
-                    <!-- 白線 -->
-                    <div class="banner--border my-2" data-aos="fade-up" data-aos-delay="100"></div>
-                    <!-- 標題 -->
-                    <h2 class="text-white fw-bold text--shadow" data-aos="fade-up" data-aos-delay="200">Interior.DS
-                        打造品味空間
-                    </h2>
-                    <!-- 副標題 -->
-                    <h4 class="text-white mb-4 fw-bold text--shadow" data-aos="fade-up" data-aos-delay="200">
-                        多給自己一點時間享受靜謐，傾聽內心的聲音
-                    </h4>
-                    <!-- 連結按鈕 -->
-                    <div class="button" data-aos="fade-up" data-aos-delay="400">
-                        <a href="reserve-information.html"
-                            class="btn btn-secondary text-gray rounded-md reserve-btn me-2 hover--word__separate">立即預約</a>
-                        <a href="designer-list.html"
-                            class="btn btn-primary rounded-md course-btn hover--word__separate">查看設計作品</a>
-                    </div>
+<div class="d-flex align-items-center mb-7 parallax-window" data-parallax="scroll"
+    data-image-src="./assets/images/banner.jpg">
+    <!-- Banner 內容 -->
+    <div class="container-lg banner--img" style="height: 650px;">
+        <div class="row h-100">
+            <div class="col-12 col-md-8 col-lg-5 d-flex flex-column justify-content-center ps-5 bg--translucent">
+                <!-- 英文介紹 -->
+                <h6 class="text-white text--shadow" data-aos="fade-up">Interior Design For
+                    Private &
+                    Commercial
+                    Commissions</h6>
+                <!-- 白線 -->
+                <div class="banner--border my-2" data-aos="fade-up" data-aos-delay="100"></div>
+                <!-- 標題 -->
+                <h2 class="text-white fw-bold text--shadow" data-aos="fade-up" data-aos-delay="200">Interior.DS
+                    打造品味空間
+                </h2>
+                <!-- 副標題 -->
+                <h4 class="text-white mb-4 fw-bold text--shadow" data-aos="fade-up" data-aos-delay="200">
+                    多給自己一點時間享受靜謐，傾聽內心的聲音
+                </h4>
+                <!-- 連結按鈕 -->
+                <div class="button" data-aos="fade-up" data-aos-delay="400">
+                    <a href="reserve-information.html"
+                        class="btn btn-secondary text-gray rounded-md reserve-btn me-2 hover--word__separate">立即預約</a>
+                    <a href="designer-list.html"
+                        class="btn btn-primary rounded-md course-btn hover--word__separate">查看設計作品</a>
                 </div>
             </div>
         </div>
@@ -1155,6 +1116,38 @@
     </div>
   </footer>
 
+  <!-- 右側 icon 列表 -->
+  <div class="position-fixed nav--icon" style="z-index: 1100;">
+    <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center me-3">
+      <!-- FB連結按鈕 -->
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-facebook"></i></a>
+      </li>
+      <!-- IG連結按鈕 -->
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-instagram"></i></a>
+      </li>
+      <!-- LINE連結按鈕 -->
+      <li class="mb-2 d-none d-md-block">
+        <a href="#"
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+            class="fab fa-line"></i></a>
+      </li>
+      <!-- 回到最上面按鈕 -->
+      <li class="mb-2">
+        <a href="#"
+          class="text-white bg-primary fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black scroll--top-btn"><i
+            class="fas fa-arrow-up"></i>
+
+        </a>
+      </li>
+    </ul>
+  </div>
+
   <!-- bootstrap-JS -->
   <script src="./assets/js/vendors.js"></script>
   <!-- swiper-JS -->
@@ -1163,6 +1156,8 @@
   <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
   <!-- AOS-JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Parallax.js -->
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
   <!-- JS -->
   <script src="./assets/js/all.js"></script>
 

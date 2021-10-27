@@ -13525,10 +13525,6 @@ a {
   border-radius: 4px;
 }
 
-.parallax-img {
-  background-attachment: fixed;
-}
-
 .bg--translucent {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -13832,6 +13828,17 @@ input {
   border: 2px solid #DBE2EF;
 }
 
+.nav--padding {
+  padding: 30px 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.nav--padding__change {
+  padding: 10px 0;
+}
+
 .banner--border {
   width: 100px;
   border-bottom: 2px solid #FFF;
@@ -13846,6 +13853,11 @@ input {
 
 .required--alert {
   display: none;
+}
+
+.parallax-window {
+  min-height: 650px;
+  background: transparent;
 }
 
 body.lb-disable-scrolling {
