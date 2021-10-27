@@ -1,3 +1,110 @@
+$(document).ready(function () {
+    //下拉選單箭頭旋轉動畫
+    $('.dropdown').click(function (e) {
+        $('.caret').stop().toggleClass('caret-change__active');
+    });
+
+    // 廣告視窗顯示
+    $('.required--alert').slideDown();
+    // 點擊關閉廣告視窗
+    $('.required--alert__close').click(function (e) {
+        e.preventDefault();
+        $('.required--alert').remove();
+    })
+
+    //偵測滑鼠滾動顯示/隱藏
+    $(window).scroll(function (e) {
+        let scrollHeight = $(this).scrollTop();
+        // console.log(scrollHeight);
+
+        //導覽列縮放效果
+        if (scrollHeight > 200) {
+            $('.nav--padding').addClass('nav--padding__change');
+        } else {
+            $('.nav--padding').removeClass('nav--padding__change');
+        }
+
+        //顯示/隱藏廣告視窗
+        if (scrollHeight < 3970) {
+            $('.required--alert').slideDown();
+        } else {
+            $('.required--alert').slideUp();
+        }
+
+        //顯示/隱藏右側icon列表
+        if (scrollHeight > 500) {
+            $('.nav--icon').fadeIn();
+        } else {
+            $('.nav--icon').fadeOut();
+        }
+    });
+
+    //點擊回到最上層
+    $('.scroll--top-btn').click(function (e) {
+        e.preventDefault();
+        $('html,body').stop().animate({
+            scrollTop: 0
+        }, 1000);
+    })
+
+    //服務項目移動動畫
+    $('.btn--move').click(function (e) {
+        e.preventDefault();
+        let btnPosition = $(this).attr('href');
+        // console.log($(btnPosition).offset().top);
+        $('html,body').stop().animate({
+            scrollTop: $(btnPosition).offset().top - 100
+        }, 1000);
+    })
+
+    //設計師作品-分頁點擊效果
+    $('.page-link').click(function (e) {
+        e.preventDefault();
+        //點擊分頁標籤-新增/移除class-active
+        $(this).parent().addClass('active');
+        $(this).parent().siblings().removeClass('active');
+    })
+
+    //聯絡我們
+    $('.btn--contact').click(function (e) {
+        e.preventDefault();
+        if ($('.name').val().trim() == '' || $('.email').val().trim() == '' || $('.phone').val().trim() == '' || $('.opinion').val().trim() == '') {
+            alert('請填寫完整資料');
+        } else {
+            alert('謝謝您的建議');
+            $('.name').val('');
+            $('.email').val('');
+            $('.phone').val('');
+            $('.opinion').val('');
+        }
+    })
+
+    //lightbox-JS
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+    });
+
+    //文章-加入收藏按鈕-動畫(移入移出)
+    $('.blog--article').mouseover(function (e) {
+        $(this).find('.card > .card--like').addClass('card--like__move');
+    })
+    $('.blog--article').mouseout(function (e) {
+        $(this).find('.card > .card--like').removeClass('card--like__move');
+    })
+
+    //文章-加入收藏按鈕-點擊換色
+    $('.card--like').click(function (e) {
+        e.preventDefault();
+        $(this).toggleClass('card--like__click');
+    })
+
+    //視差滾動設定
+    $('.parallax-window').parallax({
+        imageSrc: './assets/images/banner.jpg'
+    });
+});
+
 // 表單驗證JS
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
@@ -117,139 +224,6 @@ var swiper = new Swiper(".swiper--infinite-loop-slides-per-group__3", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-});
-
-$(document).ready(function () {
-    //下拉選單箭頭旋轉動畫
-    $('.dropdown').click(function (e) {
-        $('.caret').stop().toggleClass('caret-change__active');
-    });
-
-    // 廣告視窗顯示
-    $('.required--alert').slideDown();
-    // 點擊關閉廣告視窗
-    $('.required--alert__close').click(function (e) {
-        e.preventDefault();
-        $('.required--alert').remove();
-    })
-
-    //偵測滑鼠滾動顯示/隱藏
-    $(window).scroll(function (e) {
-        let scrollHeight = $(this).scrollTop();
-        // console.log(scrollHeight);
-
-        //導覽列縮放效果
-        if (scrollHeight > 200) {
-            $('.nav--padding').addClass('nav--padding__change');
-            $('.banner--img').css('height', '730');
-        } else {
-            $('.nav--padding').removeClass('nav--padding__change');
-            $('.banner--img').css('height', '650');
-        }
-
-        //顯示/隱藏廣告視窗
-        if (scrollHeight < 3970) {
-            $('.required--alert').slideDown();
-        } else {
-            $('.required--alert').slideUp();
-        }
-
-        //顯示/隱藏右側icon列表
-        if (scrollHeight > 500) {
-            $('.nav--icon').fadeIn();
-        } else {
-            $('.nav--icon').fadeOut();
-        }
-    });
-
-    //點擊回到最上層
-    $('.scroll--top-btn').click(function (e) {
-        e.preventDefault();
-        $('html,body').animate({
-            scrollTop: 0
-        }, 1000);
-    })
-
-    //服務項目-點擊到工程施作
-    $('.btn--construction-works').click(function (e) {
-        e.preventDefault();
-        $('html,body').animate({
-            scrollTop: 400
-        }, 1000);
-    })
-
-    //服務項目-居家格局設計
-    $('.btn--layout-planning').click(function (e) {
-        e.preventDefault();
-        $('html,body').animate({
-            scrollTop: 1048
-        }, 1000);
-    })
-
-    //服務項目-室內裝潢
-    $('.btn--interior-design').click(function (e) {
-        e.preventDefault();
-        $('html,body').animate({
-            scrollTop: 1700
-        }, 1000);
-    })
-
-    //服務項目-訂製傢俱
-    $('.btn--furniture-making').click(function (e) {
-        e.preventDefault();
-        $('html,body').animate({
-            scrollTop: 2348
-        }, 1000);
-    })
-
-    //設計師作品-分頁點擊效果
-    $('.page-link').click(function (e) {
-        e.preventDefault();
-        //點擊分頁標籤-新增/移除class-active
-        $(this).parent().addClass('active');
-        $(this).parent().siblings().removeClass('active');
-
-        // let page = $(this).attr('href');
-    })
-
-    //聯絡我們
-    $('.btn--contact').click(function (e) {
-        e.preventDefault();
-        if ($('.name').val().trim() == '' || $('.email').val().trim() == '' || $('.phone').val().trim() == '' || $('.opinion').val().trim() == '') {
-            alert('請填寫完整資料');
-        } else {
-            alert('謝謝您的建議');
-            $('.name').val('');
-            $('.email').val('');
-            $('.phone').val('');
-            $('.opinion').val('');
-        }
-    })
-
-    //lightbox-JS
-    lightbox.option({
-        'resizeDuration': 200,
-        'wrapAround': true
-    });
-
-    //文章-加入收藏按鈕-動畫(移入移出)
-    $('.blog--article').mouseover(function (e) {
-        $(this).find('.card > .card--like').addClass('card--like__move');
-    })
-    $('.blog--article').mouseout(function (e) {
-        $(this).find('.card > .card--like').removeClass('card--like__move');
-    })
-
-    //文章-加入收藏按鈕-點擊換色
-    $('.card--like').click(function (e) {
-        e.preventDefault();
-        $(this).toggleClass('card--like__click');
-    })
-
-    //視差滾動設定
-    $('.parallax-window').parallax({
-        imageSrc: './assets/images/banner.jpg'
-    });
 });
 
 //vanillajs-datepicker
