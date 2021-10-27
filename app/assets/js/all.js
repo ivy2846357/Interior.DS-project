@@ -138,6 +138,15 @@ $(document).ready(function () {
         let scrollHeight = $(this).scrollTop();
         // console.log(scrollHeight);
 
+        //導覽列縮放效果
+        if (scrollHeight > 200) {
+            $('.nav--padding').addClass('nav--padding__change');
+            $('.banner--img').css('height', '730');
+        } else {
+            $('.nav--padding').removeClass('nav--padding__change');
+            $('.banner--img').css('height', '650');
+        }
+
         //顯示/隱藏廣告視窗
         if (scrollHeight < 3970) {
             $('.required--alert').slideDown();
@@ -236,6 +245,11 @@ $(document).ready(function () {
         e.preventDefault();
         $(this).toggleClass('card--like__click');
     })
+
+    //視差滾動設定
+    $('.parallax-window').parallax({
+        imageSrc: './assets/images/banner.jpg'
+    });
 });
 
 //vanillajs-datepicker

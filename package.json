@@ -36,11 +36,13 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "jquery": "^3.6.0",
+    "jquery-parallax.js": "^1.5.0",
     "lightbox2": "^2.11.3",
     "minimist": "^1.2.0",
     "morgan": "^1.9.1",
     "node-sass": "^4.14.1",
     "popper.js": "^1.16.1",
+    "remove": "^0.1.5",
     "vanillajs": "^1.0.1"
   }
 }
