@@ -13533,6 +13533,14 @@ a {
   display: none;
 }
 
+.margin--top {
+  margin-top: 160px;
+}
+
+.margin--top__thumbs-gallery {
+  margin-top: 118px;
+}
+
 .logo__font {
   font-family: 'Dancing Script', cursive;
 }
