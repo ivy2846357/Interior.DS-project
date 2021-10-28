@@ -4,6 +4,11 @@
     border-bottom: 2px solid #FFF;
 }
 
+//導覽列變換時，調整banner高度
+.banner--change>.parallax-mirror {
+    height: 682px !important;
+}
+
 //設計師照片
 .person--img__circle {
     min-width: 90px;
