@@ -61,3 +61,12 @@ a {
 .display-none {
     display: none;
 }
+
+//設定頁面margin-top
+.margin--top {
+    margin-top: 160px;
+
+    &__thumbs-gallery {
+        margin-top: 118px;
+    }
+}
