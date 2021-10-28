@@ -13534,7 +13534,7 @@ a {
 }
 
 .margin--top {
-  margin-top: 160px;
+  margin-top: 60px;
 }
 
 .margin--top__thumbs-gallery {
@@ -13795,7 +13795,7 @@ input {
   letter-spacing: 1px;
 }
 
-.caret-change {
+.caret--change {
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
@@ -13804,7 +13804,7 @@ input {
           transform: rotate(0deg);
 }
 
-.caret-change__active {
+.caret--change__active {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -13850,6 +13850,10 @@ input {
 .banner--border {
   width: 100px;
   border-bottom: 2px solid #FFF;
+}
+
+.banner--change > .parallax-mirror {
+  height: 682px !important;
 }
 
 .person--img__circle {

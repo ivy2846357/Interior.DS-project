@@ -19,8 +19,10 @@ $(document).ready(function () {
 
     if (scrollHeight > 200) {
       $('.nav--padding').addClass('nav--padding__change');
+      $('body').addClass('banner--change');
     } else {
       $('.nav--padding').removeClass('nav--padding__change');
+      $('body').removeClass('banner--change');
     } //顯示/隱藏廣告視窗
 
 
