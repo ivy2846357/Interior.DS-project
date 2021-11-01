@@ -44,7 +44,7 @@ $(document).ready(function () {
     e.preventDefault();
     $('html,body').stop().animate({
       scrollTop: 0
-    }, 100);
+    }, 1000);
   }); //服務項目移動動畫
 
   $('.btn--move').click(function (e) {
@@ -53,7 +53,7 @@ $(document).ready(function () {
 
     $('html,body').stop().animate({
       scrollTop: $(btnPosition).offset().top - 100
-    }, 100);
+    }, 1000);
   }); //設計師作品-分頁點擊效果
 
   $('.page-link').click(function (e) {

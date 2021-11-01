@@ -13537,8 +13537,9 @@ a {
   margin-top: 60px;
 }
 
-.margin--top__thumbs-gallery {
-  margin-top: 118px;
+html,
+body {
+  scroll-behavior: auto !important;
 }
 
 .logo__font {
