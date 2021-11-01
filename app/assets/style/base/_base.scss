@@ -65,8 +65,10 @@ a {
 //設定頁面margin-top
 .margin--top {
     margin-top: 60px;
+}
 
-    &__thumbs-gallery {
-        margin-top: 118px;
-    }
+//取消bootstrap預設行為
+html,
+body {
+    scroll-behavior: auto !important;
 }
