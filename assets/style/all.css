@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*-------------------vendors設定-------------------*/
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -13488,391 +13490,7 @@ fieldset:disabled .btn {
   }
 }
 
-.bg-blend-mode {
-  background-color: rgba(0, 0, 0, 0.6);
-  background-blend-mode: multiply;
-}
-
-a {
-  text-decoration: none;
-}
-
-.bg-cover {
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-position: center center;
-}
-
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
-
-.overflow-y-hidden {
-  overflow-y: hidden;
-}
-
-.rounded-lg {
-  border-radius: 16px;
-}
-
-.rounded-md {
-  border-radius: 4.8px;
-}
-
-.rounded-sm {
-  border-radius: 4px;
-}
-
-.bg--translucent {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.display-none {
-  display: none;
-}
-
-.margin--top {
-  margin-top: 60px;
-}
-
-html,
-body {
-  scroll-behavior: auto !important;
-}
-
-.logo__font {
-  font-family: 'Dancing Script', cursive;
-}
-
-.link--word__gray {
-  color: #707070;
-}
-
-.nav--items__hover {
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-}
-
-.nav--items__hover:hover {
-  border-bottom: 1px solid #DBE2EF;
-}
-
-.hover--shadow__gray {
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-}
-
-.hover--shadow__gray:hover {
-  -webkit-box-shadow: 0px 0px 6px #BBB;
-          box-shadow: 0px 0px 6px #BBB;
-}
-
-.hover--shadow__black {
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-}
-
-.hover--shadow__black:hover {
-  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
-}
-
-.hover--word__separate {
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-}
-
-.hover--word__separate:hover {
-  letter-spacing: 3px;
-}
-
-.hover--rise {
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-}
-
-.hover--rise:hover {
-  -webkit-transform: translateY(-8px);
-      -ms-transform: translateY(-8px);
-          transform: translateY(-8px);
-}
-
-.hover--change-color__light {
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-}
-
-.hover--change-color__light:hover {
-  background-color: #3F72AF;
-}
-
-.hover--change-color__primary {
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-}
-
-.hover--change-color__primary:hover {
-  color: #3F72AF;
-}
-
-.hover--img__enlarge {
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-  background-size: 180%;
-}
-
-.hover--img__enlarge:hover {
-  background-size: 210%;
-}
-
-.text--shadow {
-  text-shadow: 0px 0px 8px #000;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.swiper-slide {
-  text-align: center;
-  background-size: cover;
-  background-position: center center;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.swiper-slide--w__80 {
-  width: 80%;
-}
-
-.swiper-slide--w__100 {
-  width: 100%;
-}
-
-.swiper--thumbs-gallery-loop {
-  width: 100%;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.swiper-slide--thumbs-gallery-loop {
-  background-size: cover;
-  background-position: cover;
-}
-
-.swiper--thumbs-gallery-loop__top {
-  height: 500px;
-  width: 100%;
-}
-
-.swiper--thumbs-gallery-loop__bottom {
-  height: 180px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 10px 0;
-}
-
-.swiper--thumbs-gallery-loop__bottom .swiper-slide--thumbs-gallery-loop {
-  width: 25%;
-  height: 100%;
-  opacity: 0.4;
-}
-
-.swiper--thumbs-gallery-loop__bottom .swiper-slide-thumb-active {
-  opacity: 1;
-}
-
-.swiper-slide--article-blog:nth-child(4n) {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-justify-content: start;
-  -webkit-box-align: start;
-}
-
-.card--like {
-  position: absolute;
-  top: 10px;
-  left: 245px;
-  z-index: 10;
-  width: 50px;
-  height: 50px;
-  background-color: #FFF;
-  border-radius: 50%;
-  -webkit-transform: translateX(70px);
-      -ms-transform: translateX(70px);
-          transform: translateX(70px);
-}
-
-.card--like__move {
-  -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0);
-}
-
-.card--like__click {
-  background-color: #FF9292;
-  color: #FFF;
-}
-
-.card--company__logo {
-  width: 120px !important;
-  height: 120px !important;
-}
-
-.icon--size {
-  font-size: 80px;
-}
-
-.datepicker-cell.selected,
-.datepicker-cell.selected:hover {
-  background-color: #3F72AF;
-}
-
-.datepicker-cell.focused:not(.selected) {
-  background-color: #3F72AF;
-  color: #FFF;
-}
-
-.next-btn,
-.prev-btn {
-  color: #112D4E !important;
-}
-
-.view-switch,
-.dow {
-  color: #3F72AF !important;
-}
-
-.day {
-  color: #707070;
-}
-
-.prev,
-.next {
-  color: #889EAF !important;
-}
-
-.datepicker--border {
-  outline: none;
-  border: 1px solid #ced4da;
-}
-
-input {
-  color: #707070;
-}
-
-.datepicker--word__spacing {
-  letter-spacing: 1px;
-}
-
-.caret--change {
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-  -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-
-.caret--change__active {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.nav--items {
-  border-bottom: 1px solid transparent;
-}
-
-.nav--icon {
-  display: none;
-  top: 50%;
-  right: 10px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-@media (max-width: 500px) {
-  .nav--icon {
-    top: 95%;
-    right: 0;
-  }
-}
-
-.nav--icon__btn {
-  width: 40px;
-  height: 40px;
-  border: 2px solid #DBE2EF;
-}
-
-.nav--padding {
-  padding: 30px 0;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-}
-
-.nav--padding__change {
-  padding: 10px 0;
-}
-
-.banner--border {
-  width: 100px;
-  border-bottom: 2px solid #FFF;
-}
-
-.banner--change > .parallax-mirror {
-  height: 682px !important;
-}
-
-.person--img__circle {
-  min-width: 90px;
-  min-height: 90px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.required--alert {
-  display: none;
-}
-
-.parallax-window {
-  min-height: 650px;
-  background: transparent;
-}
-
+/*-------------------lightbox樣式設定-------------------*/
 body.lb-disable-scrolling {
   overflow: hidden;
 }
@@ -14072,6 +13690,418 @@ body.lb-disable-scrolling {
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
+}
+
+/*-------------------base設定-------------------*/
+/*-------------------網頁顏色樣式-------------------*/
+/*-------------------網頁預設樣式修改-------------------*/
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  scroll-behavior: auto !important;
+}
+
+input {
+  color: #707070;
+}
+
+/*-------------------共用樣式設定-------------------*/
+.bg__translucent {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg__cover {
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
+}
+
+.overflow__x--hidden {
+  overflow-x: hidden;
+}
+
+.overflow__y--hidden {
+  overflow-y: hidden;
+}
+
+.rounded--sm {
+  border-radius: 4px;
+}
+
+.rounded--md {
+  border-radius: 4.8px;
+}
+
+.rounded--lg {
+  border-radius: 16px;
+}
+
+.display--none {
+  display: none;
+}
+
+.margin--top {
+  margin-top: 60px;
+}
+
+/*-------------------字型設定-------------------*/
+.logo__font {
+  font-family: 'Dancing Script', cursive;
+}
+
+/*-------------------文字樣式-------------------*/
+.link__word--gray {
+  color: #707070;
+}
+
+/*-------------------components設定-------------------*/
+/*-------------------陰影設定-------------------*/
+.word__shadow {
+  text-shadow: 0px 0px 8px #000;
+}
+
+/*-------------------網頁區塊設定-------------------*/
+.card__like {
+  position: absolute;
+  top: 10px;
+  left: 245px;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background-color: #FFF;
+  border-radius: 50%;
+  -webkit-transform: translateX(70px);
+      -ms-transform: translateX(70px);
+          transform: translateX(70px);
+}
+
+.card__like--move {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.card__like--click {
+  background-color: #FF9292;
+  color: #FFF;
+}
+
+.card__company-logo {
+  width: 120px !important;
+  height: 120px !important;
+}
+
+/*-------------------icon 設定-------------------*/
+.icon__size {
+  font-size: 80px;
+}
+
+/*-------------------datepicker CSS樣式設定-------------------*/
+.datepicker-cell.selected,
+.datepicker-cell.selected:hover {
+  background-color: #3F72AF;
+}
+
+.datepicker-cell.focused:not(.selected) {
+  background-color: #3F72AF;
+  color: #FFF;
+}
+
+.next-btn,
+.prev-btn {
+  color: #112D4E !important;
+}
+
+.view-switch,
+.dow {
+  color: #3F72AF !important;
+}
+
+.day {
+  color: #707070;
+}
+
+.prev,
+.next {
+  color: #889EAF !important;
+}
+
+/*-------------------datepicker 自訂樣式-------------------*/
+.datepicker__word-spacing {
+  letter-spacing: 1px;
+}
+
+.datepicker__border {
+  outline: none;
+  border: 1px solid #ced4da;
+}
+
+/*-------------------swiper樣式設定-------------------*/
+/*-------------------開發預設樣式-------------------*/
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper__thumbs-gallery-loop--bottom .swiper-slide__thumbs-gallery-loop {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.swiper__thumbs-gallery-loop--bottom .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+/*-------------------自訂一般樣式-------------------*/
+.swiper-slide__w--80 {
+  width: 80%;
+}
+
+.swiper-slide__w--100 {
+  width: 100%;
+}
+
+.swiper-slide__thumbs-gallery-loop {
+  background-size: cover;
+  background-position: cover;
+}
+
+.swiper-slide__article:nth-child(4n) {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-justify-content: start;
+  -webkit-box-align: start;
+}
+
+/*-------------------自訂樣式(幻燈片)-------------------*/
+.swiper__thumbs-gallery-loop {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper__thumbs-gallery-loop--top {
+  height: 500px;
+  width: 100%;
+}
+
+.swiper__thumbs-gallery-loop--bottom {
+  height: 180px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 0;
+}
+
+/*-------------------網頁動畫設定-------------------*/
+.caret__change {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.caret__change--active {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+/*-------------------網頁hover效果樣式-------------------*/
+.hover__shadow--gray {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.hover__shadow--gray:hover {
+  -webkit-box-shadow: 0px 0px 6px #BBB;
+          box-shadow: 0px 0px 6px #BBB;
+}
+
+.hover__shadow--black {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.hover__shadow--black:hover {
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hover--rise {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.hover--rise:hover {
+  -webkit-transform: translateY(-8px);
+      -ms-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+.hover__word--separate {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.hover__word--separate:hover {
+  letter-spacing: 3px;
+}
+
+.hover__word-change-color--primary {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.hover__word-change-color--primary:hover {
+  color: #3F72AF;
+}
+
+.hover__bg-change-color--primary {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.hover__bg-change-color--primary:hover {
+  background-color: #3F72AF;
+}
+
+.hover__change-color--light {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.hover__change-color--light:hover {
+  background-color: #3F72AF;
+}
+
+.hover__img--enlarge {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  background-size: 180%;
+}
+
+.hover__img--enlarge:hover {
+  background-size: 210%;
+}
+
+.nav__items--hover {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.nav__items--hover:hover {
+  border-bottom: 1px solid #DBE2EF;
+}
+
+/*-------------------layout設定-------------------*/
+/*-------------------導覽列樣式設定-------------------*/
+.nav__items {
+  border-bottom: 1px solid transparent;
+}
+
+.nav__icon {
+  display: none;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.nav__icon--btn {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #DBE2EF;
+}
+
+.nav__padding {
+  padding: 30px 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.nav__padding--change {
+  padding: 10px 0;
+}
+
+@media (max-width: 500px) {
+  .nav__icon {
+    top: 95%;
+    right: 0;
+  }
+}
+
+/*-------------------pages設定-------------------*/
+/*-------------------首頁樣式設定-------------------*/
+.banner__border {
+  width: 100px;
+  border-bottom: 2px solid #FFF;
+}
+
+.banner--change > .parallax-mirror {
+  height: 682px !important;
+}
+
+.person__img--circle {
+  min-width: 90px;
+  min-height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.parallax-window {
+  min-height: 650px;
+  background: transparent;
+}
+
+.required__alert {
+  display: none;
 }
 
 /*# sourceMappingURL=all.css.map */

@@ -21,7 +21,7 @@
 <body class="position-relative">
 
   <!-- 導覽列 -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-auxiliary-dark sticky-top nav--padding w-100">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-auxiliary-dark sticky-top nav__padding w-100">
     <div class="container-lg">
       <!-- LOGO -->
       <a class="navbar-brand me-9 pe-8 d-lg-none logo__font text-white fs-2" href="index.html">Interior.DS</a>
@@ -37,24 +37,24 @@
         <ul class="navbar-nav mb-2 mb-lg-0">
           <!-- 公司介紹 -->
           <li class="nav-item mb-3 mb-lg-0">
-            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav__items nav__items--hover"
               aria-current="page" href="company-profile.html">公司介紹</a>
           </li>
           <!-- 服務項目 -->
           <li class="nav-item mb-3 mb-lg-0">
-            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav__items nav__items--hover"
               href="company-services.html">服務項目</a>
           </li>
           <!-- 設計作品 -->
           <li class="nav-item mb-3 mb-lg-0">
-            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav__items nav__items--hover"
               href="designer-list.html">設計作品</a>
           </li>
           <!-- 合作商家(下拉選單) -->
           <li class="nav-item dropdown mb-3 mb-lg-0">
-            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav--items nav--items__hover"
+            <a class="nav-link nav-hover text-secondary me-6 px-0 d-inline d-lg-block nav__items nav__items--hover"
               href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              合作商家介紹<i class="fas fa-caret-down ms-2 caret caret--change"></i>
+              合作商家介紹<i class="fas fa-caret-down ms-2 caret caret__change"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <!-- 選單內容 -->
@@ -69,16 +69,16 @@
           </li>
           <!-- 部落格 -->
           <li class="nav-item mb-3 mb-lg-0">
-            <a class="nav-link nav-hover text-secondary px-0 d-inline d-lg-block nav--items nav--items__hover"
+            <a class="nav-link nav-hover text-secondary px-0 d-inline d-lg-block nav__items nav__items--hover"
               href="blog.html">部落格</a>
           </li>
         </ul>
         <!-- 連結按鈕 -->
         <!-- 電腦版按鈕 -->
         <div class="d-flex mb-3 mb-lg-0">
-          <a href="reserve-information.html" class="btn btn-outline-secondary rounded-lg me-3 reserve-btn py-2 px-3"
+          <a href="reserve-information.html" class="btn btn-outline-secondary rounded--lg me-3 reserve-btn py-2 px-3"
             type="submit">立即預約</a>
-          <a href="contact.html" class="btn btn-outline-secondary rounded-lg course-btn py-2 px-3"
+          <a href="contact.html" class="btn btn-outline-secondary rounded--lg course-btn py-2 px-3"
             type="submit">聯絡我們</a>
         </div>
       </div>
@@ -91,13 +91,13 @@
 <h2 class="margin--top mb-4 text-primary text-center fw-bold" data-aos="fade-up">聯絡我們</h2>
 
 <div class="container-lg" style="margin-bottom: 110px;">
-    <div class="row d-flex flex-column flex-lg-row overflow-x-hidden overflow-y-hidden">
+    <div class="row d-flex flex-column flex-lg-row overflow__x--hidden overflow__y--hidden">
         <div class="col-12 col-lg-7">
             <!-- 地圖 -->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.5977642652488!2d121.51404261460945!3d25.047721083965957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xece39c57ea7e4e12!2z5o236YGL5Y-w5YyX6LuK56uZ56uZ!5e0!3m2!1szh-TW!2stw!4v1630419560081!5m2!1szh-TW!2stw"
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                class="mb-4 rounded-lg map-height" data-aos="fade-right"></iframe>
+                class="mb-4 rounded--lg map-height" data-aos="fade-right"></iframe>
             <!-- 公司位置 -->
             <div class="text-auxiliary-light row">
                 <div class="col-12 d-flex flex-column align-items-center align-items-lg-start px-8 px-md-0">
@@ -113,34 +113,36 @@
         </div>
         <!-- 意見回饋表單 -->
         <div class="col-12 col-lg-5">
-            <div class="bg-secondary rounded-lg p-6 text-auxiliary-dark" data-aos="fade-left">
+            <form class="bg-secondary rounded--lg p-6 text-auxiliary-dark" data-aos="fade-left">
                 <!-- 標題 -->
                 <h5 class="mb-4">意見回饋&問題詢問</h5>
                 <!-- 姓名 -->
                 <div class="mb-3">
-                    <label for="user--name" class="form-label">姓名</label>
-                    <input type="text" class="form-control" id="user--name" placeholder="請輸入您的姓名">
+                    <label for="user--name" class="form-label">姓名*</label>
+                    <input type="text" class="form-control name" id="user--name" placeholder="請輸入您的姓名" required>
                 </div>
                 <!-- 電子信箱 -->
                 <div class="mb-3">
-                    <label for="user--email" class="form-label">電子信箱</label>
-                    <input type="email" class="form-control" id="user--email" placeholder="email@example.com">
+                    <label for="user--email" class="form-label">電子信箱*</label>
+                    <input type="email" class="form-control email" id="user--email" placeholder="email@example.com"
+                        required>
                 </div>
                 <!-- 電話號碼 -->
                 <div class="mb-3">
-                    <label for="user--phone" class="form-label">電話號碼</label>
-                    <input type="tel" class="form-control" id="user--phone" placeholder="0912-345-678">
+                    <label for="user--phone" class="form-label">電話號碼*</label>
+                    <input type="tel" class="form-control phone" id="user--phone" placeholder="0912-345-678" required>
                 </div>
                 <!-- 意見回饋 -->
                 <div class="mb-3">
-                    <label for="user--opinion" class="form-label">意見回饋</label>
-                    <textarea class="form-control" id="user--opinion" rows="11" style="resize: none"></textarea>
+                    <label for="user--opinion" class="form-label">意見回饋*</label>
+                    <textarea class="form-control opinion" id="user--opinion" rows="11" style="resize: none"
+                        required></textarea>
                 </div>
                 <!-- 送出按鈕 -->
                 <div class="mb-3 d-flex justify-content-end">
-                    <a href="#" class="btn btn-primary text-white btn--contact">送出</a>
+                    <button type="submit" class="btn btn-primary text-white contact__btn">送出</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 </div>
@@ -171,29 +173,29 @@
           <!-- icon 連結 -->
           <ul class="footer-icon list-unstyled d-flex">
             <!-- FB連結按鈕 -->
-            <li><a href="#" class="text-white h4 me-2 hover--change-color__light px-1 rounded-sm"><i
+            <li><a href="#" class="text-white h4 me-2 hover__bg-change-color--primary px-1 rounded--sm"><i
                   class="fab fa-facebook"></i></a>
             </li>
             <!-- IG連結按鈕 -->
-            <li><a href="#" class="text-white h4 me-2 hover--change-color__light px-1 rounded-sm"><i
+            <li><a href="#" class="text-white h4 me-2 hover__bg-change-color--primary px-1 rounded--sm"><i
                   class="fab fa-instagram"></i></a>
             </li>
             <!-- LINE連結按鈕 -->
-            <li><a href="#" class="text-white h4 hover--change-color__light px-1 rounded-sm"><i
+            <li><a href="#" class="text-white h4 hover__bg-change-color--primary px-1 rounded--sm"><i
                   class="fab fa-line"></i></a></li>
           </ul>
         </div>
         <div class="footer-item d-flex flex-column flex-md-row align-items-md-end">
           <!-- 導覽列 -->
           <ul class="list-unstyled m-0">
-            <li class="mb-2"><a href="company-profile.html" class="text-white nav--items nav--items__hover">公司介紹</a>
+            <li class="mb-2"><a href="company-profile.html" class="text-white nav__items nav__items--hover">公司介紹</a>
             </li>
-            <li class="mb-2"><a href="company-services.html" class="text-white nav--items nav--items__hover">服務項目</a>
+            <li class="mb-2"><a href="company-services.html" class="text-white nav__items nav__items--hover">服務項目</a>
             </li>
-            <li class="mb-2"><a href="designer-list.html" class="text-white nav--items nav--items__hover">設計作品</a></li>
+            <li class="mb-2"><a href="designer-list.html" class="text-white nav__items nav__items--hover">設計作品</a></li>
             <li class="mb-2"><a href="cooperative-business.html"
-                class="text-white nav--items nav--items__hover">合作商家介紹</a></li>
-            <li class="mb-2"><a href="blog.html" class="text-white nav--items nav--items__hover">部落格</a></li>
+                class="text-white nav__items nav__items--hover">合作商家介紹</a></li>
+            <li class="mb-2"><a href="blog.html" class="text-white nav__items nav__items--hover">部落格</a></li>
           </ul>
           <!-- 版權文字 -->
           <p class="text-white offset-md-3 ps-md-3 offset-lg-4 ps-lg-6 mb-2">© 2021. All Rights Reserved.</p>
@@ -203,30 +205,30 @@
   </footer>
 
   <!-- 右側 icon 列表 -->
-  <div class="position-fixed nav--icon" style="z-index: 1100;">
+  <div class="position-fixed nav__icon" style="z-index: 1100;">
     <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center me-3">
       <!-- FB連結按鈕 -->
       <li class="mb-2 d-none d-md-block">
         <a href="#"
-          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded--sm nav__icon--btn hover__shadow--black"><i
             class="fab fa-facebook"></i></a>
       </li>
       <!-- IG連結按鈕 -->
       <li class="mb-2 d-none d-md-block">
         <a href="#"
-          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded--sm nav__icon--btn hover__shadow--black"><i
             class="fab fa-instagram"></i></a>
       </li>
       <!-- LINE連結按鈕 -->
       <li class="mb-2 d-none d-md-block">
         <a href="#"
-          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black"><i
+          class="text-primary bg-white fs-4 d-flex justify-content-center align-items-center rounded--sm nav__icon--btn hover__shadow--black"><i
             class="fab fa-line"></i></a>
       </li>
       <!-- 回到最上面按鈕 -->
       <li class="mb-2">
         <a href="#"
-          class="text-white bg-primary fs-4 d-flex justify-content-center align-items-center rounded-sm nav--icon__btn hover--shadow__black scroll--top-btn"><i
+          class="text-white bg-primary fs-4 d-flex justify-content-center align-items-center rounded--sm nav__icon--btn hover__shadow--black scroll__top-btn"><i
             class="fas fa-arrow-up"></i>
 
         </a>
