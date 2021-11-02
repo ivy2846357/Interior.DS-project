@@ -1,37 +1,42 @@
-//導覽列連結底線-透明
-.nav--items {
-    border-bottom: 1px solid transparent;
-}
+/*-------------------導覽列樣式設定-------------------*/
 
-//右側icon列表位置
-.nav--icon {
-    display: none;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
+.nav {
+
+    //最上層導覽列連結-底線顏色設定透明
+    &__items {
+        border-bottom: 1px solid transparent;
+    }
+
+    //右側icon列表-位置設定
+    &__icon {
+        display: none;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+
+        //右側icon列表-按鈕設定
+        &--btn {
+            width: 40px;
+            height: 40px;
+            border: 2px solid $secondary;
+        }
+    }
+
+    //最上層導覽列-padding改變動畫
+    &__padding {
+        padding: 30px 0;
+        transition: all .3s;
+
+        &--change {
+            padding: 10px 0;
+        }
+    }
 }
 
 //手機版icon列表位置
 @media (max-width: 500px) {
-    .nav--icon {
+    .nav__icon {
         top: 95%;
         right: 0;
-    }
-}
-
-//右側icon方框
-.nav--icon__btn {
-    width: 40px;
-    height: 40px;
-    border: 2px solid $secondary;
-}
-
-//導覽列padding
-.nav--padding {
-    padding: 30px 0;
-    transition: all .3s;
-
-    &__change {
-        padding: 10px 0;
     }
 }

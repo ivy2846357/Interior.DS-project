@@ -1,29 +1,40 @@
-//banner白色底線
-.banner--border {
-    width: 100px;
-    border-bottom: 2px solid #FFF;
+/*-------------------首頁樣式設定-------------------*/
+
+.banner {
+
+    //banner-文字白色底線
+    &__border {
+        width: 100px;
+        border-bottom: 2px solid #FFF;
+    }
+
+    //導覽列變換時，調整banner高度
+    &--change>.parallax-mirror {
+        height: 682px !important;
+    }
 }
 
-//導覽列變換時，調整banner高度
-.banner--change>.parallax-mirror {
-    height: 682px !important;
-}
+//設計師照片設定
+.person {
 
-//設計師照片
-.person--img__circle {
-    min-width: 90px;
-    min-height: 90px;
-    border-radius: 50%;
-    overflow: hidden;
-}
+    &__img {
 
-//廣告列表-隱藏
-.required--alert {
-    display: none;
+        &--circle {
+            min-width: 90px;
+            min-height: 90px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
 }
 
 //視差滾動設定
 .parallax-window {
     min-height: 650px;
     background: transparent;
+}
+
+//廣告列表-隱藏
+.required__alert {
+    display: none;
 }

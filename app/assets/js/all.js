@@ -1,55 +1,90 @@
+/*-------------------jquery-------------------*/
+
+
 $(document).ready(function () {
-    //下拉選單箭頭旋轉動畫
+
+
+    /*-------------------導覽列-------------------*/
+
+
+    // 下拉選單箭頭-點擊開啟旋轉動畫
     $('.dropdown').click(function (e) {
-        $('.caret').stop().toggleClass('caret-change__active');
+        $('.caret').stop().toggleClass('caret__change--active');
     });
 
-    // 廣告視窗顯示
-    $('.required--alert').slideDown();
-    // 點擊關閉廣告視窗
-    $('.required--alert__close').click(function (e) {
+
+    /*-------------------下方廣告視窗-------------------*/
+
+
+    // 預設廣告視窗顯示
+    $('.required__alert').slideDown();
+
+    // 點擊按鈕關閉廣告視窗
+    $('.required__alert--close').click(function (e) {
         e.preventDefault();
-        $('.required--alert').remove();
+        $('.required__alert').remove();
     })
 
-    //偵測滑鼠滾動顯示/隱藏
+
+    /*-------------------偵測頁面位置-------------------*/
+
+
+    //偵測頁面滾動位置來顯示/隱藏內容
+
+
     $(window).scroll(function (e) {
         let scrollHeight = $(this).scrollTop();
         // console.log(scrollHeight);
 
         //導覽列縮放效果
         if (scrollHeight > 200) {
-            $('.nav--padding').addClass('nav--padding__change');
+
+            //如果頁面到達指定位置，使導覽列padding縮小
+            $('.nav__padding').addClass('nav__padding--change');
             $('body').addClass('banner--change');
         } else {
-            $('.nav--padding').removeClass('nav--padding__change');
+
+            //如果頁面回到上層位置，取消padding縮小效果
+            $('.nav__padding').removeClass('nav__padding--change');
             $('body').removeClass('banner--change');
         }
 
-        //顯示/隱藏廣告視窗
+        //廣告視窗顯示/隱藏效果
         if (scrollHeight < 3970) {
-            $('.required--alert').slideDown();
+
+            //如果頁面要到footer的位置時，隱藏廣告視窗
+            $('.required__alert').slideDown();
         } else {
-            $('.required--alert').slideUp();
+
+            //如果頁面離開footer或還沒到達footer位置時，顯示廣告視窗
+            $('.required__alert').slideUp();
         }
 
         //顯示/隱藏右側icon列表
         if (scrollHeight > 500) {
-            $('.nav--icon').fadeIn();
+
+            //如果頁面往下移動到某個距離，顯示右側的icon列表
+            $('.nav__icon').fadeIn();
         } else {
-            $('.nav--icon').fadeOut();
+
+            //如果頁面還沒移動到指定距離，則不顯示右側的icon列表
+            $('.nav__icon').fadeOut();
         }
     });
 
+
+    /*-------------------animate效果-------------------*/
+
+
     //點擊回到最上層
-    $('.scroll--top-btn').click(function (e) {
+    $('.scroll__top-btn').click(function (e) {
         e.preventDefault();
         $('html,body').stop().animate({
             scrollTop: 0
         }, 1000);
     })
 
-    //服務項目移動動畫
+    //服務項目-點擊移動到該服務項目的位置
     $('.btn--move').click(function (e) {
         e.preventDefault();
         let btnPosition = $(this).attr('href');
@@ -59,7 +94,11 @@ $(document).ready(function () {
         }, 1000);
     })
 
-    //設計師作品-分頁點擊效果
+
+    /*-------------------分頁點擊效果-------------------*/
+
+
+    //設計師作品-點擊分頁並標示目前分頁位置
     $('.page-link').click(function (e) {
         e.preventDefault();
         //點擊分頁標籤-新增/移除class-active
@@ -67,12 +106,18 @@ $(document).ready(function () {
         $(this).parent().siblings().removeClass('active');
     })
 
-    //聯絡我們
-    $('.btn--contact').click(function (e) {
+
+    /*-------------------自訂表單驗證-------------------*/
+
+
+    //聯絡我們-偵測欄位是否有填寫，沒有填寫則跳出警告視窗
+    $('.contact__btn').click(function (e) {
         e.preventDefault();
         if ($('.name').val().trim() == '' || $('.email').val().trim() == '' || $('.phone').val().trim() == '' || $('.opinion').val().trim() == '') {
             alert('請填寫完整資料');
         } else {
+
+            //資料填寫完整，送出後清空欄位資料
             alert('謝謝您的建議');
             $('.name').val('');
             $('.email').val('');
@@ -81,41 +126,62 @@ $(document).ready(function () {
         }
     })
 
-    //lightbox-JS
-    lightbox.option({
-        'resizeDuration': 200,
-        'wrapAround': true
-    });
 
-    //文章-加入收藏按鈕-動畫(移入移出)
-    $('.blog--article').mouseover(function (e) {
-        $(this).find('.card > .card--like').addClass('card--like__move');
+    /*-------------------部落格文章收藏按鈕設定-------------------*/
+
+
+    //hover效果
+    $('.blog__article').mouseover(function (e) {
+
+        //如果滑鼠移動到文章區塊上，讓按鈕出現
+        $(this).find('.card > .card__like').addClass('card__like--move');
     })
-    $('.blog--article').mouseout(function (e) {
-        $(this).find('.card > .card--like').removeClass('card--like__move');
+    $('.blog__article').mouseout(function (e) {
+
+        //如果滑鼠離開文章區塊，讓按鈕消失
+        $(this).find('.card > .card__like').removeClass('card__like--move');
     })
 
-    //文章-加入收藏按鈕-點擊換色
-    $('.card--like').click(function (e) {
+    //點擊效果
+    $('.card__like').click(function (e) {
+
+        //點擊收藏按鈕，使用toggleClass來改變按鈕顏色
         e.preventDefault();
-        $(this).toggleClass('card--like__click');
+        $(this).toggleClass('card__like--click');
     })
+
+
+    /*-------------------視差滾動預設內容-------------------*/
+
 
     //視差滾動設定
     $('.parallax-window').parallax({
         imageSrc: './assets/images/banner.jpg'
     });
+
+
+    /*-------------------lightbox-JS預設內容-------------------*/
+
+
+    //lightbox-JS
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+    });
 });
 
-// 表單驗證JS
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+/*-------------------javascript-------------------*/
+
+
+/*-------------------bootstrap-------------------*/
+
+
+//表單驗證
 (function () {
     'use strict'
 
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var forms = document.querySelectorAll('.needs-validation')
 
-    // Loop over them and prevent submission
     Array.prototype.slice.call(forms)
         .forEach(function (form) {
             form.addEventListener('submit', function (event) {
@@ -129,7 +195,13 @@ $(document).ready(function () {
         })
 })()
 
-//沒有箭頭、有進度條
+
+/*-------------------swiper相關設定-------------------*/
+
+
+/*-------------------swiper(沒有箭頭、有進度條)-------------------*/
+
+
 //首頁-居家風格-swiper-電腦版
 var swiper = new Swiper(".swiper--pagination", {
     slidesPerView: "auto",
@@ -140,12 +212,15 @@ var swiper = new Swiper(".swiper--pagination", {
     },
 });
 
-//有箭頭、有進度條、單排、無限制
+
+/*-------------------swiper(有箭頭、有進度條、單排(直向)、無限輪播)-------------------*/
+
+
 //首頁-屋主評價-平板/手機版
 //設計師作品-推薦設計師
 //部落格-推薦文章
 //公司介紹-設計師總攬
-var swiper = new Swiper(".swiper--infinite-loop", {
+var swiper = new Swiper(".swiper__infinite-loop", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -159,60 +234,12 @@ var swiper = new Swiper(".swiper--infinite-loop", {
     },
 });
 
-//無箭頭、有進度條、三個一排
-//公司介紹-企業合作
-//設計作品-公司介紹-相關文章
-var swiper = new Swiper(".swiper--slides-per-view", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-});
 
-//幻燈片式swiper
-//公司介紹-作品總攬-swiper
-var swiper = new Swiper(".swiper--thumbs-gallery-loop__bottom", {
-    loop: true,
-    spaceBetween: 10,
-    slidesPerView: 4,
-    freeMode: true,
-    watchSlidesProgress: true,
-});
-var swiper2 = new Swiper(".swiper--thumbs-gallery-loop__top", {
-    loop: true,
-    spaceBetween: 10,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    thumbs: {
-        swiper: swiper,
-    },
-});
+/*-------------------swiper(有箭頭、有進度條、三個一排(橫向)、無限輪播)-------------------*/
 
-//有箭頭、有進度條、一排四個
-//公司介紹-設計師總攬-swiper
-var swiper = new Swiper(".swiper--infinite-loop-slides-per-group__4", {
-    slidesPerView: 4,
-    spaceBetween: 30,
-    slidesPerGroup: 4,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
 
-//有箭頭、有進度條、一排三個
 //合作商家-商家swiper
-var swiper = new Swiper(".swiper--infinite-loop-slides-per-group__3", {
+var swiper = new Swiper(".swiper__infinite-loop-slides-per-group--3", {
     slidesPerView: 3,
     spaceBetween: 30,
     slidesPerGroup: 3,
@@ -228,7 +255,70 @@ var swiper = new Swiper(".swiper--infinite-loop-slides-per-group__3", {
     },
 });
 
-//vanillajs-datepicker
+
+/*-------------------swiper(無箭頭、有進度條、三個一排呈現(橫向)、定點停止)-------------------*/
+
+
+//公司介紹-企業合作
+//設計作品-公司介紹-相關文章
+var swiper = new Swiper(".swiper__slides-per-view", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+
+
+/*-------------------swiper(有箭頭、有進度條、四個一排呈現(橫向)、定點停止)-------------------*/
+
+
+//公司介紹-設計師總攬-swiper
+var swiper = new Swiper(".swiper__infinite-loop-slides-per-group--4", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 4,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+
+/*-------------------swiper(幻燈片)-------------------*/
+
+
+//公司介紹-作品總攬-swiper
+var swiper = new Swiper(".swiper__thumbs-gallery-loop--bottom", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".swiper__thumbs-gallery-loop--top", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: swiper,
+    },
+});
+
+
+/*-------------------vanillajs-datepicker-------------------*/
+
+
 const datepickerMeasure = document.querySelector('input[name="datepickerMeasure"]');
 if (datepickerMeasure) {
     const datepickerMeasureElem = new Datepicker(datepickerMeasure, {
@@ -248,7 +338,10 @@ if (datepickerConstruction) {
     });
 }
 
-//AOS效果
+
+/*-------------------AOS效果-------------------*/
+
+
 AOS.init();
 
 // You can also pass an optional settings object
@@ -275,18 +368,3 @@ AOS.init({
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
-
-// //vanillajs-datepicker
-// const datepickerMeasure = document.querySelector('input[name="datepickerMeasure"]');
-// const datepickerMeasureElem = new Datepicker(datepickerMeasure, {
-//     autohide: true,
-//     nextArrow: '>',
-//     prevArrow: '<'
-// });
-
-// const datepickerConstruction = document.querySelector('input[name="datepickerConstruction"]');
-// const datepickerConstructionElem = new Datepicker(datepickerConstruction, {
-//     autohide: true,
-//     nextArrow: '>',
-//     prevArrow: '<'
-// });

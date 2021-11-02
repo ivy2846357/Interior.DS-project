@@ -1,30 +1,33 @@
+/*-------------------datepicker CSS樣式設定-------------------*/
+
+
 //選擇日期-文字顏色
 .datepicker-cell.selected,
 .datepicker-cell.selected:hover {
-    background-color: #3F72AF;
+    background-color: $primary;
 }
 
 //預設值日期-文字顏色
 .datepicker-cell.focused:not(.selected) {
-    background-color: #3F72AF;
+    background-color: $primary;
     color: #FFF;
 }
 
 //上個月/下個月-箭頭顏色
 .next-btn,
 .prev-btn {
-    color: #112D4E !important;
+    color: $auxiliary !important;
 }
 
 //月份/星期-文字顏色
 .view-switch,
 .dow {
-    color: #3F72AF !important;
+    color: $primary !important;
 }
 
 //當月日期-文字顏色
 .day {
-    color: #707070;
+    color: $gray;
 }
 
 //上個月日期/下個月日期-文字顏色
@@ -33,18 +36,20 @@
     color: #889EAF !important;
 }
 
-//input邊線設定
-.datepicker--border {
-    outline: none;
-    border: 1px solid #ced4da;
-}
 
-//input-文字顏色
-input {
-    color: #707070;
-}
+/*-------------------datepicker 自訂樣式-------------------*/
 
-//日期文字間距
-.datepicker--word__spacing {
-    letter-spacing: 1px;
+
+.datepicker {
+
+    //日期文字間距
+    &__word-spacing {
+        letter-spacing: 1px;
+    }
+
+    //input邊線設定
+    &__border {
+        outline: none;
+        border: 1px solid #ced4da;
+    }
 }

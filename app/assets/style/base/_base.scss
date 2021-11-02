@@ -1,74 +1,96 @@
-//顏色樣式
+/*-------------------網頁顏色樣式-------------------*/
+
+
 $primary: #3F72AF;
 $secondary: #DBE2EF;
 $auxiliary: #112D4E;
 $pink: #FF9292;
+$gray: #707070;
 
-//黑色遮色片
-@mixin bg-dark {
-    background-color: rgba(0, 0, 0, .6);
-    background-blend-mode: multiply;
-}
 
-.bg-blend-mode {
-    background-color: rgba(0, 0, 0, .6);
-    background-blend-mode: multiply;
-}
+/*-------------------網頁預設樣式修改-------------------*/
+
 
 //連結無底線
 a {
     text-decoration: none;
 }
 
-//圖片置中
-.bg-cover {
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-position: center center;
-}
-
-//隱藏X軸/Y軸
-.overflow-x-hidden {
-    overflow-x: hidden;
-}
-
-.overflow-y-hidden {
-    overflow-y: hidden
-}
-
-
-//圓角設定
-.rounded-lg {
-    border-radius: 16px;
-}
-
-.rounded-md {
-    border-radius: 4.8px;
-}
-
-.rounded-sm {
-    border-radius: 4px;
-}
-
-//半透明黑色背景
-.bg--translucent {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-//display設定none
-.display-none {
-    display: none;
-}
-
-//設定頁面margin-top
-.margin--top {
-    margin-top: 60px;
-}
-
-//取消bootstrap預設行為
+//取消bootstrap-scroll-behavior預設行為
 html,
 body {
     scroll-behavior: auto !important;
+}
+
+//input-文字顏色
+input {
+    color: #707070;
+}
+
+
+/*-------------------共用樣式設定-------------------*/
+
+
+//背景/圖片樣式設計
+.bg {
+
+    //半透明黑色背景
+    &__translucent {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    //圖片置中
+    &__cover {
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-position: center center;
+    }
+}
+
+//隱藏卷軸設定
+.overflow {
+
+    //隱藏X軸
+    &__x--hidden {
+        overflow-x: hidden;
+    }
+
+    //隱藏Y軸
+    &__y--hidden {
+        overflow-y: hidden;
+    }
+}
+
+//按鈕/區塊圓角設定
+.rounded {
+
+    &--sm {
+        border-radius: 4px;
+    }
+
+    &--md {
+        border-radius: 4.8px;
+    }
+
+    &--lg {
+        border-radius: 16px;
+    }
+}
+
+//display設定none(沒有!important)
+.display {
+
+    &--none {
+        display: none;
+    }
+}
+
+//頁面margin-top
+.margin {
+
+    &--top {
+        margin-top: 60px;
+    }
 }

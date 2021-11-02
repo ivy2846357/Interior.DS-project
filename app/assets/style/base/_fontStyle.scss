@@ -1,13 +1,27 @@
-//LOGO字型
+/*-------------------字型設定-------------------*/
+
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
-.logo__font {
-    font-family: 'Dancing Script', cursive;
+//LOGO字型設定
+.logo {
+
+    &__font {
+        font-family: 'Dancing Script', cursive;
+    }
 }
 
-//連結文字顏色
-.link--word {
-    &__gray {
-        color: #707070;
+
+/*-------------------文字樣式-------------------*/
+
+
+//連結文字顏色(沒有!important)
+.link {
+
+    &__word {
+
+        &--gray {
+            color: #707070;
+        }
     }
 }

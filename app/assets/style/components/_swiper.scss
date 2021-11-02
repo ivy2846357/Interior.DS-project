@@ -1,4 +1,9 @@
-// swiper設定
+/*-------------------swiper樣式設定-------------------*/
+
+
+/*-------------------開發預設樣式-------------------*/
+
+
 .swiper {
     width: 100%;
     height: 100%;
@@ -34,55 +39,77 @@
     object-fit: cover;
 }
 
-//swiper圖片-寬度80%
-.swiper-slide--w__80 {
-    width: 80%;
-}
-
-//swiper圖片-寬度100%
-.swiper-slide--w__100 {
-    width: 100%;
-}
-
-//swiper幻燈片設定
-.swiper--thumbs-gallery-loop {
-    width: 100%;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.swiper-slide--thumbs-gallery-loop {
-    background-size: cover;
-    background-position: cover;
-}
-
-//swiper幻燈片-大圖設定
-.swiper--thumbs-gallery-loop__top {
-    height: 500px;
-    width: 100%;
-}
-
-//swiper幻燈片-小圖設定
-.swiper--thumbs-gallery-loop__bottom {
-    height: 180px;
-    box-sizing: border-box;
-    padding: 10px 0;
-}
-
-.swiper--thumbs-gallery-loop__bottom .swiper-slide--thumbs-gallery-loop {
+.swiper__thumbs-gallery-loop--bottom .swiper-slide__thumbs-gallery-loop {
     width: 25%;
     height: 100%;
     opacity: 0.4;
 }
 
-.swiper--thumbs-gallery-loop__bottom .swiper-slide-thumb-active {
+.swiper__thumbs-gallery-loop--bottom .swiper-slide-thumb-active {
     opacity: 1;
 }
 
-//公司介紹-相關文章-swiper-查看更多文章
-.swiper-slide--article-blog:nth-child(4n) {
-    justify-content: start;
-    -webkit-justify-content: start;
-    -webkit-box-align: start;
+
+/*-------------------自訂一般樣式-------------------*/
+
+
+.swiper-slide {
+
+    //圖片寬度
+
+    &__w {
+
+        //寬度80%
+        &--80 {
+            width: 80%;
+        }
+
+        //寬度100%
+        &--100 {
+            width: 100%;
+        }
+    }
+
+    //幻燈片(圖片置中)
+    &__thumbs-gallery-loop {
+        background-size: cover;
+        background-position: cover;
+    }
+
+    //公司介紹-相關文章-swiper-查看更多文章
+    &__article {
+
+        &:nth-child(4n) {
+            justify-content: start;
+            -webkit-justify-content: start;
+            -webkit-box-align: start;
+        }
+    }
+}
+
+
+/*-------------------自訂樣式(幻燈片)-------------------*/
+
+
+.swiper {
+
+    &__thumbs-gallery-loop {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+
+        //大圖設定
+        &--top {
+            height: 500px;
+            width: 100%;
+        }
+
+        //小圖設定
+        &--bottom {
+            height: 180px;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+    }
 }

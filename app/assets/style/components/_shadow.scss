@@ -1,4 +1,8 @@
-//文字陰影
-.text--shadow {
-    text-shadow: 0px 0px 8px #000;
+/*-------------------陰影設定-------------------*/
+
+.word {
+
+    &__shadow {
+        text-shadow: 0px 0px 8px #000;
+    }
 }

@@ -1,75 +1,117 @@
+/*-------------------網頁hover效果樣式-------------------*/
+
+
+.hover {
+
+    //區塊hover效果
+
+    //新增陰影
+    &__shadow {
+
+        &--gray {
+            transition: all .3s;
+
+            &:hover {
+                box-shadow: 0px 0px 6px #BBB;
+            }
+        }
+
+        &--black {
+            transition: all .3s;
+
+            &:hover {
+                box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+
+    //上升效果
+    &--rise {
+        transition: all .3s;
+
+        &:hover {
+            transform: translateY(-8px);
+        }
+    }
+
+    //文字hover效果
+
+    //間距拉開
+    &__word {
+
+        &--separate {
+            transition: all .3s;
+
+            &:hover {
+                letter-spacing: 3px;
+            }
+        }
+
+        &-change-color {
+
+            &--primary {
+                transition: all .3s;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    //改變背景顏色
+    &__bg-change-color {
+
+        &--primary {
+            transition: all .3s;
+
+            &:hover {
+                background-color: $primary;
+            }
+        }
+    }
+
+    //顏色改變
+    &__change-color {
+
+
+
+        &--light {
+            transition: all .3s;
+
+            &:hover {
+                background-color: $primary;
+            }
+        }
+    }
+
+    //圖片hover效果
+
+    //放大
+    &__img {
+
+        &--enlarge {
+            transition: all .3s;
+            background-size: 180%;
+
+            &:hover {
+                background-size: 210%;
+            }
+        }
+    }
+}
+
 //導覽列hover效果-連結底線-顯示
-.nav--items__hover {
-    transition: all .3s;
+.nav {
 
-    &:hover {
-        border-bottom: 1px solid $secondary;
-    }
-}
+    &__items {
 
-//卡片hover效果-陰影
-.hover--shadow {
-    &__gray {
-        transition: all .3s;
+        &--hover {
+            transition: all .3s;
 
-        &:hover {
-            box-shadow: 0px 0px 6px #BBB;
+            &:hover {
+                border-bottom: 1px solid $secondary;
+            }
         }
-    }
-
-    &__black {
-        transition: all .3s;
-
-        &:hover {
-            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
-        }
-    }
-}
-
-//文字hover效果-間距拉開
-.hover--word__separate {
-    transition: all .3s;
-
-    &:hover {
-        letter-spacing: 3px;
-    }
-}
-
-//卡片hover效果-上升
-.hover--rise {
-    transition: all .3s;
-
-    &:hover {
-        transform: translateY(-8px);
-    }
-}
-
-//文字hover效果-顏色改變
-.hover--change-color {
-
-    &__light {
-        transition: all .3s;
-
-        &:hover {
-            background-color: $primary;
-        }
-    }
-
-    &__primary {
-        transition: all .3s;
-
-        &:hover {
-            color: $primary;
-        }
-    }
-}
-
-//圖片hover效果-放大
-.hover--img__enlarge {
-    transition: all .3s;
-    background-size: 180%;
-
-    &:hover {
-        background-size: 210%;
     }
 }
