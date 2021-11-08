@@ -5,7 +5,7 @@
 
     //部落格文章區塊設定
 
-    //加入收藏按鈕
+    //加入收藏按鈕(電腦版設定隱藏)
     &__like {
         position: absolute;
         top: 10px;
@@ -15,17 +15,26 @@
         height: 50px;
         background-color: #FFF;
         border-radius: 50%;
-        transform: translateX(70px);
-
-        //動畫-按鈕移入區塊
-        &--move {
-            transform: translateX(0);
-        }
+        transform: translateX(30px);
 
         //動畫-按鈕點擊變粉紅色
         &--click {
             background-color: $pink;
             color: #FFF;
+        }
+    }
+
+    //加入收藏按鈕(平板/手機版設定顯示)
+    @media (min-width: 992px) {
+        .card {
+            &__like {
+                transform: translateX(70px);
+
+                //動畫-按鈕移入區塊
+                &--move {
+                    transform: translateX(0);
+                }
+            }
         }
     }
 
