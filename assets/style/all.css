@@ -13775,20 +13775,27 @@ input {
   height: 50px;
   background-color: #FFF;
   border-radius: 50%;
-  -webkit-transform: translateX(70px);
-      -ms-transform: translateX(70px);
-          transform: translateX(70px);
-}
-
-.card__like--move {
-  -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(30px);
+      -ms-transform: translateX(30px);
+          transform: translateX(30px);
 }
 
 .card__like--click {
   background-color: #FF9292;
   color: #FFF;
+}
+
+@media (min-width: 992px) {
+  .card .card__like {
+    -webkit-transform: translateX(70px);
+        -ms-transform: translateX(70px);
+            transform: translateX(70px);
+  }
+  .card .card__like--move {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 .card__company-logo {
