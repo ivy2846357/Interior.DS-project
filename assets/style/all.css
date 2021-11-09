@@ -13775,9 +13775,9 @@ input {
   height: 50px;
   background-color: #FFF;
   border-radius: 50%;
-  -webkit-transform: translateX(30px);
-      -ms-transform: translateX(30px);
-          transform: translateX(30px);
+  -webkit-transform: translateX(42px);
+      -ms-transform: translateX(42px);
+          transform: translateX(42px);
 }
 
 .card__like--click {
@@ -13785,22 +13785,22 @@ input {
   color: #FFF;
 }
 
+.card__company-logo {
+  width: 120px !important;
+  height: 120px !important;
+}
+
 @media (min-width: 992px) {
-  .card .card__like {
+  .card__like {
     -webkit-transform: translateX(70px);
         -ms-transform: translateX(70px);
             transform: translateX(70px);
   }
-  .card .card__like--move {
+  .card__like--move {
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
             transform: translateX(0);
   }
-}
-
-.card__company-logo {
-  width: 120px !important;
-  height: 120px !important;
 }
 
 /*-------------------icon 設定-------------------*/
