@@ -18,10 +18,11 @@
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
-<body class="position-relative">
+<body>
 
   <!-- 導覽列 -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-auxiliary-dark sticky-top nav__padding w-100">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-auxiliary-dark position-fixed nav__padding w-100"
+    style="z-index: 2000;">
     <div class="container-lg">
       <!-- LOGO -->
       <a class="navbar-brand me-9 pe-8 d-lg-none logo__font text-white fs-2" href="index.html">Interior.DS</a>
@@ -88,7 +89,7 @@
   <!-- 內容 -->
   
 <!-- 設計師作品瀏覽-swiper -->
-<div class="bg-dark margin--top__thumbs-gallery">
+<div class="bg-dark thumbs-gallery__padding--top">
     <div class="container overflow-hidden">
         <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
             class="swiper__thumbs-gallery-loop swiper__thumbs-gallery-loop--top">

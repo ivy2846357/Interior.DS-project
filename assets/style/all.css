@@ -13745,8 +13745,8 @@ input {
   display: none;
 }
 
-.margin--top {
-  margin-top: 60px;
+.padding--top {
+  padding-top: 160px;
 }
 
 /*-------------------字型設定-------------------*/
@@ -13769,15 +13769,13 @@ input {
 .card__like {
   position: absolute;
   top: 10px;
-  left: 245px;
+  right: 10px;
   z-index: 10;
   width: 50px;
   height: 50px;
   background-color: #FFF;
   border-radius: 50%;
-  -webkit-transform: translateX(42px);
-      -ms-transform: translateX(42px);
-          transform: translateX(42px);
+  color: #707070;
 }
 
 .card__like--click {
@@ -13788,6 +13786,10 @@ input {
 .card__company-logo {
   width: 120px !important;
   height: 120px !important;
+}
+
+.card__height {
+  height: 350px;
 }
 
 @media (min-width: 992px) {
@@ -13931,6 +13933,10 @@ input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px 0;
+}
+
+.thumbs-gallery__padding--top {
+  padding-top: 100px;
 }
 
 /*-------------------網頁動畫設定-------------------*/
@@ -14089,10 +14095,6 @@ input {
 .banner__border {
   width: 100px;
   border-bottom: 2px solid #FFF;
-}
-
-.banner--change > .parallax-mirror {
-  height: 682px !important;
 }
 
 .person__img--circle {

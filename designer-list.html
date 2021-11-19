@@ -18,10 +18,11 @@
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
-<body class="position-relative">
+<body>
 
   <!-- 導覽列 -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-auxiliary-dark sticky-top nav__padding w-100">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-auxiliary-dark position-fixed nav__padding w-100"
+    style="z-index: 2000;">
     <div class="container-lg">
       <!-- LOGO -->
       <a class="navbar-brand me-9 pe-8 d-lg-none logo__font text-white fs-2" href="index.html">Interior.DS</a>
@@ -88,8 +89,9 @@
   <!-- 內容 -->
   
 <!-- 推薦設計師標題 -->
-<h2 class="margin--top mb-2 text-primary text-center fw-bold" data-aos="fade-up">本月推薦設計師</h2>
-<h5 class="text-center text-primary mb-6" data-aos="fade-up" data-aos-delay="100"><span
+<div class="padding--top"></div>
+<h2 class="mb-5 mb-lg-2 text-primary text-center fw-bold" data-aos="fade-up">本月推薦設計師</h2>
+<h5 class="text-center text-primary mb-6 d-none d-lg-block" data-aos="fade-up" data-aos-delay="100"><span
         class="fw-bold me-2">10</span>月屋主推薦設計師</h5>
 
 <!-- 推薦設計師介紹 -->
@@ -271,13 +273,13 @@
         </div>
         <!-- 平板/手機板-swiper -->
         <div class="swiper swiper__infinite-loop d-lg-none" data-aos="fade-up" data-aos-delay="200">
-            <div class="swiper-wrapper pb-9">
+            <div class="swiper-wrapper pb-8">
                 <!-- 設計師資訊 -->
                 <div class="swiper-slide swiper-slide__w--100">
                     <div class="col-12">
                         <div class="d-flex align-items-center justify-content-center flex-column">
                             <div class="card-img bg__cover rounded--lg mb-3"
-                                style="background-image: url(https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 350px;">
+                                style="background-image: url(https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 250px;">
                             </div>
                             <p class="text-primary fs-3 mb-0">Tom Chen<small class="text-auxiliary-light fs-6">（AB
                                     設計空間）</small></p>
@@ -290,9 +292,6 @@
                                 <li class="mb-1">2019 Best of Canada Design Award - 獲獎</li>
                                 <li class="mb-1">2019 英國 - London Design Award - 金獎</li>
                                 <li class="mb-1">2019 日本 - Kukan Design Award - 優選</li>
-                                <li class="mb-1">2018 英國 - LICC - 優選</li>
-                                <li class="mb-1">2016 Best of Canada Design Award - 優選</li>
-                                <li class="mb-1">2016 JCD International Design Award</li>
                             </ul>
                             <div class="d-flex justify-content-center w-100">
                                 <a href="reserve-information.html"
@@ -308,7 +307,7 @@
                     <div class="col-12">
                         <div class="d-flex align-items-center justify-content-center flex-column">
                             <div class="card-img bg__cover rounded--lg mb-3"
-                                style="background-image: url(https://images.unsplash.com/photo-1618221710640-c0eaaa2adb49?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 350px;">
+                                style="background-image: url(https://images.unsplash.com/photo-1618221710640-c0eaaa2adb49?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 250px;">
                             </div>
                             <p class="text-primary fs-3 mb-0">Mary Hsu<small class="text-auxiliary-light fs-6">（CD
                                     設計空間）</small></p>
@@ -321,9 +320,6 @@
                                 <li class="mb-1">2019 Best of Canada Design Award - 獲獎</li>
                                 <li class="mb-1">2019 英國 - London Design Award - 金獎</li>
                                 <li class="mb-1">2019 日本 - Kukan Design Award - 優選</li>
-                                <li class="mb-1">2018 英國 - LICC - 優選</li>
-                                <li class="mb-1">2016 Best of Canada Design Award - 優選</li>
-                                <li class="mb-1">2016 JCD International Design Award</li>
                             </ul>
                             <div class="d-flex justify-content-center w-100">
                                 <a href="reserve-information.html"
@@ -339,7 +335,7 @@
                     <div class="col-12">
                         <div class="d-flex align-items-center justify-content-center flex-column">
                             <div class="card-img bg__cover rounded--lg mb-3"
-                                style="background-image: url(https://images.unsplash.com/photo-1618219740975-d40978bb7378?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=80); height: 350px;">
+                                style="background-image: url(https://images.unsplash.com/photo-1618219740975-d40978bb7378?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=80); height: 250px;">
                             </div>
                             <p class="text-primary fs-3 mb-0">Morris Tony<small class="text-auxiliary-light fs-6">（EF
                                     設計空間）</small></p>
@@ -353,9 +349,6 @@
                                 <li class="mb-1">2019 Best of Canada Design Award - 獲獎</li>
                                 <li class="mb-1">2019 英國 - London Design Award - 金獎</li>
                                 <li class="mb-1">2019 日本 - Kukan Design Award - 優選</li>
-                                <li class="mb-1">2018 英國 - LICC - 優選</li>
-                                <li class="mb-1">2016 Best of Canada Design Award - 優選</li>
-                                <li class="mb-1">2016 JCD International Design Award</li>
                             </ul>
                             <div class="d-flex justify-content-center w-100">
                                 <a href="reserve-information.html"
@@ -371,7 +364,7 @@
                     <div class="col-12">
                         <div class="d-flex align-items-center justify-content-center flex-column">
                             <div class="card-img bg__cover rounded--lg mb-3"
-                                style="background-image: url(https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80); height: 350px;">
+                                style="background-image: url(https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80); height: 250px;">
                             </div>
                             <p class="text-primary fs-3 mb-0">Andrew Bert<small class="text-auxiliary-light fs-6">（GH
                                     設計空間）</small></p>
@@ -384,9 +377,6 @@
                                 <li class="mb-1">2019 Best of Canada Design Award - 獲獎</li>
                                 <li class="mb-1">2019 英國 - London Design Award - 金獎</li>
                                 <li class="mb-1">2019 日本 - Kukan Design Award - 優選</li>
-                                <li class="mb-1">2018 英國 - LICC - 優選</li>
-                                <li class="mb-1">2016 Best of Canada Design Award - 優選</li>
-                                <li class="mb-1">2016 JCD International Design Award</li>
                             </ul>
                             <div class="d-flex justify-content-center w-100">
                                 <a href="reserve-information.html"
@@ -402,7 +392,7 @@
                     <div class="col-12">
                         <div class="d-flex align-items-center justify-content-center flex-column">
                             <div class="card-img bg__cover rounded--lg mb-3"
-                                style="background-image: url(https://images.unsplash.com/photo-1618221118493-9cfa1a1c00da?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 350px;">
+                                style="background-image: url(https://images.unsplash.com/photo-1618221118493-9cfa1a1c00da?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 250px;">
                             </div>
                             <p class="text-primary fs-3 mb-0">Frankie Gaston<small class="text-auxiliary-light fs-6">（IJ
                                     設計空間）</small></p>
@@ -415,9 +405,6 @@
                                 <li class="mb-1">2019 Best of Canada Design Award - 獲獎</li>
                                 <li class="mb-1">2019 英國 - London Design Award - 金獎</li>
                                 <li class="mb-1">2019 日本 - Kukan Design Award - 優選</li>
-                                <li class="mb-1">2018 英國 - LICC - 優選</li>
-                                <li class="mb-1">2016 Best of Canada Design Award - 優選</li>
-                                <li class="mb-1">2016 JCD International Design Award</li>
                             </ul>
                             <div class="d-flex justify-content-center w-100">
                                 <a href="reserve-information.html"
