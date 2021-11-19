@@ -41,12 +41,10 @@ $(document).ready(function () {
 
             //如果頁面到達指定位置，使導覽列padding縮小
             $('.nav__padding').addClass('nav__padding--change');
-            $('body').addClass('banner--change');
         } else {
 
             //如果頁面回到上層位置，取消padding縮小效果
             $('.nav__padding').removeClass('nav__padding--change');
-            $('body').removeClass('banner--change');
         }
 
         //廣告視窗顯示/隱藏效果
