@@ -12,10 +12,10 @@ current: index
         class="fw-bold me-2">10</span>月屋主推薦設計師</h5>
 
 <!-- 推薦設計師介紹 -->
-<div class="container mb-9">
+<div class="container mb-9" data-aos="fade-up" data-aos-delay="200">
     <div class="row">
         <!-- 電腦版-swiper -->
-        <div class="swiper swiper__infinite-loop d-none d-lg-block" data-aos="fade-up" data-aos-delay="200">
+        <div class="swiper swiper__infinite-loop d-none d-lg-block">
             <div class="swiper-wrapper pb-9">
                 <!-- 設計師資訊 -->
                 <div class="swiper-slide swiper-slide__w--100">
@@ -189,7 +189,7 @@ current: index
             <div class="swiper-pagination"></div>
         </div>
         <!-- 平板/手機板-swiper -->
-        <div class="swiper swiper__infinite-loop d-lg-none" data-aos="fade-up" data-aos-delay="200">
+        <div class="swiper swiper__infinite-loop d-lg-none">
             <div class="swiper-wrapper pb-8">
                 <!-- 設計師資訊 -->
                 <div class="swiper-slide swiper-slide__w--100">
@@ -340,313 +340,315 @@ current: index
     </div>
 </div>
 
-<!-- 設計師搜尋 -->
-<div class="class-select bg-secondary py-3" data-aos="fade-up">
-    <div class="container">
-        <div class="row">
-            <div class="d-flex align-items-baseline">
-                <!-- 搜尋列表 -->
-                <div class="col-8 col-sm-5 col-lg-4">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="搜尋設計公司" aria-label="Username"
-                            aria-describedby="basic-addon1">
-                        <a href="#" class="btn btn-primary text-white py-2 px-3">搜尋</a>
+<div data-aos="fade-up">
+    <!-- 設計師搜尋 -->
+    <div class="class-select bg-secondary py-3">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex align-items-baseline">
+                    <!-- 搜尋列表 -->
+                    <div class="col-8 col-sm-5 col-lg-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="搜尋設計公司" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                            <a href="#" class="btn btn-primary text-white py-2 px-3">搜尋</a>
+                        </div>
                     </div>
-                </div>
-                <!-- 居家風格(下拉選單) -->
-                <div class="col">
-                    <div class="dropdown ms-3">
-                        <button class="btn btn-light text-auxiliary-light dropdown-toggle" type="button"
-                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            居家風格
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">北歐風</a></li>
-                            <li><a class="dropdown-item" href="#">現代風</a></li>
-                            <li><a class="dropdown-item" href="#">新古典</a></li>
-                            <li><a class="dropdown-item" href="#">美式風</a></li>
-                            <li><a class="dropdown-item" href="#">鄉村風</a></li>
-                            <li><a class="dropdown-item" href="#">混搭風</a></li>
-                            <li><a class="dropdown-item" href="#">奢華風</a></li>
-                            <li><a class="dropdown-item" href="#">簡約風</a></li>
-                            <li><a class="dropdown-item" href="#">工業風</a></li>
-                        </ul>
+                    <!-- 居家風格(下拉選單) -->
+                    <div class="col">
+                        <div class="dropdown ms-3">
+                            <button class="btn btn-light text-auxiliary-light dropdown-toggle" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                居家風格
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">北歐風</a></li>
+                                <li><a class="dropdown-item" href="#">現代風</a></li>
+                                <li><a class="dropdown-item" href="#">新古典</a></li>
+                                <li><a class="dropdown-item" href="#">美式風</a></li>
+                                <li><a class="dropdown-item" href="#">鄉村風</a></li>
+                                <li><a class="dropdown-item" href="#">混搭風</a></li>
+                                <li><a class="dropdown-item" href="#">奢華風</a></li>
+                                <li><a class="dropdown-item" href="#">簡約風</a></li>
+                                <li><a class="dropdown-item" href="#">工業風</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- 設計公司介紹 -->
-<div class="container mt-7">
-    <div class="row">
-        <!-- 設計公司介紹 -->
-        <div class="col-12 col-lg-9">
-            <div class="page--item" data-page="page-1">
-                <div class="row">
-                    <!-- 設計公司 -->
-                    <div class="col-12 col-sm-6 col-lg-7" data-aos="fade-up" data-aos-delay="100">
-                        <a href="company-portfolio.html">
-                            <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
-                                style="background-image: url(https://images.unsplash.com/photo-1614255976202-8ce52bfcb655?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80); height: 300px;">
-                                <div class="card-img-overlay d-flex align-items-end word__shadow">
-                                    <div class="card-text px-4 py-3 mt-auto bg__translucent">
-                                        <h3 class="m-0 fw-bold">AB 設計空間</h3>
-                                        <h6 class="m-0 fw-bold">設計師：Carol Tang</h6>
+    <!-- 設計公司介紹 -->
+    <div class="container mt-7">
+        <div class="row">
+            <!-- 設計公司介紹 -->
+            <div class="col-12 col-lg-9">
+                <div class="page--item" data-page="page-1">
+                    <div class="row">
+                        <!-- 設計公司 -->
+                        <div class="col-12 col-sm-6 col-lg-7">
+                            <a href="company-portfolio.html">
+                                <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
+                                    style="background-image: url(https://images.unsplash.com/photo-1614255976202-8ce52bfcb655?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80); height: 300px;">
+                                    <div class="card-img-overlay d-flex align-items-end word__shadow">
+                                        <div class="card-text px-4 py-3 mt-auto bg__translucent">
+                                            <h3 class="m-0 fw-bold">AB 設計空間</h3>
+                                            <h6 class="m-0 fw-bold">設計師：Carol Tang</h6>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+                        <!-- 設計公司 -->
+                        <div class="col-12 col-sm-6 col-lg-5">
+                            <a href="#">
+                                <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
+                                    style="background-image: url(https://images.unsplash.com/photo-1617098900591-3f90928e8c54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80); height: 300px;">
+                                    <div class="card-img-overlay d-flex align-items-end">
+                                        <div class="card-text px-4 py-3 mt-auto bg__translucent">
+                                            <h3 class="m-0 fw-bold">CD 設計空間</h3>
+                                            <h6 class="m-0 fw-bold">設計師：Kanae</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <!-- 設計公司 -->
-                    <div class="col-12 col-sm-6 col-lg-5" data-aos="fade-up" data-aos-delay="200">
-                        <a href="#">
-                            <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
-                                style="background-image: url(https://images.unsplash.com/photo-1617098900591-3f90928e8c54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80); height: 300px;">
-                                <div class="card-img-overlay d-flex align-items-end">
-                                    <div class="card-text px-4 py-3 mt-auto bg__translucent">
-                                        <h3 class="m-0 fw-bold">CD 設計空間</h3>
-                                        <h6 class="m-0 fw-bold">設計師：Kanae</h6>
+                    <div class="row">
+                        <!-- 設計公司 -->
+                        <div class="col-12 col-sm-6 col-lg-5">
+                            <a href="#">
+                                <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
+                                    style="background-image: url(https://images.unsplash.com/photo-1615529162924-f8605388461d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    <div class="card-img-overlay d-flex align-items-end">
+                                        <div class="card-text px-4 py-3 mt-auto bg__translucent">
+                                            <h3 class="m-0">EF 設計空間</h3>
+                                            <h6 class="m-0">設計師：Kuzuha</h6>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+                        <!-- 設計公司 -->
+                        <div class="col-12 col-sm-6 col-lg-7">
+                            <a href="#">
+                                <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
+                                    style="background-image: url(https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80); height: 300px;">
+                                    <div class="card-img-overlay d-flex align-items-end">
+                                        <div class="card-text px-4 py-3 mt-auto bg__translucent">
+                                            <h3 class="m-0 fw-bold">GH 設計空間</h3>
+                                            <h6 class="m-0 fw-bold">設計師：Kuzuha</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- 設計公司 -->
+                        <div class="col-12 col-sm-6 col-lg-7">
+                            <a href="#">
+                                <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
+                                    style="background-image: url(https://images.unsplash.com/photo-1617806118233-18e1de247200?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 300px;">
+                                    <div class="card-img-overlay d-flex align-items-end">
+                                        <div class="card-text px-4 py-3 mt-auto bg__translucent">
+                                            <h3 class="m-0 fw-bold">IJ 設計空間</h3>
+                                            <h6 class="m-0 fw-bold">設計師：Kuzuha、Kanae</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- 設計公司 -->
+                        <div class="col-12 col-sm-6 col-lg-5">
+                            <a href="#">
+                                <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
+                                    style="background-image: url(https://images.unsplash.com/photo-1616486701797-0f33f61038ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    <div class="card-img-overlay d-flex align-items-end">
+                                        <div class="card-text px-4 py-3 mt-auto bg__translucent">
+                                            <h3 class="m-0 fw-bold">KL 設計空間</h3>
+                                            <h6 class="m-0 fw-bold">設計師：Kanae</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- 設計公司 -->
+                        <div class="col-12 col-sm-6 col-lg-5">
+                            <a href="#">
+                                <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
+                                    style="background-image: url(https://images.unsplash.com/photo-1620380925682-2ccd56244186?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=405&q=80); height: 300px;">
+                                    <div class="card-img-overlay d-flex align-items-end">
+                                        <div class="card-text px-4 py-3 mt-auto bg__translucent">
+                                            <h3 class="m-0 fw-bold">MN 設計空間</h3>
+                                            <h6 class="m-0 fw-bold">設計師：Asa Chen</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- 設計公司 -->
+                        <div class="col-12 col-sm-6 col-lg-7">
+                            <a href="#">
+                                <div class="card bg-transparent  text-white bg__cover rounded--lg mb-5 hover--rise"
+                                    style="background-image: url(https://images.unsplash.com/photo-1618220985423-db5473de7fb7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 300px;">
+                                    <div class="card-img-overlay d-flex align-items-end">
+                                        <div class="card-text px-4 py-3 mt-auto bg__translucent">
+                                            <h3 class="m-0 fw-bold">OP 設計空間</h3>
+                                            <h6 class="m-0 fw-bold">設計師：Asa Chen</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <!-- 設計公司 -->
-                    <div class="col-12 col-sm-6 col-lg-5" data-aos="fade-up" data-aos-delay="200">
-                        <a href="#">
-                            <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
-                                style="background-image: url(https://images.unsplash.com/photo-1615529162924-f8605388461d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
-                                <div class="card-img-overlay d-flex align-items-end">
-                                    <div class="card-text px-4 py-3 mt-auto bg__translucent">
-                                        <h3 class="m-0">EF 設計空間</h3>
-                                        <h6 class="m-0">設計師：Kuzuha</h6>
+                <div class="page--item display--none" data-page="page-2">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-7">
+                            <a href="#">
+                                <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
+                                    style="background-image: url(https://images.unsplash.com/photo-1614255976202-8ce52bfcb655?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80); height: 300px;">
+                                    <div class="card-img-overlay d-flex align-items-end word__shadow">
+                                        <div class="card-text px-4 py-3 mt-auto bg__translucent">
+                                            <h3 class="m-0 fw-bold">AB 設計空間</h3>
+                                            <h6 class="m-0 fw-bold">設計師：Carol Tang</h6>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-5">
+                            <a href="#">
+                                <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
+                                    style="background-image: url(https://images.unsplash.com/photo-1617098900591-3f90928e8c54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80); height: 300px;">
+                                    <div class="card-img-overlay d-flex align-items-end">
+                                        <div class="card-text px-4 py-3 mt-auto bg__translucent">
+                                            <h3 class="m-0 fw-bold">CD 設計空間</h3>
+                                            <h6 class="m-0 fw-bold">設計師：Kanae</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <!-- 設計公司 -->
-                    <div class="col-12 col-sm-6 col-lg-7" data-aos="fade-up" data-aos-delay="100">
-                        <a href="#">
-                            <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
-                                style="background-image: url(https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80); height: 300px;">
-                                <div class="card-img-overlay d-flex align-items-end">
-                                    <div class="card-text px-4 py-3 mt-auto bg__translucent">
-                                        <h3 class="m-0 fw-bold">GH 設計空間</h3>
-                                        <h6 class="m-0 fw-bold">設計師：Kuzuha</h6>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-5">
+                            <a href="#">
+                                <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
+                                    style="background-image: url(https://images.unsplash.com/photo-1615529162924-f8605388461d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    <div class="card-img-overlay d-flex align-items-end">
+                                        <div class="card-text px-4 py-3 mt-auto bg__translucent">
+                                            <h3 class="m-0">EF 設計空間</h3>
+                                            <h6 class="m-0">設計師：Kuzuha</h6>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-7">
+                            <a href="#">
+                                <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
+                                    style="background-image: url(https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80); height: 300px;">
+                                    <div class="card-img-overlay d-flex align-items-end">
+                                        <div class="card-text px-4 py-3 mt-auto bg__translucent">
+                                            <h3 class="m-0 fw-bold">GH 設計空間</h3>
+                                            <h6 class="m-0 fw-bold">設計師：Kuzuha</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <!-- 設計公司 -->
-                    <div class="col-12 col-sm-6 col-lg-7" data-aos="fade-up" data-aos-delay="100">
-                        <a href="#">
-                            <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
-                                style="background-image: url(https://images.unsplash.com/photo-1617806118233-18e1de247200?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 300px;">
-                                <div class="card-img-overlay d-flex align-items-end">
-                                    <div class="card-text px-4 py-3 mt-auto bg__translucent">
-                                        <h3 class="m-0 fw-bold">IJ 設計空間</h3>
-                                        <h6 class="m-0 fw-bold">設計師：Kuzuha、Kanae</h6>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-7">
+                            <a href="#">
+                                <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
+                                    style="background-image: url(https://images.unsplash.com/photo-1617806118233-18e1de247200?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 300px;">
+                                    <div class="card-img-overlay d-flex align-items-end">
+                                        <div class="card-text px-4 py-3 mt-auto bg__translucent">
+                                            <h3 class="m-0 fw-bold">IJ 設計空間</h3>
+                                            <h6 class="m-0 fw-bold">設計師：Kuzuha、Kanae</h6>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-5">
+                            <a href="#">
+                                <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
+                                    style="background-image: url(https://images.unsplash.com/photo-1616486701797-0f33f61038ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80); height: 300px;">
+                                    <div class="card-img-overlay d-flex align-items-end">
+                                        <div class="card-text px-4 py-3 mt-auto bg__translucent">
+                                            <h3 class="m-0 fw-bold">KL 設計空間</h3>
+                                            <h6 class="m-0 fw-bold">設計師：Kanae</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <!-- 設計公司 -->
-                    <div class="col-12 col-sm-6 col-lg-5" data-aos="fade-up" data-aos-delay="200">
-                        <a href="#">
-                            <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
-                                style="background-image: url(https://images.unsplash.com/photo-1616486701797-0f33f61038ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80); height: 300px;">
-                                <div class="card-img-overlay d-flex align-items-end">
-                                    <div class="card-text px-4 py-3 mt-auto bg__translucent">
-                                        <h3 class="m-0 fw-bold">KL 設計空間</h3>
-                                        <h6 class="m-0 fw-bold">設計師：Kanae</h6>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-5">
+                            <a href="#">
+                                <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
+                                    style="background-image: url(https://images.unsplash.com/photo-1620380925682-2ccd56244186?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=405&q=80); height: 300px;">
+                                    <div class="card-img-overlay d-flex align-items-end">
+                                        <div class="card-text px-4 py-3 mt-auto bg__translucent">
+                                            <h3 class="m-0 fw-bold">MN 設計空間</h3>
+                                            <h6 class="m-0 fw-bold">設計師：Asa Chen</h6>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- 設計公司 -->
-                    <div class="col-12 col-sm-6 col-lg-5" data-aos="fade-up" data-aos-delay="200">
-                        <a href="#">
-                            <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
-                                style="background-image: url(https://images.unsplash.com/photo-1620380925682-2ccd56244186?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=405&q=80); height: 300px;">
-                                <div class="card-img-overlay d-flex align-items-end">
-                                    <div class="card-text px-4 py-3 mt-auto bg__translucent">
-                                        <h3 class="m-0 fw-bold">MN 設計空間</h3>
-                                        <h6 class="m-0 fw-bold">設計師：Asa Chen</h6>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-7">
+                            <a href="#">
+                                <div class="card bg-transparent  text-white bg__cover rounded--lg mb-5 hover--rise"
+                                    style="background-image: url(https://images.unsplash.com/photo-1618220985423-db5473de7fb7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 300px;">
+                                    <div class="card-img-overlay d-flex align-items-end">
+                                        <div class="card-text px-4 py-3 mt-auto bg__translucent">
+                                            <h3 class="m-0 fw-bold">OP 設計空間</h3>
+                                            <h6 class="m-0 fw-bold">設計師：Asa Chen</h6>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- 設計公司 -->
-                    <div class="col-12 col-sm-6 col-lg-7" data-aos="fade-up" data-aos-delay="100">
-                        <a href="#">
-                            <div class="card bg-transparent  text-white bg__cover rounded--lg mb-5 hover--rise"
-                                style="background-image: url(https://images.unsplash.com/photo-1618220985423-db5473de7fb7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 300px;">
-                                <div class="card-img-overlay d-flex align-items-end">
-                                    <div class="card-text px-4 py-3 mt-auto bg__translucent">
-                                        <h3 class="m-0 fw-bold">OP 設計空間</h3>
-                                        <h6 class="m-0 fw-bold">設計師：Asa Chen</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="page--item display--none" data-page="page-2">
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-lg-7" data-aos="fade-up" data-aos-delay="200">
-                        <a href="#">
-                            <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
-                                style="background-image: url(https://images.unsplash.com/photo-1614255976202-8ce52bfcb655?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80); height: 300px;">
-                                <div class="card-img-overlay d-flex align-items-end word__shadow">
-                                    <div class="card-text px-4 py-3 mt-auto bg__translucent">
-                                        <h3 class="m-0 fw-bold">AB 設計空間</h3>
-                                        <h6 class="m-0 fw-bold">設計師：Carol Tang</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-5" data-aos="fade-up" data-aos-delay="100">
-                        <a href="#">
-                            <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
-                                style="background-image: url(https://images.unsplash.com/photo-1617098900591-3f90928e8c54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80); height: 300px;">
-                                <div class="card-img-overlay d-flex align-items-end">
-                                    <div class="card-text px-4 py-3 mt-auto bg__translucent">
-                                        <h3 class="m-0 fw-bold">CD 設計空間</h3>
-                                        <h6 class="m-0 fw-bold">設計師：Kanae</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-lg-5" data-aos="fade-up" data-aos-delay="100">
-                        <a href="#">
-                            <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
-                                style="background-image: url(https://images.unsplash.com/photo-1615529162924-f8605388461d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80); height: 300px;">
-                                <div class="card-img-overlay d-flex align-items-end">
-                                    <div class="card-text px-4 py-3 mt-auto bg__translucent">
-                                        <h3 class="m-0">EF 設計空間</h3>
-                                        <h6 class="m-0">設計師：Kuzuha</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-7" data-aos="fade-up" data-aos-delay="200">
-                        <a href="#">
-                            <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
-                                style="background-image: url(https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80); height: 300px;">
-                                <div class="card-img-overlay d-flex align-items-end">
-                                    <div class="card-text px-4 py-3 mt-auto bg__translucent">
-                                        <h3 class="m-0 fw-bold">GH 設計空間</h3>
-                                        <h6 class="m-0 fw-bold">設計師：Kuzuha</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-lg-7" data-aos="fade-up" data-aos-delay="200">
-                        <a href="#">
-                            <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
-                                style="background-image: url(https://images.unsplash.com/photo-1617806118233-18e1de247200?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 300px;">
-                                <div class="card-img-overlay d-flex align-items-end">
-                                    <div class="card-text px-4 py-3 mt-auto bg__translucent">
-                                        <h3 class="m-0 fw-bold">IJ 設計空間</h3>
-                                        <h6 class="m-0 fw-bold">設計師：Kuzuha、Kanae</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-5" data-aos="fade-up" data-aos-delay="100">
-                        <a href="#">
-                            <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
-                                style="background-image: url(https://images.unsplash.com/photo-1616486701797-0f33f61038ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80); height: 300px;">
-                                <div class="card-img-overlay d-flex align-items-end">
-                                    <div class="card-text px-4 py-3 mt-auto bg__translucent">
-                                        <h3 class="m-0 fw-bold">KL 設計空間</h3>
-                                        <h6 class="m-0 fw-bold">設計師：Kanae</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-lg-5" data-aos="fade-up" data-aos-delay="100">
-                        <a href="#">
-                            <div class="card bg-transparent text-white bg__cover rounded--lg mb-5 hover--rise"
-                                style="background-image: url(https://images.unsplash.com/photo-1620380925682-2ccd56244186?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=405&q=80); height: 300px;">
-                                <div class="card-img-overlay d-flex align-items-end">
-                                    <div class="card-text px-4 py-3 mt-auto bg__translucent">
-                                        <h3 class="m-0 fw-bold">MN 設計空間</h3>
-                                        <h6 class="m-0 fw-bold">設計師：Asa Chen</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-7" data-aos="fade-up" data-aos-delay="200">
-                        <a href="#">
-                            <div class="card bg-transparent  text-white bg__cover rounded--lg mb-5 hover--rise"
-                                style="background-image: url(https://images.unsplash.com/photo-1618220985423-db5473de7fb7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80); height: 300px;">
-                                <div class="card-img-overlay d-flex align-items-end">
-                                    <div class="card-text px-4 py-3 mt-auto bg__translucent">
-                                        <h3 class="m-0 fw-bold">OP 設計空間</h3>
-                                        <h6 class="m-0 fw-bold">設計師：Asa Chen</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+            <!-- 標語 -->
+            <div class="offset-sm-3 offset-lg-0 col-12 col-sm-6 col-lg-3">
+                <div class="d-none d-lg-flex flex-column align-items-center align-items-lg-start">
+                    <h5 class="text-primary fw-bold">Interior.DS 與多家設計公司合作</h5>
+                    <ul class="text-gray list-unstyled">
+                        <li class="mb-1">
+                            <h6>我們對於每個設計公司都有嚴格把關</h6>
+                        </li>
+                        <li class="mb-1">
+                            <h6>為了給每位顧客最優質的服務，我們會定期考察設計師</h6>
+                        </li>
+                        <li class="mb-1">
+                            <h6>並推薦上個月顧客評價最好的設計師給您做參考</h6>
+                        </li>
+                        <li class="mb-1">
+                            <h6>歡迎顧客將您的體驗與我們分享</h6>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <!-- 標語 -->
-        <div class="offset-sm-3 offset-lg-0 col-12 col-sm-6 col-lg-3" data-aos="fade-up">
-            <div class="d-none d-lg-flex flex-column align-items-center align-items-lg-start">
-                <h5 class="text-primary fw-bold">Interior.DS 與多家設計公司合作</h5>
-                <ul class="text-gray list-unstyled">
-                    <li class="mb-1">
-                        <h6>我們對於每個設計公司都有嚴格把關</h6>
-                    </li>
-                    <li class="mb-1">
-                        <h6>為了給每位顧客最優質的服務，我們會定期考察設計師</h6>
-                    </li>
-                    <li class="mb-1">
-                        <h6>並推薦上個月顧客評價最好的設計師給您做參考</h6>
-                    </li>
-                    <li class="mb-1">
-                        <h6>歡迎顧客將您的體驗與我們分享</h6>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <!-- 分頁標示 -->
+        <nav aria-label="Page navigation" style="margin-bottom: 116px;">
+            <ul class="pagination pagination-lg justify-content-center">
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+            </ul>
+        </nav>
     </div>
-    <!-- 分頁標示 -->
-    <nav aria-label="Page navigation" style="margin-bottom: 116px;" data-aos="fade-up">
-        <ul class="pagination pagination-lg justify-content-center">
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-        </ul>
-    </nav>
 </div>
